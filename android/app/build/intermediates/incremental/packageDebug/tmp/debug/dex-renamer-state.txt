@@ -1,0 +1,4 @@
+#Wed Jun 03 18:06:02 ICT 2020
+base.0=/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
