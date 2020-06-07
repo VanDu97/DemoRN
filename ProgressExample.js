@@ -38,6 +38,7 @@ export default class ProgressExample extends Component {
           <Text>Next</Text>
         </TouchableOpacity>
         <Progress.Bar
+          color={"red"}
           progress={this.state.offset}
           width={Dimensions.get("window").width * 0.95}
           height={25}

@@ -19,7 +19,8 @@ export const assets = [backgroundImage];
 // import App from "./RenderHTML";
 //import App from "./Loadmore";
 // import App from "./Languea";
-import App from "./ProgressExample";
+// import App from "./ProgressExample";
+import App from "./SizeImage";
 //import App from './UberEats.ts'
 // export const fonts = {
 //   UberMoveRegular: require("./assets/UberMoveRegular.ttf"),
