@@ -190,8 +190,9 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
+    implementation project(':react-native-webview')
     implementation "com.facebook.react:react-native:+"  // From node_modules
-
+    implementation project(':react-native-art')
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     compile project(':react-native-vector-icons')
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {

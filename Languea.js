@@ -19,6 +19,13 @@ const translate = memoize(
   (key, config) => i18n.t(key, config),
   (key, config) => (config ? key + JSON.stringify(config) : key)
 );
+//alert(RNLocalize.getCurrencies());
+//alert(RNLocalize.getCountry());
+//alert(RNLocalize.getCalendar());
+//get local time example asis/HCM city
+//alert(RNLocalize.getTimeZone());
+//check if your phone format 24h => true otherwise false
+//alert(RNLocalize.uses24HourClock());
 const setI18nConfig = () => {
   // fallback if no available language fits
   const fallback = { languageTag: "en", isRTL: false };
@@ -57,6 +64,7 @@ export default class Languea extends Component {
     return (
       <SafeAreaView style={styles.safeArea}>
         <Text style={styles.value}>{translate("hello")}</Text>
+        <Text> </Text>
       </SafeAreaView>
     );
   }

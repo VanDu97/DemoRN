@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/art": "^1.2.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/bottom-tabs": "^5.5.1",
     "@react-navigation/drawer": "^5.8.1",
@@ -19,6 +20,8 @@
     "@react-navigation/stack": "^5.4.1",
     "i18n-js": "^3.7.0",
     "lodash.memoize": "^4.1.2",
+    "moment": "^2.26.0",
+    "moments": "0.0.2",
     "react": "16.11.0",
     "react-i18next": "^11.5.0",
     "react-native": "0.62.2",
@@ -29,6 +32,7 @@
     "react-native-paper": "^3.10.1",
     "react-native-parallax-scroll-view": "^0.21.3",
     "react-native-parallax-scrollview": "^3.0.0",
+    "react-native-progress": "^4.1.2",
     "react-native-reanimated": "^1.9.0",
     "react-native-redash": "^14.1.1",
     "react-native-render-html": "^4.2.0",
