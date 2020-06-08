@@ -224,6 +224,23 @@
                     }
                 },
                 {
+                    "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/9212b699b75d8030856ae0f91dba886d/jetified-android-scalablevideoview-1.0.4/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "1028",
+                        "endOffsets": "1079"
+                    },
+                    "to": {
+                        "startLines": "7321",
+                        "startColumns": "4",
+                        "startOffsets": "452175",
+                        "endColumns": "1028",
+                        "endOffsets": "453199"
+                    }
+                },
+                {
                     "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/420bad76d144494602cd19d31fe9bd87/coordinatorlayout-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,6,16",

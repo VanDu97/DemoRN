@@ -5,6 +5,7 @@ INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:1:1-27:12
 MERGED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-video] /Users/ducena/Desktop/DemoRN/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] /Users/ducena/Desktop/DemoRN/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2a541438a92d51987c1e764cbfde06bc/jetified-flipper-0.33.1/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fa9d249d56579007dba70f8ee4dd5b3f/flipper-network-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
@@ -20,7 +21,10 @@ MERGED from [:react-native-safe-area-context] /Users/ducena/Desktop/DemoRN/node_
 MERGED from [:react-native-screens] /Users/ducena/Desktop/DemoRN/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a97d24c763a817474c58ac1d7b9cf148/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/055a171d10c43231a2795117ecd4c3fd/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ed26cdc1f47a6754ce1546799dd43a1/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9212b699b75d8030856ae0f91dba886d/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:2:1-12:12
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c180792e3f393fe4453d9c695595b3ef/flipper-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/14649b8b71802f359f24d4f29dd55d6b/stetho-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/83ef104dfb430f397d92e4759e916162/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
@@ -31,8 +35,6 @@ MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ducena/.gradle/cach
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/3b198830d922c7c36b5728d232b5dfa2/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8b504391aa72c1fccbfde5f9aecf364d/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/3eb43dcc83336306d77ef63b3402a327/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/edab9a506dbd8c78a6f1a18fc4eb209e/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/3e974e7e51555c82be5b9fd468966b2b/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -94,10 +96,10 @@ MERGED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/re
 MERGED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a97d24c763a817474c58ac1d7b9cf148/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a97d24c763a817474c58ac1d7b9cf148/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:11:5-20
 MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/ee4a69f4f726969bc5c4f11a1f23bd91/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
@@ -160,6 +162,8 @@ uses-sdk
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-video] /Users/ducena/Desktop/DemoRN/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-video] /Users/ducena/Desktop/DemoRN/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/ducena/Desktop/DemoRN/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/ducena/Desktop/DemoRN/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2a541438a92d51987c1e764cbfde06bc/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
@@ -190,8 +194,14 @@ MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/cache
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a97d24c763a817474c58ac1d7b9cf148/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/055a171d10c43231a2795117ecd4c3fd/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/055a171d10c43231a2795117ecd4c3fd/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ed26cdc1f47a6754ce1546799dd43a1/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ed26cdc1f47a6754ce1546799dd43a1/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9212b699b75d8030856ae0f91dba886d/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9212b699b75d8030856ae0f91dba886d/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c180792e3f393fe4453d9c695595b3ef/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c180792e3f393fe4453d9c695595b3ef/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/14649b8b71802f359f24d4f29dd55d6b/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
@@ -212,10 +222,6 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8b504391aa72c1fccbfde5f9aecf364d/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a682a4f61b53a5eb0b34ff17728f4b20/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7b4521e09033db39989053c4a0984cc2/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2b7e6ebaa515cd43f42fb356f0d1941c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/3eb43dcc83336306d77ef63b3402a327/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/3eb43dcc83336306d77ef63b3402a327/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/edab9a506dbd8c78a6f1a18fc4eb209e/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
