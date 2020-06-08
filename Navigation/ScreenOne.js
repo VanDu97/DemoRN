@@ -23,26 +23,31 @@ export default class ScreenOne extends Component {
     this.refs._scrollView;
   }
   handleScroll = (event) => {
-    console.log(event.nativeEvent.contentOffset);
-
-    var { y } = event.nativeEvent.contentOffset;
-    if (this.offset > y) {
-      //   this.state.fade.interpolate({
-      //     inputRange: [1,0.5,0],
-      //     outputRange: [0,0.5,1],
-      //   });
-      this.setState({ isVisible: !this.state.isVisible });
-      this.offset = y;
-    } else {
-      this.setState({ isVisible: !this.state.isVisible });
-      this.offset = y;
-    }
+    //console.log(event.nativeEvent.contentOffset);
+    // var { y } = event.nativeEvent.contentOffset;
+    // if (this.offset > y) {
+    //   //   this.state.fade.interpolate({
+    //   //     inputRange: [1,0.5,0],
+    //   //     outputRange: [0,0.5,1],
+    //   //   });
+    //   this.setState({ isVisible: !this.state.isVisible });
+    //   this.offset = y;
+    // } else {
+    //   this.setState({ isVisible: !this.state.isVisible });
+    //   this.offset = y;
+    // }
   };
   render() {
     const { isVisible } = this.state;
     return (
       <View style={{ flex: 1 }}>
-        <ScrollView onScroll={this.handleScroll}>
+        <ScrollView
+         // pagingEnabled={true}
+          onScroll={this.handleScroll}
+          onScrollBeginDrag={(event) => {
+            console.log("event", event);
+          }}
+        >
           <View style={styles.view}>
             <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
