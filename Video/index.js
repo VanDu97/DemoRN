@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Dimensions } from "react-native";
 import Video from "react-native-video";
+import VideoPlayer from "react-native-video-controls";
 
 export default class DemoVideo extends Component {
   render() {
@@ -14,15 +15,7 @@ export default class DemoVideo extends Component {
           alignItems: "center",
         }}
       >
-        <Video
-          muted={true}
-          repeat={true}
-          style={{
-            width: Dimensions.get("window").width,
-            height: Dimensions.get("window").height * 0.6,
-          }}
-          source={require("./Gopanda.mp4")}
-        />
+        <VideoPlayer source={require("./Gopanda.mp4")} />
       </View>
     );
   }
