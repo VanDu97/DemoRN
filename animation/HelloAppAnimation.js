@@ -3,6 +3,9 @@ import { View, Text, ImageBackground, Dimensions, Image } from "react-native";
 const { width, height } = Dimensions.get("window");
 
 export default class HelloAppAnimation extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <ImageBackground
