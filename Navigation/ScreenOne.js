@@ -12,6 +12,8 @@ import {
   StatusBar,
 } from "react-native";
 import Modal from "react-native-modal";
+import ParallaxScrollView from "react-native-parallax-scroll-view";
+import { HeaderHeightContext } from "@react-navigation/stack";
 
 import { HeaderStyleInterpolators } from "@react-navigation/stack";
 class HeaderCustom extends Component {
@@ -29,6 +31,7 @@ export default class ScreenOne extends Component {
     this.state = {
       fade: new Animated.Value(0),
       isVisible: false,
+      height: new Animated.Value(0),
     };
     this.offset = 0;
     this.refs._scrollView;
@@ -55,6 +58,7 @@ export default class ScreenOne extends Component {
 
     //console.log(event.nativeEvent.contentOffset);
     var { y } = event.nativeEvent.contentOffset;
+
     console.log(this.HEIGHT, y, +Dimensions.get("window").height * 0.2);
     if (this.HEIGHT < y + Dimensions.get("window").height * 0.15) {
       // this.HEIGHT = fade.interpolate({
@@ -69,7 +73,7 @@ export default class ScreenOne extends Component {
       });
       this.offset = y;
     } else {
-      //this.setState({ isVisible: !this.state.isVisible });
+      //this.setState({ isVisible: !thifas.state.isVisible });
       // alert(1)
       // this.HEIGHT = fade.interpolate({
       //   inputRange: [0, 100],
@@ -81,7 +85,6 @@ export default class ScreenOne extends Component {
         headerTransparent: true,
         headerTitle: null,
         headerTintColor: "#fff",
-        headerStyleInterpolator: this.forFade,
       });
       // console.log("Height", this.HEIGHT);
       // console.log("Fade", this.state.fade);
@@ -103,6 +106,7 @@ export default class ScreenOne extends Component {
     //   outputRange: [Dimensions.get("window").height * 0.3, 0],
     // });
     console.log("Height", this.HEIGHT);
+    const { onScroll = () => {} } = this.props;
     return (
       <View
         style={{ flex: 1 }}
@@ -113,144 +117,164 @@ export default class ScreenOne extends Component {
         //   //alert("1");
         //   console.log("I am moving!", event.nativeEvent);
         // }}
-        onResponderGrant={(event) => {
-          console.log("event", event.nativeEvent);
-        }}
-        onResponderTerminationRequest={() => true}
-        onStartShouldSetResponder={() => true}
+        // onResponderGrant={(event) => {
+        //   console.log("event", event.nativeEvent);
+        // }}
+        // onResponderTerminationRequest={() => true}
+        // onStartShouldSetResponder={() => true}
       >
-        <Animated.ScrollView
-          // pagingEnabled={true}
+        <ParallaxScrollView
+          backgroundColor="#fff"
           onScroll={this.handleScroll}
-          contentContainerStyle={{}}
-          scrollEventThrottle={16}
-          onScrollBeginDrag={(event) => {
-            //console.log("event", event);
-          }}
+          stickyHeaderHeight={90}
+          parallaxHeaderHeight={Dimensions.get("window").height * 0.3}
+          backgroundSpeed={10}
+          // renderForeground={() => (
+          //   <View>
+          //     <Text>Hello</Text>
+          //   </View>
+          // )}
+          // renderStickyHeader={() => (
+          //   <View>
+          //     <Text>Hello</Text>
+          //   </View>
+          // )}
+          renderBackground={() => (
+            <Animated.Image
+              resizeMode="cover"
+              style={{
+                width: Dimensions.get("window").width,
+                height: this.HEIGHT,
+                justifyContent: "center",
+              }}
+              source={{
+                uri:
+                  "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
+              }}
+            />
+          )}
         >
-          <Animated.Image
-            resizeMode="cover"
-            style={{
-              width: Dimensions.get("window").width,
-              height: this.HEIGHT,
-              justifyContent: "center",
+          <Animated.ScrollView
+            // pagingEnabled={true}
+            onScroll={this.handleScroll}
+            contentContainerStyle={{}}
+            scrollEventThrottle={16}
+            onScrollBeginDrag={(event) => {
+              //console.log("event", event);
             }}
-            source={{
-              uri:
-                "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
-            }}
-          />
-          <StatusBar
-            translucent
-            barStyle="dark-content"
-            backgroundColor="transparent"
-          />
+          >
+            <StatusBar
+              translucent
+              barStyle="dark-content"
+              backgroundColor="transparent"
+            />
 
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View style={styles.view}>
-            <Text style={styles.text}>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-        </Animated.ScrollView>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+            <View style={styles.view}>
+              <Text style={styles.text}>
+                This man’s name is Jay. He was part of a video series by
+                Momondo, a travel company that had a competition. To join this
+                competition people took a DNA test. It showed their genetic
+                ancestry. It showed where each person’s family had come from for
+                many, many generations. Jay thought the test would show that he
+                is 100 percent English - from Great Britain. But he was wrong!
+                The test showed that Jay is 55 percent Irish. He is only 30
+                percent English. It also showed he is five percent German and
+                even a bit Turkish. Jay responded to the results:
+              </Text>
+            </View>
+          </Animated.ScrollView>
+        </ParallaxScrollView>
 
         <Modal
           isVisible={isVisible}

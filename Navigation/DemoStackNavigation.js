@@ -9,6 +9,7 @@ import {
 import Home from "./Home";
 import ScreenOne from "./ScreenOne";
 import Icon from "react-native-vector-icons/AntDesign";
+
 const Stack = createStackNavigator();
 class HeaderCustom extends Component {
   render() {
@@ -49,6 +50,8 @@ export default class DemoStackNavigation extends Component {
           headerMode="screen"
           screenOptions={{
             headerTitleAlign: "center",
+            headerBackTitle: "",
+            headerBackTitleVisible: false,
           }}
         >
           <Stack.Screen name="Home" component={Home} />
