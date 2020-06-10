@@ -13,6 +13,7 @@ import {
 } from "react-native";
 import Modal from "react-native-modal";
 
+import { HeaderStyleInterpolators } from "@react-navigation/stack";
 class HeaderCustom extends Component {
   render() {
     return (
@@ -33,28 +34,55 @@ export default class ScreenOne extends Component {
     this.refs._scrollView;
     this.HEIGHT = Dimensions.get("window").height * 0.3;
   }
+  forFade = ({ current, next }) => {
+    const opacity = Animated.add(
+      current.progress,
+      next ? next.progress : 0
+    ).interpolate({
+      inputRange: [0, 1, 2],
+      outputRange: [0, 1, 2],
+    });
+
+    return {
+      titleStyle: { opacity },
+      backgroundStyle: { opacity },
+    };
+  };
   handleScroll = (event) => {
     const { fade } = this.state;
+    const { navigation } = this.props;
+    //console.log(navigation);
 
     //console.log(event.nativeEvent.contentOffset);
     var { y } = event.nativeEvent.contentOffset;
-    if (this.offset > y) {
-      this.HEIGHT = fade.interpolate({
-        inputRange: [0, 100],
-        outputRange: [Dimensions.get("window").height * 0.3, 0],
-      });
+    console.log(this.HEIGHT, y, +Dimensions.get("window").height * 0.2);
+    if (this.HEIGHT < y + Dimensions.get("window").height * 0.15) {
+      // this.HEIGHT = fade.interpolate({
+      //   inputRange: [0, 100],
+      //   outputRange: [Dimensions.get("window").height * 0.3, 0],
+      // });
       ///this.setState({ isVisible: !this.state.isVisible });
+      navigation.setOptions({
+        headerTransparent: false,
+        headerTitle: "Du Cena",
+        headerTintColor: "red",
+      });
       this.offset = y;
     } else {
       //this.setState({ isVisible: !this.state.isVisible });
       // alert(1)
-      this.HEIGHT = fade.interpolate({
-        inputRange: [0, 100],
-        outputRange: [Dimensions.get("window").height * 0.3, 0],
-        extrapolate: "clamp",
+      // this.HEIGHT = fade.interpolate({
+      //   inputRange: [0, 100],
+      //   outputRange: [Dimensions.get("window").height * 0.3, 0],
+      //   extrapolate: "clamp",
+      // });
+      // this.offset = y;
+      navigation.setOptions({
+        headerTransparent: true,
+        headerTitle: null,
+        headerTintColor: "#fff",
+        headerStyleInterpolator: this.forFade,
       });
-      this.offset = y;
-
       // console.log("Height", this.HEIGHT);
       // console.log("Fade", this.state.fade);
     }
@@ -67,13 +95,14 @@ export default class ScreenOne extends Component {
       useNativeDriver: true,
     }).start();
   }
+
   render() {
     const { isVisible, fade } = this.state;
     // const HEIGHT = fade.interpolate({
     //   inputRange: [0, 2],
     //   outputRange: [Dimensions.get("window").height * 0.3, 0],
     // });
-    //console.log("Height", this.HEIGHT);
+    console.log("Height", this.HEIGHT);
     return (
       <View
         style={{ flex: 1 }}
@@ -90,19 +119,6 @@ export default class ScreenOne extends Component {
         onResponderTerminationRequest={() => true}
         onStartShouldSetResponder={() => true}
       >
-        <Animated.Image
-          resizeMode="cover"
-          style={{
-            width: Dimensions.get("window").width,
-            height: this.HEIGHT,
-            justifyContent: "center",
-          }}
-          source={{
-            uri:
-              "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
-          }}
-        />
-
         <Animated.ScrollView
           // pagingEnabled={true}
           onScroll={this.handleScroll}
@@ -112,11 +128,23 @@ export default class ScreenOne extends Component {
             //console.log("event", event);
           }}
         >
-          {/**  <StatusBar
+          <Animated.Image
+            resizeMode="cover"
+            style={{
+              width: Dimensions.get("window").width,
+              height: this.HEIGHT,
+              justifyContent: "center",
+            }}
+            source={{
+              uri:
+                "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
+            }}
+          />
+          <StatusBar
             translucent
-            barStyle="light-content"
+            barStyle="dark-content"
             backgroundColor="transparent"
-          /> */}
+          />
 
           <View style={styles.view}>
             <Text style={styles.text}>

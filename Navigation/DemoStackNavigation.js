@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Animated } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-
+import {
+  createCollapsibleStack,
+  // disableExpoTranslucentStatusBar,
+} from "react-navigation-collapsible";
 import Home from "./Home";
 import ScreenOne from "./ScreenOne";
 import Icon from "react-native-vector-icons/AntDesign";
@@ -23,6 +26,10 @@ class HeaderCustom extends Component {
   }
 }
 export default class DemoStackNavigation extends Component {
+  constructor(props) {
+    super(props);
+    this._animation = new Animated.Value(0);
+  }
   render() {
     const config = {
       animation: "spring",
@@ -39,11 +46,12 @@ export default class DemoStackNavigation extends Component {
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName={Home}
+          headerMode="screen"
           screenOptions={{
             headerTitleAlign: "center",
           }}
         >
-          <Stack.Screen name="Home" component={Home} options={{}} />
+          <Stack.Screen name="Home" component={Home} />
           <Stack.Screen
             name="ScreenOne"
             component={ScreenOne}
@@ -55,7 +63,8 @@ export default class DemoStackNavigation extends Component {
               headerTransparent: true,
               headerTitle: null,
               headerTintColor: "#fff",
-              headerLeft: (props) => <HeaderCustom navigation={navigation} />,
+
+              //headerLeft: (props) => <HeaderCustom navigation={navigation} />,
             })}
           />
         </Stack.Navigator>
