@@ -21,8 +21,9 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./ProgressExample";
 // import App from "./SizeImage";
 //import App from './UberEats.ts'
-// import App from "./Navigation/DemoStackNavigation";
-import App from "./animation/HelloAppAnimation";
+ import App from "./Navigation/DemoStackNavigation";
+//import App from "./animation/HelloAppAnimation";
+//import App from "./animation/AnimationDemo";
 //import App from "./Video/index";
 // export const fonts = {
 //   UberMoveRegular: require("./assets/UberMoveRegular.ttf"),

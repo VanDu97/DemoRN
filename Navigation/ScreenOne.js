@@ -9,45 +9,115 @@ import {
   Dimensions,
   SafeAreaView,
   Animated,
+  StatusBar,
 } from "react-native";
 import Modal from "react-native-modal";
 
+class HeaderCustom extends Component {
+  render() {
+    return (
+      <TouchableOpacity>
+        <Text>Hello</Text>
+      </TouchableOpacity>
+    );
+  }
+}
 export default class ScreenOne extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fade: new Animated.Value(1),
+      fade: new Animated.Value(0),
       isVisible: false,
     };
     this.offset = 0;
     this.refs._scrollView;
+    this.HEIGHT = Dimensions.get("window").height * 0.3;
   }
   handleScroll = (event) => {
+    const { fade } = this.state;
+
     //console.log(event.nativeEvent.contentOffset);
-    // var { y } = event.nativeEvent.contentOffset;
-    // if (this.offset > y) {
-    //   //   this.state.fade.interpolate({
-    //   //     inputRange: [1,0.5,0],
-    //   //     outputRange: [0,0.5,1],
-    //   //   });
-    //   this.setState({ isVisible: !this.state.isVisible });
-    //   this.offset = y;
-    // } else {
-    //   this.setState({ isVisible: !this.state.isVisible });
-    //   this.offset = y;
-    // }
+    var { y } = event.nativeEvent.contentOffset;
+    if (this.offset > y) {
+      this.HEIGHT = fade.interpolate({
+        inputRange: [0, 100],
+        outputRange: [Dimensions.get("window").height * 0.3, 0],
+      });
+      ///this.setState({ isVisible: !this.state.isVisible });
+      this.offset = y;
+    } else {
+      //this.setState({ isVisible: !this.state.isVisible });
+      // alert(1)
+      this.HEIGHT = fade.interpolate({
+        inputRange: [0, 100],
+        outputRange: [Dimensions.get("window").height * 0.3, 0],
+        extrapolate: "clamp",
+      });
+      this.offset = y;
+
+      // console.log("Height", this.HEIGHT);
+      // console.log("Fade", this.state.fade);
+    }
   };
+
+  componentDidMount() {
+    Animated.timing(this.state.fade, {
+      toValue: 0,
+      duration: 2000,
+      useNativeDriver: true,
+    }).start();
+  }
   render() {
-    const { isVisible } = this.state;
+    const { isVisible, fade } = this.state;
+    // const HEIGHT = fade.interpolate({
+    //   inputRange: [0, 2],
+    //   outputRange: [Dimensions.get("window").height * 0.3, 0],
+    // });
+    //console.log("Height", this.HEIGHT);
     return (
-      <View style={{ flex: 1 }}>
-        <ScrollView
-         // pagingEnabled={true}
+      <View
+        style={{ flex: 1 }}
+        // onStartShouldSetResponder={(event) => {
+        //   console.log("event", event.nativeEvent);
+        // }}
+        // onResponderMove={(event) => {
+        //   //alert("1");
+        //   console.log("I am moving!", event.nativeEvent);
+        // }}
+        onResponderGrant={(event) => {
+          console.log("event", event.nativeEvent);
+        }}
+        onResponderTerminationRequest={() => true}
+        onStartShouldSetResponder={() => true}
+      >
+        <Animated.Image
+          resizeMode="cover"
+          style={{
+            width: Dimensions.get("window").width,
+            height: this.HEIGHT,
+            justifyContent: "center",
+          }}
+          source={{
+            uri:
+              "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
+          }}
+        />
+
+        <Animated.ScrollView
+          // pagingEnabled={true}
           onScroll={this.handleScroll}
+          contentContainerStyle={{}}
+          scrollEventThrottle={16}
           onScrollBeginDrag={(event) => {
-            console.log("event", event);
+            //console.log("event", event);
           }}
         >
+          {/**  <StatusBar
+            translucent
+            barStyle="light-content"
+            backgroundColor="transparent"
+          /> */}
+
           <View style={styles.view}>
             <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
@@ -152,7 +222,7 @@ export default class ScreenOne extends Component {
               Turkish. Jay responded to the results:
             </Text>
           </View>
-        </ScrollView>
+        </Animated.ScrollView>
 
         <Modal
           isVisible={isVisible}

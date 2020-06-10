@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.demorn"
 4    android:versionCode="1"
-5    android:versionName="1.0" >
+5    android:versionName="1.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
@@ -15,8 +15,8 @@
 12-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:4:5-67
 12-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2a541438a92d51987c1e764cbfde06bc/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2a541438a92d51987c1e764cbfde06bc/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/00b7f2d87dbe42ac21b9d51d29778948/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/00b7f2d87dbe42ac21b9d51d29778948/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 14
 15    <application
 15-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:6:5-25:19
@@ -25,7 +25,7 @@
 17        android:allowBackup="false"
 17-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:11:7-34
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:18-86
+18-->[androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db66a303bf26c4c9c9ee589a595c808c/core-1.1.0/AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/ic_launcher"
 20-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:9:7-41
