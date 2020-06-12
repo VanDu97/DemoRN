@@ -32,10 +32,12 @@ export default class ScreenOne extends Component {
       fade: new Animated.Value(0),
       isVisible: false,
       height: new Animated.Value(0),
+      _scrollY: new Animated.Value(0),
     };
     this.offset = 0;
     this.refs._scrollView;
     this.HEIGHT = Dimensions.get("window").height * 0.3;
+    this.refs._scrollY;
   }
   forFade = ({ current, next }) => {
     const opacity = Animated.add(
@@ -60,7 +62,7 @@ export default class ScreenOne extends Component {
     var { y } = event.nativeEvent.contentOffset;
 
     console.log(this.HEIGHT, y, +Dimensions.get("window").height * 0.2);
-    if (this.HEIGHT < y + Dimensions.get("window").height * 0.15) {
+    if (this.HEIGHT < y + Dimensions.get("window").height * 0.1) {
       // this.HEIGHT = fade.interpolate({
       //   inputRange: [0, 100],
       //   outputRange: [Dimensions.get("window").height * 0.3, 0],
@@ -70,6 +72,12 @@ export default class ScreenOne extends Component {
         headerTransparent: false,
         headerTitle: "Du Cena",
         headerTintColor: "red",
+        // headerStyle: {
+        //   backgroundColor: this.state.fade.interpolate({
+        //     inputRange: [0, 10],
+        //     outputRange: ["#ddd", "#fff"],
+        //   }),
+        // },
       });
       this.offset = y;
     } else {
@@ -105,7 +113,7 @@ export default class ScreenOne extends Component {
     //   inputRange: [0, 2],
     //   outputRange: [Dimensions.get("window").height * 0.3, 0],
     // });
-    console.log("Height", this.HEIGHT);
+    console.log("Height", this.state._scrollY);
     const { onScroll = () => {} } = this.props;
     return (
       <View
@@ -125,8 +133,8 @@ export default class ScreenOne extends Component {
       >
         <ParallaxScrollView
           backgroundColor="#fff"
-          onScroll={this.handleScroll}
           stickyHeaderHeight={90}
+          onScroll={this.handleScroll}
           parallaxHeaderHeight={Dimensions.get("window").height * 0.3}
           backgroundSpeed={10}
           // renderForeground={() => (
@@ -156,9 +164,20 @@ export default class ScreenOne extends Component {
         >
           <Animated.ScrollView
             // pagingEnabled={true}
+            //ref={(ref) => (this._scrollY = ref)}
+            //scrollEventThrottle
             onScroll={this.handleScroll}
+            // onScroll={Animated.event(
+            //   [{ nativeEvent: { contentOffset: { y: this.state._scrollY } } }],
+            //   { useNativeDriver: true },
+            //   {
+            //     listener: (event, gestureState) => {
+            //       console.log("event", event, gestureState);
+            //     },
+            //   } // Optional async listener
+            // )}
             contentContainerStyle={{}}
-            scrollEventThrottle={16}
+            scrollEventThrottle={1}
             onScrollBeginDrag={(event) => {
               //console.log("event", event);
             }}
