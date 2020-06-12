@@ -29,5 +29,6 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //   UberMoveRegular: require("./assets/UberMoveRegular.ttf"),
 //   UberMoveMedium: require("./assets/UberMoveMedium.ttf"),
 // };
-import App from "./images/ScrollImage";
+//import App from "./images/ScrollImage";
+import App from "./animation/TransformAnimation";
 AppRegistry.registerComponent(appName, () => App);
