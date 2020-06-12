@@ -14,13 +14,19 @@ import {
 import Modal from "react-native-modal";
 import ParallaxScrollView from "react-native-parallax-scroll-view";
 import { HeaderHeightContext } from "@react-navigation/stack";
-
+import Icon from "react-native-vector-icons/AntDesign";
 import { HeaderStyleInterpolators } from "@react-navigation/stack";
 class HeaderCustom extends Component {
   render() {
+    const { navigation } = this.props;
+    console.log(navigation);
     return (
-      <TouchableOpacity>
-        <Text>Hello</Text>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.goBack();
+        }}
+      >
+        <Icon name="left" size={30} color="#fff" style={{ marginLeft: 5 }} />
       </TouchableOpacity>
     );
   }
@@ -38,6 +44,9 @@ export default class ScreenOne extends Component {
     this.refs._scrollView;
     this.HEIGHT = Dimensions.get("window").height * 0.3;
     this.refs._scrollY;
+    // this.props.navigation.setOptions({
+    //   headerLeft: () => <HeaderCustom navigation={this.props.navigation} />,
+    // });
   }
   forFade = ({ current, next }) => {
     const opacity = Animated.add(
@@ -53,6 +62,7 @@ export default class ScreenOne extends Component {
       backgroundStyle: { opacity },
     };
   };
+
   handleScroll = (event) => {
     const { fade } = this.state;
     const { navigation } = this.props;
