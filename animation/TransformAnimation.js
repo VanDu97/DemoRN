@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   StatusBar,
+  Easing,
 } from "react-native";
 
 export default class TransformAnimation extends Component {
@@ -17,7 +18,7 @@ export default class TransformAnimation extends Component {
   }
   startAnimation = () => {
     Animated.timing(this.state.animation, {
-      toValue: 360,
+      toValue: 1,
       duration: 1500,
       useNativeDriver: false,
     }).start(() => {
@@ -26,26 +27,26 @@ export default class TransformAnimation extends Component {
   };
   render() {
     const { animation } = this.state;
-    const scale = animation.interpolate({
-      inputRange: [0, 360],
-      outputRange: ["0deg", "360deg"],
-      extrapolate: "clamp",
+    const widthInteralte = animation.interpolate({
+      inputRange: [0, 1],
+      outputRange: [50, 200],
+      //easing: Easing.step0,
+      //easing: Easing.step1,
+      //easing: Easing.linear,
+      easing: Easing.back(6),
     });
-    console.log(this.state.animation);
-
+    const heightInteralte = animation.interpolate({
+      inputRange: [0, 1],
+      outputRange: [50, 200],
+      //easing: Easing.step0,
+      //easing: Easing.step1,
+      //easing: Easing.linear,
+      //easing: Easing.in,
+      easing: Easing.back(6),
+    });
     const transform = {
-      transform: [
-        {
-          //translateY: scale,
-          //translateX: scale,
-          //rotateX: scale,
-          //rotate: scale,
-          rotateY: scale,
-        },
-      ],
-    };
-    const opacity = {
-      opacity: this.state.animation,
+      width: widthInteralte,
+      height: heightInteralte,
     };
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
