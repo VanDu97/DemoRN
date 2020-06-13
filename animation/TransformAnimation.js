@@ -17,7 +17,7 @@ export default class TransformAnimation extends Component {
   }
   startAnimation = () => {
     Animated.timing(this.state.animation, {
-      toValue: 4,
+      toValue: 360,
       duration: 1500,
       useNativeDriver: false,
     }).start(() => {
@@ -27,28 +27,20 @@ export default class TransformAnimation extends Component {
   render() {
     const { animation } = this.state;
     const scale = animation.interpolate({
-      inputRange: [0, 4],
-      outputRange: [1, 4],
+      inputRange: [0, 360],
+      outputRange: ["0deg", "360deg"],
       extrapolate: "clamp",
     });
     console.log(this.state.animation);
-    // const scaleX = animation.interpolate({
-    //   inputRange: [0, 3],
-    //   outputRange: [1, 4],
-    // });
 
-    // const scaleY = animation.interpolate({
-    //   inputRange: [0, 3],
-    //   outputRange: [1, 4],
-    // });
-    //alert(JSON.stringify(scale));
-    console.log(scale);
     const transform = {
       transform: [
         {
-          scale: scale,
-          //   scaleY: scaleY,
-          //   scaleX: scaleX,
+          //translateY: scale,
+          //translateX: scale,
+          //rotateX: scale,
+          //rotate: scale,
+          rotateY: scale,
         },
       ],
     };
