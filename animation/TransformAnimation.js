@@ -17,9 +17,11 @@ export default class TransformAnimation extends Component {
     };
   }
   startAnimation = () => {
-    Animated.timing(this.state.animation, {
+    Animated.spring(this.state.animation, {
+      friction: 10,
+     // speed: 4,
+      tension: 160,
       toValue: 1,
-      duration: 1500,
       useNativeDriver: false,
     }).start(() => {
       console.log("this", this.state.animation);
@@ -33,7 +35,7 @@ export default class TransformAnimation extends Component {
       //easing: Easing.step0,
       //easing: Easing.step1,
       //easing: Easing.linear,
-      easing: Easing.back(6),
+      //easing: Easing.back(6),
     });
     const heightInteralte = animation.interpolate({
       inputRange: [0, 1],
@@ -42,7 +44,7 @@ export default class TransformAnimation extends Component {
       //easing: Easing.step1,
       //easing: Easing.linear,
       //easing: Easing.in,
-      easing: Easing.back(6),
+      // easing: Easing.back(6),
     });
     const transform = {
       width: widthInteralte,
