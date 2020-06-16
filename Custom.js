@@ -1,200 +1,295 @@
 import React, { Component } from "react";
 import {
-  Dimensions,
-  Image,
-  PixelRatio,
+  Animated,
+  Platform,
+  StatusBar,
   StyleSheet,
   Text,
   View,
-  ScrollView,
-  FlatList,
+  RefreshControl,
+  Dimensions,
+  Image,
   TouchableOpacity,
 } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome";
-import ParallaxScrollView from "react-native-parallax-scroll-view";
 
-class Custom extends Component {
+const HEADER_MAX_HEIGHT = 300;
+const HEADER_MIN_HEIGHT = Platform.OS === "ios" ? 60 : 73;
+const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
+import { SliderBox } from "react-native-image-slider-box";
+import Carousel, { Pagination } from "react-native-snap-carousel";
+const data = [
+  "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg",
+  "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg",
+  "https://cdn.24h.com.vn/upload/3-2019/images/2019-09-15/1568562241-489-a--6--1568544517-width650height763.jpg",
+];
+const dataTwo = [
+  { title: "one", uri: "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg" },
+  { title: "two", uri: "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg" },
+  {
+    title: "three",
+    uri:
+      "https://cdn.24h.com.vn/upload/3-2019/images/2019-09-15/1568562241-489-a--6--1568544517-width650height763.jpg",
+  },
+];
+export default class Custom extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      dataSource: [
-        "Simplicity Matters",
-        "Hammock Driven Development 1900",
-        "Value of Values",
-        "Are We There Yet?",
-        "The Language of the System",
-        "Design, Composition, and Performance",
-        "Clojure core.async",
-        "The Functional Database",
-        "Deconstructing the Database",
-        "Hammock Driven Development22",
-        "Value of Values 3",
-        "Simplicity Matter s",
-        "Hammock Driven Development 1",
-        "Value of Values 2",
-        "Are We There Yet?3",
-        "The Language of the System3",
-        "Design, Composition, and Performance4",
-        "Clojure core.async4",
-        "The Functional Database3",
-        "Deconstructing the Database3",
-        "Hammock Driven Development4",
-        "Value of Values3",
-      ],
+      scrollY: new Animated.Value(
+        // iOS has negative initial scroll value because content inset...
+        Platform.OS === "ios" ? -HEADER_MAX_HEIGHT : 0
+      ),
+      refreshing: false,
     };
   }
 
-  render() {
-    const { onScroll = () => {} } = this.props;
+  _renderScrollViewContent() {
+    const data = Array.from({ length: 30 });
     return (
-      <View style={{ flex: 1 }}>
-        <ParallaxScrollView
-          backgroundColor="#fff"
-          onScroll={onScroll}
-          headerBackgroundColor="#fff"
-          stickyHeaderHeight={STICKY_HEADER_HEIGHT}
-          parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT}
-          backgroundSpeed={10}
-          renderBackground={() => (
-            <View key="background">
-              <Image
-                source={{
-                  uri: "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg",
-                  width: window.width,
-                  height: PARALLAX_HEADER_HEIGHT,
-                }}
-              />
-            </View>
+      <View style={styles.scrollViewContent}>
+        {data.map((_, i) => (
+          <View key={i} style={styles.row}>
+            <Text>{i}</Text>
+          </View>
+        ))}
+      </View>
+    );
+  }
+  _renderItem = ({ item, index }) => {
+    return (
+      <TouchableOpacity>
+        <Animated.Image
+          source={{ uri: item.uri }}
+          style={{
+            width: "80%",
+            height: 300,
+          }}
+        />
+      </TouchableOpacity>
+    );
+  };
+  pagination() {
+    const { entries, activeSlide } = this.state;
+    return (
+      <Pagination
+        dotsLength={dataTwo.length}
+        //activeDotIndex={activeSlide}
+        containerStyle={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+        dotStyle={{
+          width: 10,
+          height: 10,
+          borderRadius: 5,
+          marginHorizontal: 8,
+          backgroundColor: "rgba(255, 255, 255, 0.92)",
+        }}
+        inactiveDotStyle={
+          {
+            // Define styles for inactive dots here
+          }
+        }
+        inactiveDotOpacity={0.4}
+        inactiveDotScale={0.6}
+      />
+    );
+  }
+  render() {
+    // Because of content inset the scroll value will be negative on iOS so bring
+    // it back to 0.
+    const scrollY = Animated.add(
+      this.state.scrollY,
+      Platform.OS === "ios" ? HEADER_MAX_HEIGHT : 0
+    );
+    const headerTranslate = scrollY.interpolate({
+      inputRange: [0, HEADER_SCROLL_DISTANCE],
+      outputRange: [0, -HEADER_SCROLL_DISTANCE],
+      extrapolate: "clamp",
+    });
+
+    const imageOpacity = scrollY.interpolate({
+      inputRange: [0, HEADER_SCROLL_DISTANCE / 2, HEADER_SCROLL_DISTANCE],
+      outputRange: [1, 1, 0],
+      extrapolate: "clamp",
+    });
+    const imageTranslate = scrollY.interpolate({
+      inputRange: [0, HEADER_SCROLL_DISTANCE],
+      outputRange: [0, 100],
+      extrapolate: "clamp",
+    });
+
+    const titleScale = scrollY.interpolate({
+      inputRange: [0, HEADER_SCROLL_DISTANCE / 2, HEADER_SCROLL_DISTANCE],
+      outputRange: [1, 1, 0.8],
+      extrapolate: "clamp",
+    });
+    const titleTranslate = scrollY.interpolate({
+      inputRange: [0, HEADER_SCROLL_DISTANCE / 2, HEADER_SCROLL_DISTANCE],
+      outputRange: [0, 0, -8],
+      extrapolate: "clamp",
+    });
+
+    return (
+      <View style={styles.fill}>
+        <StatusBar
+          translucent
+          barStyle="light-content"
+          backgroundColor="transparent"
+        />
+        <Animated.ScrollView
+          style={styles.fill}
+          scrollEventThrottle={1}
+          onScroll={Animated.event(
+            [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
+            { useNativeDriver: true }
           )}
-          // renderForeground={() => (
-          //   <View key="parallax-header" style={styles.parallaxHeader}>
-          //     <Image
-          //       style={styles.avatar}
-          //       source={{
-          //         uri:
-          //           "https://pbs.twimg.com/profile_images/2694242404/5b0619220a92d391534b0cd89bf5adc1_400x400.jpeg",
-          //         width: AVATAR_SIZE,
-          //         height: AVATAR_SIZE,
-          //       }}
-          //     />
-          //     <Text style={styles.sectionSpeakerText}>
-          //       Talks by Rich Hickey
-          //     </Text>
-          //     <Text style={styles.sectionTitleText}>
-          //       CTO of Cognitec, Creator of Clojure
-          //     </Text>
-          //   </View>
-          // )}
-          renderStickyHeader={() => (
-            <TouchableOpacity key="sticky-header" style={styles.stickySection}>
-              <Icon name="search" size={30} color={"#ccc"} />
-            </TouchableOpacity>
-          )}
+          refreshControl={
+            <RefreshControl
+              refreshing={this.state.refreshing}
+              onRefresh={() => {
+                this.setState({ refreshing: true });
+                setTimeout(() => this.setState({ refreshing: false }), 1000);
+              }}
+              // Android offset for RefreshControl
+              progressViewOffset={HEADER_MAX_HEIGHT}
+            />
+          }
+          // iOS offset for RefreshControl
+          contentInset={{
+            top: HEADER_MAX_HEIGHT,
+          }}
+          contentOffset={{
+            y: -HEADER_MAX_HEIGHT,
+          }}
         >
-          <View>
-            <Text>
-              During his life, Dickens published 15 books, and hundreds of short
-              stories. He also continued his work as a news reporter. Everyone
-              in England knew Charles Dickens. He was a famous celebrity. People
-              even paid money to see him read the most exciting parts of his
-              books. And people bought many, many copies of his books.
-            </Text>
+          {this._renderScrollViewContent()}
+          <View style={{ marginTop: 20 }}>
+            <Carousel
+              // ref={(c) => {
+              //   this._carousel = c;
+              // }}
+              data={dataTwo}
+              layout="default"
+              renderItem={this._renderItem}
+              sliderWidth={Dimensions.get("window").width}
+              itemWidth={Dimensions.get("window").width * 0.8}
+            />
+            {this.pagination()}
           </View>
-          <View>
-            <Text>
-              During his life, Dickens published 15 books, and hundreds of short
-              stories. He also continued his work as a news reporter. Everyone
-              in England knew Charles Dickens. He was a famous celebrity. People
-              even paid money to see him read the most exciting parts of his
-              books. And people bought many, many copies of his books.
-            </Text>
-          </View>
-          <View>
-            <Text>
-              During his life, Dickens published 15 books, and hundreds of short
-              stories. He also continued his work as a news reporter. Everyone
-              in England knew Charles Dickens. He was a famous celebrity. People
-              even paid money to see him read the most exciting parts of his
-              books. And people bought many, many copies of his books.
-            </Text>
-          </View>
-        </ParallaxScrollView>
+        </Animated.ScrollView>
+        <Animated.View
+          pointerEvents="none"
+          style={[
+            styles.header,
+            { transform: [{ translateY: headerTranslate }] },
+          ]}
+        >
+          <Carousel
+            // ref={(c) => {
+            //   this._carousel = c;
+            // }}
+            data={dataTwo}
+            layout="default"
+            renderItem={({ item, index }) => {
+              return (
+                <Animated.Image
+                  source={{ uri: item.uri }}
+                  style={[
+                    styles.backgroundImage,
+                    {
+                      opacity: imageOpacity,
+                      transform: [{ translateY: imageTranslate }],
+                    },
+                  ]}
+                />
+              );
+            }}
+            sliderWidth={Dimensions.get("window").width}
+            itemWidth={Dimensions.get("window").width * 0.8}
+          />
+          {this.pagination()}
+        </Animated.View>
+        <Animated.View
+          style={[
+            styles.bar,
+            {
+              transform: [
+                { scale: titleScale },
+                { translateY: titleTranslate },
+              ],
+            },
+          ]}
+        >
+          <Text style={styles.title}>Title</Text>
+        </Animated.View>
+        {/*<Animated.Image
+            style={[
+              styles.backgroundImage,
+              {
+                opacity: imageOpacity,
+                transform: [{ translateY: imageTranslate }],
+              },
+            ]}
+            source={{
+              uri:
+                "https://cdn.24h.com.vn/upload/3-2019/images/2019-09-15/1568562241-489-a--6--1568544517-width650height763.jpg",
+            }}
+          />
+        </Animated.View>*/}
       </View>
     );
   }
 }
 
-const window = Dimensions.get("window");
-
-const AVATAR_SIZE = 120;
-const ROW_HEIGHT = 60;
-const PARALLAX_HEADER_HEIGHT = 350;
-const STICKY_HEADER_HEIGHT = 70;
-
 const styles = StyleSheet.create({
-  container: {
+  fill: {
     flex: 1,
-    backgroundColor: "black",
   },
-  background: {
+  content: {
+    flex: 1,
+  },
+  header: {
     position: "absolute",
     top: 0,
     left: 0,
-    width: window.width,
-    height: PARALLAX_HEADER_HEIGHT,
+    right: 0,
+    backgroundColor: "#03A9F4",
+    overflow: "hidden",
+    height: HEADER_MAX_HEIGHT,
+    // zIndex: 10,
   },
-  stickySection: {
-    height: STICKY_HEADER_HEIGHT,
-    width: Dimensions.get("window").width,
-    borderWidth: 1,
-    borderColor: "#eee",
-  },
-  stickySectionText: {
-    color: "#000",
-    fontSize: 20,
-    margin: 10,
-  },
-  fixedSection: {
+  backgroundImage: {
     position: "absolute",
-    bottom: 10,
-    right: 10,
+    top: 0,
+    left: 0,
+    right: 0,
+    width: null,
+    height: HEADER_MAX_HEIGHT,
+    resizeMode: "cover",
   },
-  fixedSectionText: {
-    color: "#999",
-    fontSize: 20,
-  },
-  parallaxHeader: {
+  bar: {
+    backgroundColor: "transparent",
+    marginTop: Platform.OS === "ios" ? 28 : 38,
+    height: 32,
     alignItems: "center",
-    flex: 1,
-    flexDirection: "column",
-    paddingTop: 100,
+    justifyContent: "center",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
   },
-  avatar: {
-    marginBottom: 10,
-    borderRadius: AVATAR_SIZE / 2,
-  },
-  sectionSpeakerText: {
-    color: "white",
-    fontSize: 24,
-    paddingVertical: 5,
-  },
-  sectionTitleText: {
+  title: {
     color: "white",
     fontSize: 18,
-    paddingVertical: 5,
+  },
+  scrollViewContent: {
+    // iOS uses content inset, which acts like padding.
+    paddingTop: Platform.OS !== "ios" ? HEADER_MAX_HEIGHT : 0,
   },
   row: {
-    overflow: "hidden",
-    paddingHorizontal: 10,
-    height: ROW_HEIGHT,
-    backgroundColor: "white",
-    borderColor: "#ccc",
-    borderBottomWidth: 1,
+    height: 40,
+    margin: 16,
+    backgroundColor: "#D3D3D3",
+    alignItems: "center",
     justifyContent: "center",
   },
-  rowText: {
-    fontSize: 20,
-  },
 });
-
-export default Custom;

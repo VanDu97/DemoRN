@@ -6,6 +6,7 @@ export default class PanGesture extends Component {
   panResponder = PanResponder.create({
     onMoveShouldSetPanResponder: () => true,
     onPanResponderGrant: () => {
+      console.log("this", this.pan);
       this.pan.setOffset({
         x: this.pan.x._value,
         y: this.pan.y._value,
@@ -17,7 +18,20 @@ export default class PanGesture extends Component {
     ),
     onPanResponderRelease: () => {
       console.log("Index", this.pan);
+      // Animated.spring(
+      //   this.pan, // Auto-multiplexed
+      //   {
+      //     toValue: { x: 0, y: 0 },
+
+      //     useNativeDriver: true,
+      //     delay: 3000,
+      //     //restSpeedThreshold: 5,
+      //   } // Back to zero
+      // ).start();
+
       this.pan.flattenOffset();
+      //this.pan.extractOffset();
+      console.log("", this.pan);
     },
 
     onMoveShouldSetPanResponderCapture: (e, gestureState) => true,

@@ -13,7 +13,7 @@ import { name as appName } from "./app.json";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 //import App from "./Demo";
-//import App from "./Custom";
+import App from "./Custom";
 // import App from "./DemoPallax";
 // import App from "./RenderHTML";
 //import App from "./Loadmore";
@@ -31,5 +31,5 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // };
 //import App from "./images/ScrollImage";
 //import App from "./animation/TransformAnimation";
-import App from "./animation/PanGesture";
+//import App from "./animation/PanGesture";
 AppRegistry.registerComponent(appName, () => App);

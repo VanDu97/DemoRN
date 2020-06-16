@@ -7,10 +7,33 @@ import {
   Dimensions,
   ScrollView,
   StyleSheet,
+  TouchableOpacity,
+  StatusBar,
+  Platform,
 } from "react-native";
-
+//import Icon from "react-native-vector-icons/AntDesign";
 const MAX_HEIGHT = Dimensions.get("window").height * 0.4;
 const MIN_HEIGHT = Dimensions.get("window").height * 0.2;
+const LEFT = Dimensions.get("window").width * 0.025;
+const MORE_ICON = Platform.OS === "ios" ? "dots-horizontal" : "dots-vertical";
+import { Appbar } from "react-native-paper";
+const dataArray = [
+  { title: "First Element", content: "Lorem ipsum dolor sit amet" },
+  { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
+  { title: "Third Element", content: "Lorem ipsum dolor sit amet" },
+];
+import {
+  Container,
+  Header,
+  Left,
+  Body,
+  Right,
+  Button,
+  Icon,
+  Title,
+  Accordion,
+  Content,
+} from "native-base";
 export default class ScrollImage extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +42,39 @@ export default class ScrollImage extends Component {
     };
   }
   componentDidMount() {}
-
+  _renderHeader(item, expanded) {
+    return (
+      <View
+        style={{
+          flexDirection: "row",
+          padding: 10,
+          justifyContent: "space-between",
+          alignItems: "center",
+          backgroundColor: "#A9DAD6",
+        }}
+      >
+        <Text style={{ fontWeight: "600" }}> {item.title}</Text>
+        {expanded ? (
+          <Icon style={{ fontSize: 18 }} name="remove-circle" />
+        ) : (
+          <Icon style={{ fontSize: 18 }} name="add-circle" />
+        )}
+      </View>
+    );
+  }
+  _renderContent(item) {
+    return (
+      <Text
+        style={{
+          backgroundColor: "#e3f1f1",
+          padding: 10,
+          fontStyle: "italic",
+        }}
+      >
+        {item.content}
+      </Text>
+    );
+  }
   render() {
     const { height } = this.state;
     const heightAminated = height.interpolate({
