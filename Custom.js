@@ -7,30 +7,12 @@ import {
   Text,
   View,
   RefreshControl,
-  Dimensions,
-  Image,
-  TouchableOpacity,
 } from "react-native";
 
 const HEADER_MAX_HEIGHT = 300;
 const HEADER_MIN_HEIGHT = Platform.OS === "ios" ? 60 : 73;
 const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
-import { SliderBox } from "react-native-image-slider-box";
-import Carousel, { Pagination } from "react-native-snap-carousel";
-const data = [
-  "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg",
-  "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg",
-  "https://cdn.24h.com.vn/upload/3-2019/images/2019-09-15/1568562241-489-a--6--1568544517-width650height763.jpg",
-];
-const dataTwo = [
-  { title: "one", uri: "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg" },
-  { title: "two", uri: "https://i.ytimg.com/vi/P-NZei5ANaQ/maxresdefault.jpg" },
-  {
-    title: "three",
-    uri:
-      "https://cdn.24h.com.vn/upload/3-2019/images/2019-09-15/1568562241-489-a--6--1568544517-width650height763.jpg",
-  },
-];
+
 export default class Custom extends Component {
   constructor(props) {
     super(props);
@@ -56,43 +38,7 @@ export default class Custom extends Component {
       </View>
     );
   }
-  _renderItem = ({ item, index }) => {
-    return (
-      <TouchableOpacity>
-        <Animated.Image
-          source={{ uri: item.uri }}
-          style={{
-            width: "80%",
-            height: 300,
-          }}
-        />
-      </TouchableOpacity>
-    );
-  };
-  pagination() {
-    const { entries, activeSlide } = this.state;
-    return (
-      <Pagination
-        dotsLength={dataTwo.length}
-        //activeDotIndex={activeSlide}
-        containerStyle={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
-        dotStyle={{
-          width: 10,
-          height: 10,
-          borderRadius: 5,
-          marginHorizontal: 8,
-          backgroundColor: "rgba(255, 255, 255, 0.92)",
-        }}
-        inactiveDotStyle={
-          {
-            // Define styles for inactive dots here
-          }
-        }
-        inactiveDotOpacity={0.4}
-        inactiveDotScale={0.6}
-      />
-    );
-  }
+
   render() {
     // Because of content inset the scroll value will be negative on iOS so bring
     // it back to 0.
@@ -162,19 +108,6 @@ export default class Custom extends Component {
           }}
         >
           {this._renderScrollViewContent()}
-          <View style={{ marginTop: 20 }}>
-            <Carousel
-              // ref={(c) => {
-              //   this._carousel = c;
-              // }}
-              data={dataTwo}
-              layout="default"
-              renderItem={this._renderItem}
-              sliderWidth={Dimensions.get("window").width}
-              itemWidth={Dimensions.get("window").width * 0.8}
-            />
-            {this.pagination()}
-          </View>
         </Animated.ScrollView>
         <Animated.View
           pointerEvents="none"
@@ -183,30 +116,19 @@ export default class Custom extends Component {
             { transform: [{ translateY: headerTranslate }] },
           ]}
         >
-          <Carousel
-            // ref={(c) => {
-            //   this._carousel = c;
-            // }}
-            data={dataTwo}
-            layout="default"
-            renderItem={({ item, index }) => {
-              return (
-                <Animated.Image
-                  source={{ uri: item.uri }}
-                  style={[
-                    styles.backgroundImage,
-                    {
-                      opacity: imageOpacity,
-                      transform: [{ translateY: imageTranslate }],
-                    },
-                  ]}
-                />
-              );
+          <Animated.Image
+            style={[
+              styles.backgroundImage,
+              {
+                opacity: imageOpacity,
+                transform: [{ translateY: imageTranslate }],
+              },
+            ]}
+            source={{
+              uri:
+                "https://cdn.24h.com.vn/upload/3-2019/images/2019-09-15/1568562241-489-a--6--1568544517-width650height763.jpg",
             }}
-            sliderWidth={Dimensions.get("window").width}
-            itemWidth={Dimensions.get("window").width * 0.8}
           />
-          {this.pagination()}
         </Animated.View>
         <Animated.View
           style={[
@@ -221,20 +143,6 @@ export default class Custom extends Component {
         >
           <Text style={styles.title}>Title</Text>
         </Animated.View>
-        {/*<Animated.Image
-            style={[
-              styles.backgroundImage,
-              {
-                opacity: imageOpacity,
-                transform: [{ translateY: imageTranslate }],
-              },
-            ]}
-            source={{
-              uri:
-                "https://cdn.24h.com.vn/upload/3-2019/images/2019-09-15/1568562241-489-a--6--1568544517-width650height763.jpg",
-            }}
-          />
-        </Animated.View>*/}
       </View>
     );
   }
@@ -255,7 +163,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#03A9F4",
     overflow: "hidden",
     height: HEADER_MAX_HEIGHT,
-    // zIndex: 10,
   },
   backgroundImage: {
     position: "absolute",
@@ -291,5 +198,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#D3D3D3",
     alignItems: "center",
     justifyContent: "center",
+    borderRadius: 6
   },
 });

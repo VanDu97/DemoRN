@@ -13,13 +13,13 @@ import { name as appName } from "./app.json";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 //import App from "./Demo";
-import App from "./Custom";
+//import App from "./Custom";
 // import App from "./DemoPallax";
 // import App from "./RenderHTML";
 //import App from "./Loadmore";
 // import App from "./Languea";
 // import App from "./ProgressExample";
-// import App from "./SizeImage";
+ import App from "./images/SizeImage";
 //import App from './UberEats.ts'
 //import App from "./Navigation/DemoStackNavigation";
 //import App from "./animation/HelloAppAnimation";
