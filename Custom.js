@@ -9,7 +9,7 @@ import {
   RefreshControl,
 } from "react-native";
 
-const HEADER_MAX_HEIGHT = 300;
+const HEADER_MAX_HEIGHT = 350;
 const HEADER_MIN_HEIGHT = Platform.OS === "ios" ? 60 : 73;
 const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
 
@@ -26,8 +26,8 @@ export default class Custom extends Component {
     };
   }
 
-  _renderScrollViewContent() {
-    const data = Array.from({ length: 30 });
+  _render() {
+    const data = Array.from({ length: 60 });
     return (
       <View style={styles.scrollViewContent}>
         {data.map((_, i) => (
@@ -82,23 +82,23 @@ export default class Custom extends Component {
           backgroundColor="transparent"
         />
         <Animated.ScrollView
-          style={styles.fill}
+          //style={styles.fill}
           scrollEventThrottle={1}
           onScroll={Animated.event(
             [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
             { useNativeDriver: true }
           )}
-          refreshControl={
-            <RefreshControl
-              refreshing={this.state.refreshing}
-              onRefresh={() => {
-                this.setState({ refreshing: true });
-                setTimeout(() => this.setState({ refreshing: false }), 1000);
-              }}
-              // Android offset for RefreshControl
-              progressViewOffset={HEADER_MAX_HEIGHT}
-            />
-          }
+          // refreshControl={
+          //   <RefreshControl
+          //     refreshing={this.state.refreshing}
+          //     onRefresh={() => {
+          //       this.setState({ refreshing: true });
+          //       setTimeout(() => this.setState({ refreshing: false }), 1000);
+          //     }}
+          //     // Android offset for RefreshControl
+          //     progressViewOffset={HEADER_MAX_HEIGHT}
+          //   />
+          // }
           // iOS offset for RefreshControl
           contentInset={{
             top: HEADER_MAX_HEIGHT,
@@ -107,10 +107,10 @@ export default class Custom extends Component {
             y: -HEADER_MAX_HEIGHT,
           }}
         >
-          {this._renderScrollViewContent()}
+          {this._render()}
         </Animated.ScrollView>
         <Animated.View
-          pointerEvents="none"
+          // pointerEvents="none"
           style={[
             styles.header,
             { transform: [{ translateY: headerTranslate }] },
@@ -133,12 +133,12 @@ export default class Custom extends Component {
         <Animated.View
           style={[
             styles.bar,
-            {
-              transform: [
-                { scale: titleScale },
-                { translateY: titleTranslate },
-              ],
-            },
+            // {
+            //   transform: [
+            //     { scale: titleScale },
+            //     { translateY: titleTranslate },
+            //   ],
+            // },
           ]}
         >
           <Text style={styles.title}>Title</Text>
@@ -198,6 +198,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#D3D3D3",
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 6
+    borderRadius: 6,
   },
 });

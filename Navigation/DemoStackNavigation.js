@@ -9,7 +9,7 @@ import {
 import Home from "./Home";
 import ScreenOne from "./ScreenOne";
 import Icon from "react-native-vector-icons/AntDesign";
-
+import {SliderBox} from 'react-native-image-slider-box';
 const Stack = createStackNavigator();
 class HeaderCustom extends Component {
   render() {

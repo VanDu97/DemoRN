@@ -84,24 +84,26 @@ export default class ScrollImage extends Component {
 
     return (
       <View>
-        <Animated.Image
-          style={{
-            width: Dimensions.get("window").width,
-            height: heightAminated,
-            //   transform: [
-            //     {
-            //       translateY: this.state.height.interpolate({
-            //         inputRange: [0, MAX_HEIGHT - MIN_HEIGHT],
-            //         outputRange: [MAX_HEIGHT, MIN_HEIGHT],
-            //       }),
-            //     },
-            //   ],
-          }}
-          source={{
-            uri:
-              "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
-          }}
-        />
+        <View pointerEvents="box-only">
+          <Animated.Image
+            style={{
+              width: Dimensions.get("window").width,
+              height: heightAminated,
+              //   transform: [
+              //     {
+              //       translateY: this.state.height.interpolate({
+              //         inputRange: [0, MAX_HEIGHT - MIN_HEIGHT],
+              //         outputRange: [MAX_HEIGHT, MIN_HEIGHT],
+              //       }),
+              //     },
+              //   ],
+            }}
+            source={{
+              uri:
+                "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
+            }}
+          />
+        </View>
         <ScrollView
           scrollEventThrottle={1}
           onScroll={Animated.event(

@@ -19,7 +19,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./Loadmore";
 // import App from "./Languea";
 // import App from "./ProgressExample";
- import App from "./images/SizeImage";
+import App from "./images/SizeImage";
 //import App from './UberEats.ts'
 //import App from "./Navigation/DemoStackNavigation";
 //import App from "./animation/HelloAppAnimation";
