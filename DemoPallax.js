@@ -9,6 +9,8 @@ import {
   StatusBar,
   Platform,
   Animated,
+  FlatList,
+  StyleSheet,
 } from "react-native";
 import ParallaxScrollView from "react-native-parallax-scroll-view";
 import { SliderBox } from "react-native-image-slider-box";
@@ -18,7 +20,32 @@ import Icon from "react-native-vector-icons/AntDesign";
 const AnimatableIcon = Animatable.createAnimatableComponent(Icon);
 import { ifIphoneX, isIphoneX } from "react-native-iphone-x-helper";
 const PARALLAX_HEADER_HEIGHT = Dimensions.get("window").height * 0.45;
-
+const dataFlat = [
+  {
+    name: "Package Options",
+    id: 1,
+  },
+  {
+    name: "Add To Your Trip",
+    id: 2,
+  },
+  {
+    name: "Review",
+    id: 3,
+  },
+  {
+    name: "Things To Note",
+    id: 4,
+  },
+  {
+    name: "Location",
+    id: 5,
+  },
+  {
+    name: "About This Activity",
+    id: 6,
+  },
+];
 export default class DemoPallax extends Component {
   constructor(props) {
     super(props);
@@ -32,6 +59,9 @@ export default class DemoPallax extends Component {
       index: 1,
       scrollY: new Animated.Value(0),
     };
+    this.refs._option;
+    this.refs._review;
+    this.refs.flatList;
   }
 
   onSnap(index) {
@@ -62,7 +92,7 @@ export default class DemoPallax extends Component {
           { useNativeDriver: false }
         )}
         stickyHeaderHeight={
-          Platform.OS == "android" ? 70 : isIphoneX() ? 75 : 62
+          Platform.OS == "android" ? 95 : isIphoneX() ? 100 : 87
         }
         parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT}
         backgroundSpeed={10}
@@ -109,17 +139,18 @@ export default class DemoPallax extends Component {
           </TouchableOpacity>
         )}
         renderStickyHeader={() => (
-          <TouchableOpacity
+          <View
             onPress={() => null}
             style={{
-              height: Platform.OS == "android" ? 70 : isIphoneX() ? 75 : 62,
-              flexDirection: "row",
+              height: Platform.OS == "android" ? 95 : isIphoneX() ? 100 : 87,
+
               borderBottomWidth: 1,
               borderBottomColor: "#ddd",
               width: "100%",
               justifyContent: "center",
               alignItems: "center",
               alignContent: "center",
+              flexDirection: "column",
             }}
           >
             <Text
@@ -131,8 +162,44 @@ export default class DemoPallax extends Component {
             >
               China Orient & Yangtze Cruise
             </Text>
-            
-          </TouchableOpacity>
+            <View style={{ position: "absolute", bottom: 5 }}>
+              <FlatList
+                data={dataFlat}
+                ref={(ref) => (this.flatList = ref)}
+                showsHorizontalScrollIndicator={false}
+                horizontal={true}
+                keyExtractor={(item) => item.id.toString()}
+                scrollEventThrottle={16}
+                renderItem={({ item, index }) => {
+                  return (
+                    <TouchableOpacity
+                      onPress={() => {
+                        if (item.id == 3) {
+                          console.log("op", this.flatList);
+                        }
+                      }}
+                      style={{
+                        marginHorizontal: 5,
+                        marginLeft: 10,
+                        borderBottomColor: "red",
+                        borderBottomWidth: 3,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontWeight: "bold",
+                          fontSize: 14,
+                          color: "red",
+                        }}
+                      >
+                        {item.name}{" "}
+                      </Text>
+                    </TouchableOpacity>
+                  );
+                }}
+              />
+            </View>
+          </View>
         )}
         renderBackground={() => (
           <TouchableOpacity>
@@ -155,13 +222,15 @@ export default class DemoPallax extends Component {
         )}
       >
         <View>
+          
           <StatusBar
             translucent
             barStyle="dark-content"
             backgroundColor="transparent"
           />
-          <View>
-            <Text>
+          <View style={styles.view}>
+            <Text style={styles.textTitle}>Package Options</Text>
+            <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
               a travel company that had a competition. To join this competition
               people took a DNA test. It showed their genetic ancestry. It
@@ -170,11 +239,29 @@ export default class DemoPallax extends Component {
               percent English - from Great Britain. But he was wrong! The test
               showed that Jay is 55 percent Irish. He is only 30 percent
               English. It also showed he is five percent German and even a bit
+              Turkish. Jay responded to the results:This man’s name is Jay. He
+              was part of a video series by Momondo, a travel company that had a
+              competition. To join this competition people took a DNA test. It
+              showed their genetic ancestry. It showed where each person’s
+              family had come from for many, many generations. Jay thought the
+              test would show that he is 100 percent English - from Great
+              Britain. But he was wrong! The test showed that Jay is 55 percent
+              Irish. He is only 30 percent English. It also showed he is five
+              percent German and even a bit Turkish. Jay responded to the
+              results:This man’s name is Jay. He was part of a video series by
+              Momondo, a travel company that had a competition. To join this
+              competition people took a DNA test. It showed their genetic
+              ancestry. It showed where each person’s family had come from for
+              many, many generations. Jay thought the test would show that he is
+              100 percent English - from Great Britain. But he was wrong! The
+              test showed that Jay is 55 percent Irish. He is only 30 percent
+              English. It also showed he is five percent German and even a bit
               Turkish. Jay responded to the results:
             </Text>
           </View>
-          <View>
-            <Text>
+          <View style={styles.view}>
+            <Text style={styles.textTitle}>Add To Your Trip</Text>
+            <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
               a travel company that had a competition. To join this competition
               people took a DNA test. It showed their genetic ancestry. It
@@ -183,11 +270,29 @@ export default class DemoPallax extends Component {
               percent English - from Great Britain. But he was wrong! The test
               showed that Jay is 55 percent Irish. He is only 30 percent
               English. It also showed he is five percent German and even a bit
+              Turkish. Jay responded to the results:This man’s name is Jay. He
+              was part of a video series by Momondo, a travel company that had a
+              competition. To join this competition people took a DNA test. It
+              showed their genetic ancestry. It showed where each person’s
+              family had come from for many, many generations. Jay thought the
+              test would show that he is 100 percent English - from Great
+              Britain. But he was wrong! The test showed that Jay is 55 percent
+              Irish. He is only 30 percent English. It also showed he is five
+              percent German and even a bit Turkish. Jay responded to the
+              results:This man’s name is Jay. He was part of a video series by
+              Momondo, a travel company that had a competition. To join this
+              competition people took a DNA test. It showed their genetic
+              ancestry. It showed where each person’s family had come from for
+              many, many generations. Jay thought the test would show that he is
+              100 percent English - from Great Britain. But he was wrong! The
+              test showed that Jay is 55 percent Irish. He is only 30 percent
+              English. It also showed he is five percent German and even a bit
               Turkish. Jay responded to the results:
             </Text>
           </View>
-          <View>
-            <Text>
+          <View style={styles.view} ref={(ref) => (this._option = ref)}>
+            <Text style={styles.textTitle}>Reviews</Text>
+            <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
               a travel company that had a competition. To join this competition
               people took a DNA test. It showed their genetic ancestry. It
@@ -196,11 +301,29 @@ export default class DemoPallax extends Component {
               percent English - from Great Britain. But he was wrong! The test
               showed that Jay is 55 percent Irish. He is only 30 percent
               English. It also showed he is five percent German and even a bit
+              Turkish. Jay responded to the results:This man’s name is Jay. He
+              was part of a video series by Momondo, a travel company that had a
+              competition. To join this competition people took a DNA test. It
+              showed their genetic ancestry. It showed where each person’s
+              family had come from for many, many generations. Jay thought the
+              test would show that he is 100 percent English - from Great
+              Britain. But he was wrong! The test showed that Jay is 55 percent
+              Irish. He is only 30 percent English. It also showed he is five
+              percent German and even a bit Turkish. Jay responded to the
+              results:This man’s name is Jay. He was part of a video series by
+              Momondo, a travel company that had a competition. To join this
+              competition people took a DNA test. It showed their genetic
+              ancestry. It showed where each person’s family had come from for
+              many, many generations. Jay thought the test would show that he is
+              100 percent English - from Great Britain. But he was wrong! The
+              test showed that Jay is 55 percent Irish. He is only 30 percent
+              English. It also showed he is five percent German and even a bit
               Turkish. Jay responded to the results:
             </Text>
           </View>
-          <View>
-            <Text>
+          <View style={styles.view}>
+            <Text style={styles.textTitle}>Things To Note</Text>
+            <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
               a travel company that had a competition. To join this competition
               people took a DNA test. It showed their genetic ancestry. It
@@ -209,11 +332,29 @@ export default class DemoPallax extends Component {
               percent English - from Great Britain. But he was wrong! The test
               showed that Jay is 55 percent Irish. He is only 30 percent
               English. It also showed he is five percent German and even a bit
+              Turkish. Jay responded to the results:This man’s name is Jay. He
+              was part of a video series by Momondo, a travel company that had a
+              competition. To join this competition people took a DNA test. It
+              showed their genetic ancestry. It showed where each person’s
+              family had come from for many, many generations. Jay thought the
+              test would show that he is 100 percent English - from Great
+              Britain. But he was wrong! The test showed that Jay is 55 percent
+              Irish. He is only 30 percent English. It also showed he is five
+              percent German and even a bit Turkish. Jay responded to the
+              results:This man’s name is Jay. He was part of a video series by
+              Momondo, a travel company that had a competition. To join this
+              competition people took a DNA test. It showed their genetic
+              ancestry. It showed where each person’s family had come from for
+              many, many generations. Jay thought the test would show that he is
+              100 percent English - from Great Britain. But he was wrong! The
+              test showed that Jay is 55 percent Irish. He is only 30 percent
+              English. It also showed he is five percent German and even a bit
               Turkish. Jay responded to the results:
             </Text>
           </View>
-          <View>
-            <Text>
+          <View style={styles.view}>
+            <Text style={styles.textTitle}>Location</Text>
+            <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
               a travel company that had a competition. To join this competition
               people took a DNA test. It showed their genetic ancestry. It
@@ -222,11 +363,29 @@ export default class DemoPallax extends Component {
               percent English - from Great Britain. But he was wrong! The test
               showed that Jay is 55 percent Irish. He is only 30 percent
               English. It also showed he is five percent German and even a bit
+              Turkish. Jay responded to the results:This man’s name is Jay. He
+              was part of a video series by Momondo, a travel company that had a
+              competition. To join this competition people took a DNA test. It
+              showed their genetic ancestry. It showed where each person’s
+              family had come from for many, many generations. Jay thought the
+              test would show that he is 100 percent English - from Great
+              Britain. But he was wrong! The test showed that Jay is 55 percent
+              Irish. He is only 30 percent English. It also showed he is five
+              percent German and even a bit Turkish. Jay responded to the
+              results:This man’s name is Jay. He was part of a video series by
+              Momondo, a travel company that had a competition. To join this
+              competition people took a DNA test. It showed their genetic
+              ancestry. It showed where each person’s family had come from for
+              many, many generations. Jay thought the test would show that he is
+              100 percent English - from Great Britain. But he was wrong! The
+              test showed that Jay is 55 percent Irish. He is only 30 percent
+              English. It also showed he is five percent German and even a bit
               Turkish. Jay responded to the results:
             </Text>
           </View>
-          <View>
-            <Text>
+          <View style={styles.view}>
+            <Text style={styles.textTitle}>About This Activity</Text>
+            <Text style={styles.text}>
               This man’s name is Jay. He was part of a video series by Momondo,
               a travel company that had a competition. To join this competition
               people took a DNA test. It showed their genetic ancestry. It
@@ -235,58 +394,22 @@ export default class DemoPallax extends Component {
               percent English - from Great Britain. But he was wrong! The test
               showed that Jay is 55 percent Irish. He is only 30 percent
               English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View>
-            <Text>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View>
-            <Text>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-          <View>
-            <Text>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
-              English. It also showed he is five percent German and even a bit
-              Turkish. Jay responded to the results:
-            </Text>
-          </View>
-
-          <View>
-            <Text>
-              This man’s name is Jay. He was part of a video series by Momondo,
-              a travel company that had a competition. To join this competition
-              people took a DNA test. It showed their genetic ancestry. It
-              showed where each person’s family had come from for many, many
-              generations. Jay thought the test would show that he is 100
-              percent English - from Great Britain. But he was wrong! The test
-              showed that Jay is 55 percent Irish. He is only 30 percent
+              Turkish. Jay responded to the results:This man’s name is Jay. He
+              was part of a video series by Momondo, a travel company that had a
+              competition. To join this competition people took a DNA test. It
+              showed their genetic ancestry. It showed where each person’s
+              family had come from for many, many generations. Jay thought the
+              test would show that he is 100 percent English - from Great
+              Britain. But he was wrong! The test showed that Jay is 55 percent
+              Irish. He is only 30 percent English. It also showed he is five
+              percent German and even a bit Turkish. Jay responded to the
+              results:This man’s name is Jay. He was part of a video series by
+              Momondo, a travel company that had a competition. To join this
+              competition people took a DNA test. It showed their genetic
+              ancestry. It showed where each person’s family had come from for
+              many, many generations. Jay thought the test would show that he is
+              100 percent English - from Great Britain. But he was wrong! The
+              test showed that Jay is 55 percent Irish. He is only 30 percent
               English. It also showed he is five percent German and even a bit
               Turkish. Jay responded to the results:
             </Text>
@@ -296,3 +419,19 @@ export default class DemoPallax extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  view: {
+    width: Dimensions.get("window").width * 0.95,
+    alignSelf: "center",
+    marginVertical: 10,
+  },
+  text: {
+    fontSize: 16,
+  },
+  textTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginVertical: 10,
+  },
+});
