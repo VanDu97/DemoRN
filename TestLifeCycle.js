@@ -1,5 +1,6 @@
 import React, { Component, PureComponent } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Dimensions } from "react-native";
+import TextInputComponents from "./component/TextInputComponent/index";
 export default class TestLifeCycle extends PureComponent {
   constructor(props) {
     super(props);
@@ -17,11 +18,12 @@ export default class TestLifeCycle extends PureComponent {
   //   }
   getSnapshotBeforeUpdate(props, state) {
     console.log("Befor", props, state);
-    return null;
+    return 10;
   }
-  componentDidUpdate(props, state) {
+  componentDidUpdate(props, state, snapshot) {
     console.log("current", this.state.count);
     console.log("Did", props, state);
+    console.log("snapshot", snapshot);
   }
 
   render() {
@@ -45,6 +47,26 @@ export default class TestLifeCycle extends PureComponent {
         >
           <Text style={{ color: "#fff", fontSize: 15 }}>Touch</Text>
         </TouchableOpacity>
+        <TextInputComponents
+          style={{
+            width: Dimensions.get("window").width * 0.9,
+            borderWidth: 1,
+            borderColor: "red",
+            borderRadius: 6,
+            //paddingVertical: 10,
+            paddingHorizontal: 10,
+            marginTop: 15,
+          }}
+          placeholder="Du Cena"
+          optionalSymbol="+"
+          node="10"
+          email={"Nguyenvandugamil.com"}
+          element={
+            <View>
+              <Text>Hello element</Text>
+            </View>
+          }
+        />
       </View>
     );
   }

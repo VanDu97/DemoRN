@@ -13,6 +13,10 @@ import {
   StyleSheet,
 } from "react-native";
 import ParallaxScrollView from "react-native-parallax-scroll-view";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 import { SliderBox } from "react-native-image-slider-box";
 import { Image, colors } from "react-native-elements";
 import * as Animatable from "react-native-animatable";
@@ -72,6 +76,7 @@ export default class DemoPallax extends Component {
   }
   render() {
     const { onScroll = () => {} } = this.props;
+    console.log("Dimention", Dimensions.get("screen"));
     const { data } = this.state;
     const colorBack = this.state.scrollY.interpolate({
       inputRange: [
@@ -86,6 +91,7 @@ export default class DemoPallax extends Component {
 
     return (
       <ParallaxScrollView
+        style={{ width: wp("100%"), flex: 1 }}
         backgroundColor="#fff"
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
@@ -221,8 +227,7 @@ export default class DemoPallax extends Component {
           //autoplay={true
         )}
       >
-        <View>
-          
+        <View style={{ width: wp("95%"), alignSelf: "center" }}>
           <StatusBar
             translucent
             barStyle="dark-content"
@@ -422,7 +427,7 @@ export default class DemoPallax extends Component {
 
 const styles = StyleSheet.create({
   view: {
-    width: Dimensions.get("window").width * 0.95,
+    width: wp("95%"),
     alignSelf: "center",
     marginVertical: 10,
   },
