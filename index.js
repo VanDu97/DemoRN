@@ -14,7 +14,9 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 //import App from "./Demo";
 //import App from "./Custom";
-// import App from "./DemoPallax";
+//import App from "./DemoPallax";
+import App from "./images/ZoomImages";
+//import App from "./Scroll/DemoScroll";
 // import App from "./RenderHTML";
 //import App from "./Loadmore";
 // import App from "./Languea";
@@ -32,5 +34,5 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./images/ScrollImage";
 //import App from "./animation/TransformAnimation";
 //import App from "./animation/PanGesture";
-import App from "./TestLifeCycle";
+//import App from "./TestLifeCycle";
 AppRegistry.registerComponent(appName, () => App);
