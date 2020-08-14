@@ -133,12 +133,12 @@ export default class Custom extends Component {
         <Animated.View
           style={[
             styles.bar,
-            // {
-            //   transform: [
-            //     { scale: titleScale },
-            //     { translateY: titleTranslate },
-            //   ],
-            // },
+            {
+              transform: [
+                { scale: titleScale },
+                { translateY: titleTranslate },
+              ],
+            },
           ]}
         >
           <Text style={styles.title}>Title</Text>
