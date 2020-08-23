@@ -8,6 +8,23 @@ import {
   Animated,
   Dimensions,
 } from "react-native";
+
+/**
+stateID - ID of the gestureState- persisted as long as there at least one touch on screen
+moveX - the latest screen coordinates of the recently-moved touch
+moveY - the latest screen coordinates of the recently-moved touch
+x0 - the screen coordinates of the responder grant
+y0 - the screen coordinates of the responder grant
+dx - accumulated distance of the gesture since the touch started
+dy - accumulated distance of the gesture since the touch started
+vx - current velocity of the gesture
+vy - current velocity of the gesture
+numberActiveTouches - Number of touches currently on screen
+ */
+
+const SWIPE_THRESHOLD = 120;
+const HEIGHT = Dimensions.get("window").height;
+
 function clamp(value, min, max) {
   return min < max
     ? value < min
@@ -21,8 +38,6 @@ function clamp(value, min, max) {
     ? min
     : value;
 }
-const SWIPE_THRESHOLD = 120;
-const HEIGHT = Dimensions.get("window").height;
 export default class KittenCard extends Component {
   constructor(props) {
     super(props);
@@ -39,15 +54,18 @@ export default class KittenCard extends Component {
       opacity: new Animated.Value(1),
       next: new Animated.Value(0.9),
     };
-  }
-
-  componentWillMount() {
     this._panResponder = PanResponder.create({
-      onStartShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponder: () => true,
+      onStartShouldSetPanResponder: (evt, gestureState) => true,
+      onMoveShouldSetPanResponder: (evt, gestureState) => true,
+
+      onPanResponderGrant: (evt, gestureState) => {
+        // The gesture has started. Show visual feedback so the user knows
+        // what is happening!
+        // gestureState.d{x,y} will be set to zero now
+      },
       onPanResponderMove: Animated.event(
         [
-          ,
+          null,
           {
             dx: this.state.animation.x,
             dy: this.state.animation.y,
@@ -57,32 +75,19 @@ export default class KittenCard extends Component {
           useNativeDriver: false,
         }
       ),
-      onPanResponderRelease: (
-        e,
-        { moveX, moveY, x0, y0, dx, dy, vx, vy, numberActiveTouches }
-      ) => {
+
+      onPanResponderTerminationRequest: (evt, gestureState) => true,
+      onPanResponderRelease: (e, gestureState) => {
         let velocity;
-        console.log(
-          "Item",
-          moveX,
-          moveY,
-          x0,
-          y0,
-          dx,
-          dy,
-          vx,
-          vy,
-          numberActiveTouches
-        );
-        if (vx >= 0) {
-          velocity = clamp(vx, 3, 5);
-        } else if (vx < 0) {
-          velocity = clamp(Math.abs(vx), 3, 5) * -1;
+        if (gestureState.vx >= 0) {
+          velocity = clamp(gestureState.vx, 3, 5);
+        } else if (gestureState.vx < 0) {
+          velocity = clamp(gestureState.vx, 3, 5) * -1;
         }
 
-        if (Math.abs(dx) > SWIPE_THRESHOLD) {
+        if (Math.abs(gestureState.dx) > SWIPE_THRESHOLD) {
           Animated.decay(this.state.animation, {
-            velocity: { x: velocity, y: vy },
+            velocity: { x: velocity, y: gestureState.vy },
             deceleration: 0.98,
             useNativeDriver: false,
           }).start(this.transitionNext);
@@ -96,11 +101,11 @@ export default class KittenCard extends Component {
       },
     });
   }
+
   transitionNext = () => {
     Animated.parallel([
       Animated.timing(this.state.opacity, {
         toValue: 0,
-        duration: 300,
         useNativeDriver: false,
       }),
       Animated.spring(this.state.next, {
@@ -110,87 +115,67 @@ export default class KittenCard extends Component {
       }),
     ]).start(() => {
       this.setState(
-        (state) => {
-          return {
-            items: state.items.slice(1),
-          };
+        {
+          items: this.state.items.slice(1),
         },
         () => {
-          this.state.next.setValue(0.9);
-          this.state.opacity.setValue(1);
           this.state.animation.setValue({ x: 0, y: 0 });
+          this.state.opacity.setValue(1);
+          this.state.next.setValue(0.9);
         }
       );
     });
   };
-  handleNo = () => {
-    Animated.timing(this.state.animation.x, {
-      toValue: -SWIPE_THRESHOLD,
-      useNativeDriver: false,
-    }).start(this.transitionNext);
-  };
-  handleYes = () => {
-    Animated.timing(this.state.animation.x, {
-      toValue: SWIPE_THRESHOLD,
-      useNativeDriver: false,
-    }).start(this.transitionNext);
-  };
-
   render() {
     const { animation } = this.state;
-
     const rotate = animation.x.interpolate({
       inputRange: [-200, 0, 200],
       outputRange: ["-30deg", "0deg", "30deg"],
       extrapolate: "clamp",
-      useNativeDriver: false,
     });
-
     const opacity = animation.x.interpolate({
       inputRange: [-200, 0, 200],
       outputRange: [0.5, 1, 0.5],
-      useNativeDriver: false,
     });
 
-    const yesOpacity = animation.x.interpolate({
-      inputRange: [0, 150],
-      outputRange: [0, 1],
-      useNativeDriver: false,
-    });
-    const yesScale = animation.x.interpolate({
-      inputRange: [0, 150],
-      outputRange: [0.5, 1],
-      extrapolate: "clamp",
-      useNativeDriver: false,
-    });
-    const animatedYupStyles = {
-      transform: [{ scale: yesScale }, { rotate: "-30deg" }],
-      opacity: yesOpacity,
-    };
-
-    const noOpacity = animation.x.interpolate({
-      inputRange: [-150, 0],
-      outputRange: [1, 0],
-      useNativeDriver: false,
-    });
-    const noScale = animation.x.interpolate({
-      inputRange: [-150, 0],
-      outputRange: [1, 0.5],
-      extrapolate: "clamp",
-      useNativeDriver: false,
-    });
-    const animatedNopeStyles = {
-      transform: [{ scale: noScale }, { rotate: "30deg" }],
-      opacity: noOpacity,
-    };
-
-    const animatedCardStyles = {
-      transform: [{ rotate }, ...this.state.animation.getTranslateTransform()],
+    const animatedCardStyle = {
+      transform: [
+        {
+          rotate,
+        },
+        ...this.state.animation.getTranslateTransform(),
+      ],
       opacity: this.state.opacity,
     };
-
-    const animatedImageStyles = {
+    const animtedImageStyle = {
       opacity,
+    };
+
+    const rotateCardNope = animation.x.interpolate({
+      inputRange: [-150, 0],
+      outputRange: [1.5, 1],
+      extrapolate: "clamp",
+    });
+    const rotateCardYep = animation.x.interpolate({
+      inputRange: [0, 150],
+      outputRange: [1, 0.5],
+    });
+
+    const opacityNope = animation.x.interpolate({
+      inputRange: [-150, 0],
+      outputRange: [1, 0],
+      extrapolate: "clamp",
+    });
+    const nopeStyle = {
+      transform: [
+        {
+          rotate: "30deg",
+        },
+        {
+          scale: rotateCardNope,
+        },
+      ],
+      opacity: opacityNope,
     };
 
     return (
@@ -201,62 +186,51 @@ export default class KittenCard extends Component {
             .reverse()
             .map(({ cat, id, text }, index, items) => {
               const isLastItem = index === items.length - 1;
-              const isSecondToLast = index === items.length - 2;
-
-              const panHandlers = isLastItem
+              const isSecondItem = index === items.length - 2;
+              const cardStyle = isLastItem ? animatedCardStyle : undefined;
+              const imageStyle = isLastItem ? animtedImageStyle : undefined;
+              const panresponder = isLastItem
                 ? this._panResponder.panHandlers
                 : {};
-              const cardStyle = isLastItem ? animatedCardStyles : undefined;
-              const imageStyle = isLastItem ? animatedImageStyles : undefined;
-              const nextStyle = isSecondToLast
-                ? { transform: [{ scale: this.state.next }] }
+              const nextCard = isSecondItem
+                ? {
+                    transform: [
+                      {
+                        scale: this.state.next,
+                      },
+                    ],
+                  }
                 : undefined;
-
               return (
                 <Animated.View
-                  {...panHandlers}
-                  style={[styles.card, cardStyle, nextStyle]}
+                  {...panresponder}
                   key={id}
+                  style={[styles.viewItem, cardStyle, nextCard]}
                 >
                   <Animated.Image
                     source={cat}
                     style={[styles.image, imageStyle]}
                     resizeMode="cover"
                   />
-                  <View style={styles.lowerText}>
+                  <View style={[styles.text]}>
                     <Text>{text}</Text>
                   </View>
 
                   {isLastItem && (
-                    <Animated.View style={[styles.nope, animatedNopeStyles]}>
-                      <Text style={styles.nopeText}>Nope!</Text>
-                    </Animated.View>
+                    <View style={[styles.viewNope, nopeStyle]}>
+                      <Text style={styles.textNope}>Nope!</Text>
+                    </View>
                   )}
-
                   {isLastItem && (
-                    <Animated.View style={[styles.yup, animatedYupStyles]}>
-                      <Text style={styles.yupText}>Yup!</Text>
-                    </Animated.View>
+                    <View style={[styles.viewYep]}>
+                      <Text style={styles.textYep}>Yep!</Text>
+                    </View>
                   )}
                 </Animated.View>
               );
             })}
         </View>
-        <View style={styles.buttonBar}>
-          <TouchableOpacity
-            onPress={this.handleNo}
-            style={[styles.button, styles.nopeButton]}
-          >
-            <Text style={styles.nopeText}>NO</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={this.handleYes}
-            style={[styles.button, styles.yupButton]}
-          >
-            <Text style={styles.yupText}>YES</Text>
-          </TouchableOpacity>
-        </View>
+        <View style={styles.buttonBar} />
       </View>
     );
   }
@@ -268,81 +242,58 @@ const styles = StyleSheet.create({
   },
   top: {
     flex: 1,
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
   },
-  buttonBar: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingVertical: 10,
-  },
-  button: {
-    marginHorizontal: 10,
-    padding: 20,
-    borderRadius: 30,
-    alignItems: "center",
-    justifyContent: "center",
-    shadowOpacity: 0.3,
-    shadowOffset: { x: 0, y: 0 },
+  viewItem: {
+    width: Dimensions.get("window").width * 0.8,
+    height: Dimensions.get("window").height * 0.4,
+    alignSelf: "center",
     shadowRadius: 5,
-  },
-  yupButton: {
-    shadowColor: "green",
-  },
-  nopeButton: {
-    shadowColor: "red",
-  },
-
-  card: {
-    width: 300,
-    height: 300,
-    position: "absolute",
-    borderRadius: 3,
+    shadowOpacity: 0.2,
     shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowOffset: { x: 0, y: 0 },
-    shadowRadius: 5,
-    borderWidth: 1,
-    borderColor: "#FFF",
-  },
-  lowerText: {
-    flex: 1,
-    backgroundColor: "#FFF",
-    padding: 5,
+    position: "absolute",
+    backgroundColor: "#fff",
   },
   image: {
     width: null,
     height: null,
+    flex: 4,
+  },
+  text: {
+    flex: 1,
+    paddingVertical: 15,
+    paddingHorizontal: 15,
+    backgroundColor: "#fff",
+  },
+  viewNope: {
+    position: "absolute",
+    top: 15,
+    left: 15,
+    borderWidth: 1,
     borderRadius: 2,
-    flex: 3,
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    borderColor: "#fff",
+    backgroundColor: "#fff",
   },
-  yup: {
-    borderColor: "green",
-    borderWidth: 2,
-    position: "absolute",
-    padding: 20,
-    borderRadius: 5,
-    top: 20,
-    left: 20,
-    backgroundColor: "#FFF",
-  },
-  yupText: {
-    fontSize: 16,
-    color: "green",
-  },
-  nope: {
-    borderColor: "red",
-    borderWidth: 2,
-    position: "absolute",
-    padding: 20,
-    borderRadius: 5,
-    right: 20,
-    top: 20,
-    backgroundColor: "#FFF",
-  },
-  nopeText: {
-    fontSize: 16,
+  textNope: {
     color: "red",
+    fontSize: 16,
+  },
+  viewYep: {
+    position: "absolute",
+    top: 15,
+    right: 15,
+    borderWidth: 1,
+    borderRadius: 2,
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    borderColor: "#fff",
+    backgroundColor: "#fff",
+  },
+  textYep: {
+    color: "green",
+    fontSize: 16,
   },
 });
