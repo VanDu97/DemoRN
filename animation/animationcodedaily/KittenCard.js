@@ -246,8 +246,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   viewItem: {
-    width: Dimensions.get("window").width * 0.8,
-    height: Dimensions.get("window").height * 0.4,
+    width: 300,
+    height: 300,
     alignSelf: "center",
     shadowRadius: 5,
     shadowOpacity: 0.2,
