@@ -126,6 +126,20 @@ export default class KittenCard extends Component {
       );
     });
   };
+  handleNope = () => {
+    Animated.timing(this.state.animation, {
+      toValue: { x: -200, y: -100 },
+      duration: 500,
+      useNativeDriver: false,
+    }).start(this.transitionNext);
+  };
+  handleYep = () => {
+    Animated.timing(this.state.animation, {
+      toValue: { x: 200, y: -100 },
+      duration: 500,
+      useNativeDriver: false,
+    }).start(this.transitionNext);
+  };
   render() {
     const { animation } = this.state;
     const rotate = animation.x.interpolate({
@@ -153,18 +167,22 @@ export default class KittenCard extends Component {
 
     const rotateCardNope = animation.x.interpolate({
       inputRange: [-150, 0],
-      outputRange: [1.5, 1],
+      outputRange: [1, 0.5],
       extrapolate: "clamp",
     });
     const rotateCardYep = animation.x.interpolate({
       inputRange: [0, 150],
-      outputRange: [1, 0.5],
+      outputRange: [0.5, 1],
+      extrapolate: "clamp",
     });
 
     const opacityNope = animation.x.interpolate({
       inputRange: [-150, 0],
       outputRange: [1, 0],
-      extrapolate: "clamp",
+    });
+    const opacityYep = animation.x.interpolate({
+      inputRange: [0, 150],
+      outputRange: [0, 1],
     });
     const nopeStyle = {
       transform: [
@@ -176,6 +194,17 @@ export default class KittenCard extends Component {
         },
       ],
       opacity: opacityNope,
+    };
+    const yepStyle = {
+      transform: [
+        {
+          rotate: "-30deg",
+        },
+        {
+          scale: rotateCardYep,
+        },
+      ],
+      opacity: opacityYep,
     };
 
     return (
@@ -217,20 +246,27 @@ export default class KittenCard extends Component {
                   </View>
 
                   {isLastItem && (
-                    <View style={[styles.viewNope, nopeStyle]}>
-                      <Text style={styles.textNope}>Nope!</Text>
-                    </View>
+                    <Animated.View style={[styles.viewYep, yepStyle]}>
+                      <Text style={styles.textYep}>Yep!</Text>
+                    </Animated.View>
                   )}
                   {isLastItem && (
-                    <View style={[styles.viewYep]}>
-                      <Text style={styles.textYep}>Yep!</Text>
-                    </View>
+                    <Animated.View style={[styles.viewNope, nopeStyle]}>
+                      <Text style={styles.textNope}>Nope!</Text>
+                    </Animated.View>
                   )}
                 </Animated.View>
               );
             })}
         </View>
-        <View style={styles.buttonBar} />
+        <View style={styles.buttonBar}>
+          <TouchableOpacity style={styles.touchNope} onPress={this.handleNope}>
+            <Text style={styles.textNope}>Nope</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.touchYep} onPress={this.handleYep}>
+            <Text style={styles.textYep}>Yep</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
@@ -268,8 +304,8 @@ const styles = StyleSheet.create({
   },
   viewNope: {
     position: "absolute",
-    top: 15,
-    left: 15,
+    top: 20,
+    right: 20,
     borderWidth: 1,
     borderRadius: 2,
     paddingVertical: 10,
@@ -279,12 +315,12 @@ const styles = StyleSheet.create({
   },
   textNope: {
     color: "red",
-    fontSize: 16,
+    fontSize: 15,
   },
   viewYep: {
     position: "absolute",
-    top: 15,
-    right: 15,
+    top: 20,
+    left: 20,
     borderWidth: 1,
     borderRadius: 2,
     paddingVertical: 10,
@@ -294,6 +330,31 @@ const styles = StyleSheet.create({
   },
   textYep: {
     color: "green",
-    fontSize: 16,
+    fontSize: 15,
+  },
+  buttonBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 20,
+  },
+  touchYep: {
+    alignItems: "center",
+    paddingVertical: 10,
+    shadowOpacity: 0.1,
+    borderColor: "green",
+    borderRadius: 5,
+    paddingHorizontal: 15,
+    borderWidth: 1,
+  },
+  touchNope: {
+    alignItems: "center",
+    paddingVertical: 10,
+    shadowOpacity: 0.1,
+    borderWidth: 1,
+    borderColor: "red",
+    borderRadius: 5,
+    paddingHorizontal: 15,
+    marginRight: 20,
   },
 });
