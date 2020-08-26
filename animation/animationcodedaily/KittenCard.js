@@ -50,7 +50,7 @@ export default class KittenCard extends Component {
         { cat: require("../../assets/cat3.jpg"), id: 5, text: "Sugar cute" },
         { cat: require("../../assets/cat4.jpg"), id: 6, text: "Kitty meo meo" },
       ],
-      animation: new Animated.ValueXY(),
+      animation: new Animated.ValueXY({ x: 0, y: 0 }),
       opacity: new Animated.Value(1),
       next: new Animated.Value(0.9),
     };
@@ -113,20 +113,23 @@ export default class KittenCard extends Component {
         friction: 4,
         useNativeDriver: false,
       }),
-    ]).start(() => {
-      this.setState(
-        {
-          items: this.state.items.slice(1),
-        },
-        () => {
-          this.state.animation.setValue({ x: 0, y: 0 });
-          this.state.opacity.setValue(1);
-          this.state.next.setValue(0.9);
-        }
-      );
+    ]).start(({ finished }) => {
+      if (finished) {
+        this.setState(
+          {
+            items: this.state.items.slice(1),
+          },
+          () => {
+            this.state.animation.setValue({ x: 0, y: 0 });
+            this.state.opacity.setValue(1);
+            this.state.next.setValue(0.9);
+          }
+        );
+      }
     });
   };
   handleNope = () => {
+    console.log("No", this.state.animation.x, this.state.animation.y);
     Animated.timing(this.state.animation, {
       toValue: { x: -200, y: -100 },
       duration: 500,
@@ -134,6 +137,7 @@ export default class KittenCard extends Component {
     }).start(this.transitionNext);
   };
   handleYep = () => {
+    console.log("Yep", this.state.animation.x, this.state.animation.y);
     Animated.timing(this.state.animation, {
       toValue: { x: 200, y: -100 },
       duration: 500,

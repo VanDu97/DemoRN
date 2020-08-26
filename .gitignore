@@ -72,3 +72,8 @@ android/.gradle/6.0.1/executionHistory/executionHistory.bin
 *.lock
 android/.gradle/6.0.1/executionHistory/executionHistory.lock
 android/.gradle/6.0.1/executionHistory/executionHistory.bin
+*.lock
+*.bin
+*.lock
+*.bin
+android/.gradle/5.4.1/fileHashes/fileHashes.lock
