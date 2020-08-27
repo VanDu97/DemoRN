@@ -1,17 +1,25 @@
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactNative = require("react-native");
+
+require("react-native-gesture-handler");
+
+var _app = require("./app.json");
+
+var _reactNativeSafeAreaContext = require("react-native-safe-area-context");
+
+var _ScrollImageHori = _interopRequireDefault(require("./animation/ScrollImageHori"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 /**
  * @format
  */
-import React from "react";
-
-import { AppRegistry } from "react-native";
 //import App from './App';
 //import App from "./AnimationDemo";
-import "react-native-gesture-handler";
-import { name as appName } from "./app.json";
-
 //import App from "./UberEats";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-
 //import App from "./Demo";
 //import App from "./Custom";
 //import App from "./DemoPallax";
@@ -36,7 +44,8 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./animation/PanGesture";
 //import App from "./TestLifeCycle";
 //import App from "./animation/animationcodedaily/index";
-import App from "./animation/ScrollImageHori";
 //import App from "./animation/animationcodedaily/Easings";
 //import App from "./animation/animationcodedaily/KittenCard";
-AppRegistry.registerComponent(appName, () => App);
+_reactNative.AppRegistry.registerComponent(_app.name, function () {
+  return _ScrollImageHori["default"];
+});
