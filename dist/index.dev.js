@@ -10,7 +10,7 @@ var _app = require("./app.json");
 
 var _reactNativeSafeAreaContext = require("react-native-safe-area-context");
 
-var _ScrollImageHori = _interopRequireDefault(require("./animation/ScrollImageHori"));
+var _DiffClamps = _interopRequireDefault(require("./animation/DiffClamps"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -44,8 +44,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 //import App from "./animation/PanGesture";
 //import App from "./TestLifeCycle";
 //import App from "./animation/animationcodedaily/index";
+//import App from "./animation/ScrollImageHori";
 //import App from "./animation/animationcodedaily/Easings";
 //import App from "./animation/animationcodedaily/KittenCard";
 _reactNative.AppRegistry.registerComponent(_app.name, function () {
-  return _ScrollImageHori["default"];
+  return _DiffClamps["default"];
 });

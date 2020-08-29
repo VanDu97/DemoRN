@@ -4,101 +4,128 @@ import {
   View,
   Text,
   Animated,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-  StyleSheet,
   ScrollView,
-  Image,
-  PanResponder,
+  StatusBar,
+  Dimensions,
+  SafeAreaView,
+  TouchableOpacity,
+  LayoutAnimation,
+  UIManager,
 } from "react-native";
-import { Dimensions } from "react-native";
-import { StatusBar } from "react-native";
-const HEIGHT = Dimensions.get("window").height;
-const WIDTH = Dimensions.get("window").width;
-export default class MasterAnimation extends Component {
+const isCloseToBottom = ({ layoutMeasurement, contentOffset, contentSize }) => {
+  const paddingToBottom = 20;
+  return (
+    layoutMeasurement.height + contentOffset.y >=
+    contentSize.height - paddingToBottom
+  );
+};
+
+export default class DiffClamps extends Component {
   constructor(props) {
     super(props);
     this.state = {
       animation: new Animated.Value(0),
     };
     this.offset = 0;
-    this.panresonder = PanResponder.create({
-      onStartShouldSetPanResponder: (evt, gestureState) => true,
-      onStartShouldSetPanResponderCapture: (evt, gestureState) => true,
-      onMoveShouldSetPanResponder: (evt, gestureState) => true,
-      onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
-
-      onPanResponderGrant: (evt, gestureState) => {
-        // The gesture has started. Show visual feedback so the user knows
-        // what is happening!
-        // gestureState.d{x,y} will be set to zero now
-      },
-      onPanResponderMove: (evt, gestureState) =>
-        Animated.event(
-          [
-            {
-              dx: this.state.animation,
-            },
-          ],
-          {
-            useNativeDriver: false,
-          }
-        ),
-      onPanResponderTerminationRequest: (evt, gestureState) => true,
-      onPanResponderRelease: (evt, gestureState) => {
-        // The user has released all touches while this view is the
-        // responder. This typically means a gesture has succeeded
-      },
-      onPanResponderTerminate: (evt, gestureState) => {
-        // Another component has become the responder, so this gesture
-        // should be cancelled
-      },
-      onShouldBlockNativeResponder: (evt, gestureState) => {
-        // Returns whether this component should block native components from becoming the JS
-        // responder. Returns true by default. Is currently only supported on android.
-        return true;
-      },
-    });
   }
-  onScroll = (event) => {
-    var currentOffset = event.nativeEvent.contentOffset.y;
-    // this.setState({
-    //   animation: currentOffset,
-    // });
-    var direction = currentOffset > this.offset ? "down" : "up";
+  _onScroll = (event) => {
+    // UIManager.setLayoutAnimationEnabledExperimental &&
+    //   UIManager.setLayoutAnimationEnabledExperimental(true);
+    const currentOffset = event.nativeEvent.contentOffset.y;
+    const dif = currentOffset - this.offset;
+    console.log("i", dif, currentOffset);
+    if (dif <= 0) {
+      console.log("unclear");
+      Animated.decay(this.state.animation, {
+        toValue: 100,
+        deceleration: 0.3,
+        velocity: 1,
+        useNativeDriver: false,
+      }).start();
+    } else {
+      console.log("down");
+      Animated.decay(this.state.animation, {
+        toValue: 100,
+        deceleration: 0.3,
+        velocity: 1,
+        useNativeDriver: false,
+      }).start();
+    }
     this.offset = currentOffset;
-    console.log(direction);
   };
   render() {
-    const heightImage = this.state.animation.interpolate({
-      inputRange: [0, 200],
-      outputRange: [300, 100],
-      extrapolate: "extend",
+    const bottomHide = Animated.diffClamp(
+      this.state.animation,
+      0,
+      35
+    ).interpolate({
+      inputRange: [0, 35],
+      outputRange: [25, 95],
+      extrapolate: "clamp",
     });
-
-    console.log("Position", heightImage);
+    console.log("o", this.state.animation);
     return (
       <View style={{ flex: 1 }}>
-        <Animated.Image
-          style={{
-            flex: 1,
-            width: "100%",
-            height: heightImage,
-            position: "absolute",
-          }}
-          source={require("../../assets/cat3.jpg")}
-        />
         <Animated.ScrollView
-          contentContainerStyle={{ flex: 1 }}
+          contentContainerStyle={{}}
           scrollEventThrottle={16}
           //onScroll={this.onScroll}
-          onScroll={Animated.event(
-            [{ nativeEvent: { contentOffset: { y: this.state.animation } } }],
-            { useNativeDriver: false } // Optional async listener
-          )}
+          onScroll={(e) => {
+            this._onScroll(e);
+          }}
+          // onScroll={Animated.event(
+          //   [{ nativeEvent: { contentOffset: { y: this.state.animation } } }],
+          //   {
+          //     useNativeDriver: false,
+          //     listener: () => console.log("1", this.state.animation),
+          //   } // Optional async listener
+          // )}
         >
           <StatusBar barStyle="light-content" />
-          <Animated.View style={{ marginTop: 300 }}>
+          <Animated.View
+            style={{
+              marginTop: 40,
+              alignItems: "center",
+              witdh: Dimensions.get("window").width * 0.9,
+              alignSelf: "center",
+            }}
+          >
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quas quibusdam maxime ratione eligendi ut corporis, necessitatibus
+              minima soluta vel quod nisi rerum dolore ipsam ducimus maiores non
+              dignissimos repudiandae!
+            </Text>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quas quibusdam maxime ratione eligendi ut corporis, necessitatibus
+              minima soluta vel quod nisi rerum dolore ipsam ducimus maiores non
+              dignissimos repudiandae!
+            </Text>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quas quibusdam maxime ratione eligendi ut corporis, necessitatibus
+              minima soluta vel quod nisi rerum dolore ipsam ducimus maiores non
+              dignissimos repudiandae!
+            </Text>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quas quibusdam maxime ratione eligendi ut corporis, necessitatibus
+              minima soluta vel quod nisi rerum dolore ipsam ducimus maiores non
+              dignissimos repudiandae!
+            </Text>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quas quibusdam maxime ratione eligendi ut corporis, necessitatibus
+              minima soluta vel quod nisi rerum dolore ipsam ducimus maiores non
+              dignissimos repudiandae!
+            </Text>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quas quibusdam maxime ratione eligendi ut corporis, necessitatibus
+              minima soluta vel quod nisi rerum dolore ipsam ducimus maiores non
+              dignissimos repudiandae!
+            </Text>
             <Text>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               quas quibusdam maxime ratione eligendi ut corporis, necessitatibus
@@ -191,21 +218,33 @@ export default class MasterAnimation extends Component {
             </Text>
           </Animated.View>
         </Animated.ScrollView>
+        <Animated.View
+          style={{
+            flex: 1,
+            position: "absolute",
+            bottom: 20,
+            right: 100,
+            transform: [
+              {
+                translateY: this.state.animation,
+              },
+            ],
+          }}
+        >
+          <TouchableOpacity
+            style={{
+              width: 200,
+              backgroundColor: "red",
+              height: 35,
+              borderRadius: 6,
+              alignSelf: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Text style={{ color: "#fff", textAlign: "center" }}>New Item</Text>
+          </TouchableOpacity>
+        </Animated.View>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  box: {
-    width: 150,
-    height: 150,
-    backgroundColor: "tomato",
-    borderRadius: 6,
-  },
-});
