@@ -7,61 +7,104 @@ INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.
 MERGED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:1:1-27:12
 MERGED from [:react-native-video] /Users/ducena/Desktop/DemoRN/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] /Users/ducena/Desktop/DemoRN/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:8:1-18:12
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4c1b6740f2699ae829ed5245bc5d0c29/flipper-network-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75140fc5841194e40951e87db9b557fe/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:8:1-18:12
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1e58665674e9abcc885a67c08c7040fe/flipper-network-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5f3966b71a35c1421efc270bf449fc40/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-firebase_app] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/033202e5710b066ff2735ece02396b17/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-core:17.4.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5426419deaf391d6354ba2d4f6d45665/firebase-core-17.4.4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2544f82156912b4eab074112b8e02bc0/firebase-analytics-17.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-art] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_art] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] /Users/ducena/Desktop/DemoRN/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-localize] /Users/ducena/Desktop/DemoRN/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-onesignal] /Users/ducena/Desktop/DemoRN/node_modules/react-native-onesignal/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-reanimated] /Users/ducena/Desktop/DemoRN/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/ducena/Desktop/DemoRN/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/ducena/Desktop/DemoRN/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4d7be7d64c6c19c2d88ccdef13e5fa77/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6bb482d4edfb8945df7454050b78aa75/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b8286ed28b50483d1bfadc3ffa43e8ca/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7641105dea446ae5537c60dc45dc7187/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
-MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e533381761856b8520e1b828230a7177/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:2:1-12:12
-MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f09c903ffb3bba4651d8eb0d589b8c28/flipper-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/140b6e767445ecbd595a93bf2be69720/stetho-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/ce4f9537e8cc7fb08472508f2b5b43b0/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f2bf713e218183c457b42a259f41558c/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/640602193e9b13554b35979b0839c23d/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1bd0c5f7c73feca3508db3a96423e9fd/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/34b9f944e68c8c013aadc0afa91cfdb0/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5745c68994c278f4f440fe04eb2c6a77/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d23f5a8c0bfad9f19edcd7b40c306b7d/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2ef1c0916f1ce32aa1abddcdea1fbe34/soloader-0.8.2/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bfb36a8a02a6b71b49ca7ec649145b26/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/699bc310780b1730bce8fe271ffeca8b/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/af19d2bf9efbba5c87d98162386fe6bd/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/817fc0f1c5e4ae5271bca4e2db3eccfc/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/df075d1e0ebaa8f20062e116464b1eeb/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2dd52bdeda96a748df5d7e83cece6c38/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/863b030a4ef24c5e89f12cd832de155e/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7e3b4c2f83e256517b094f844ce7d668/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/63dca38f6832352d0414ad7faf5de168/activity-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4677d8a5382c107f6965fb7455600737/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2fe66d8bec3c90b690bace4d7b7b6157/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bbb72600245c24a4fed81f14e5302b4/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/ed5a9132108c5b2ae9625fd37b95cb34/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01d333055a983e736e0a5fac950ffa8f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f3128affa7000c088d176285d7f5681f/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ef4cf53c2e69d9a48297aca6f06a492/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cb34feab5db2b919c5bcf32eec0920cb/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f64c8351ef0c9a7a800019d28185706c/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1162dfc4708142e2976ba251e87dc077/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/69ba81d17fd1c26c75281615add0554c/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/df65787e67fe4b4bc0635deed9695797/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bc452342bfee356d6b01786353f9367d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/61b36bcd44c689e23dd0e5a9c933fba0/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/02df220f8c1d7cb41dd5202c1567d99c/annotation-0.8.2/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e47e313b0cf7341a24dbef499a8f00e4/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:2:1-122:12
+MERGED from [androidx.browser:browser:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75ffac8a8d3ada200c9b1a3ede22ea0c/browser-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/97a11c9da00543b346f331330f30e773/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c101a907d8af4b3a60bc3b9ca0f7c0ce/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c6bbccf3146e48895185241b0485752/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d04b9cc5a5b39c9c65f368055b649c24/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:2:1-12:12
+MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/226a635a9979a2b1c5b35817da50680d/flipper-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/503d25c366d5055f4e521092de2ada01/stetho-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/aa323670f327a87f7a71c8199649a283/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4a33c5790b4f7209e2f20f8588d3f146/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c2bd63ffd5e16cb5003bae09a78fc07/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/17b92ee5052fc3147ffb3e0956ee6cbf/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9d1c56d5ea7c25c26c02a6b19b4d3219/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6d25c7b202aa49fd1987b70fc603c85/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7acdf2d52656438d7cc8267efeea922b/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/038f038599d98c2ffed60f4c0f9d8a37/soloader-0.8.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6af0048dd5d581d19450d87e1134248c/play-services-measurement-sdk-17.5.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:17:1-45:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:15:1-41:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5a3d594331faf4e61cc3778e4a0e5a71/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/85d95aced43f581f8fb73d10aca4956c/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5cab2b55ac3ec613df7b5e95620f039d/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cf58a84e095dd169904469f8a02fea73/play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2846cc18407a222e0e1ac2038eff4554/play-services-measurement-base-17.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f1103622f61bc0d569140046f16294b1/play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8fe566e382bc8b7398776b20904f0511/firebase-installations-interop-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/eb169740c3f0387f0c069f7a8bde663e/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a431e874fba4e0b66ee4dc381c2039a0/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bba2b9d8a2510bd898831989366219a/jetified-play-services-location-15.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c808ff012612bc845f1076244bc09f9a/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/073b328cf8456d1230f4083c517c7195/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01b7de67393feec2c368611bad1bb91a/firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/26a9ff7613e7ed81956097ca37119707/play-services-places-placereport-15.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9d254e2367a6f79fa6dbe560a87bed0f/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/def07a52a797a4d9c2659101768981b1/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cb20f7f187a12169dd614af398a54d53/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2f08ea65390a6e1465f52edc16eedd96/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4b19a2b9239b860ded34a2368cf2a171/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9b949ce9ff4bf2a4b47f1577973c101b/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8ec73185ba434e51448ee82aa7d51ec4/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0d9dd610c88cd4f4b4b47031e4cdbad/activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e1569ea0b3654818698447f147144b3f/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/da4bdc7ce97f484d7182399445a0600b/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/369b2e8c1987b0bf69b60cb70c90148d/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1001885feaefb70409c8035550a275c1/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e629c9478969f43d94c5bd1dc44c9738/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/902a10383468f6e94bbc36a7cbea474c/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/466e9cae0523684ce889a49ace55301a/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c12f27c608cd021896300af2b398757e/jetified-firebase-components-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6b3cb5aa6b55642b65db95eb88750fe0/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0b9c3d4161ee580be8a282ec5c15c6a/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/95f4f85e44e4d76a2b3ec6ccfa73dd2f/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0a16f2e030b724888a0a34a5a95fb42d/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c43b9d8bf5f9feaf71b3467ec7dddf11/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/29086189513dad1f91eb3f0f3cd85cbc/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e4cef62ed9567c79b4047c524beca1f1/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/962cad80c3a162969cef666ce8f37320/firebase-encoders-json-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2e66d8a9551feaf2dbbdbb83076e93fb/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/45daeba57ceeae00f5847ad66de28793/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c6cfcbd44ef74cfd70d394f69ebc3c4/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/dcfa8b1e6819b87f149d4a7fe837081f/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ea70d7ded15c9325096438b11e69709/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d5e0f2a63316408633c4d8155ad81c75/annotation-0.8.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a468a034795489f3138ce28a12ea4e0e/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/41cafb0dc2ef2d2a469c2e7a2c7bc339/transport-api-2.2.0/AndroidManifest.xml:15:1-22:12
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -84,8 +127,24 @@ INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest
 		ADDED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:15:5-67
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:16:5-67
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:16:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:4:22-64
 application
@@ -94,20 +153,70 @@ MERGED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xm
 MERGED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:6:5-25:19
 MERGED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4d7be7d64c6c19c2d88ccdef13e5fa77/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4d7be7d64c6c19c2d88ccdef13e5fa77/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b8286ed28b50483d1bfadc3ffa43e8ca/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b8286ed28b50483d1bfadc3ffa43e8ca/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2ef1c0916f1ce32aa1abddcdea1fbe34/soloader-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2ef1c0916f1ce32aa1abddcdea1fbe34/soloader-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f3128affa7000c088d176285d7f5681f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f3128affa7000c088d176285d7f5681f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/02df220f8c1d7cb41dd5202c1567d99c/annotation-0.8.2/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/02df220f8c1d7cb41dd5202c1567d99c/annotation-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-core:17.4.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5426419deaf391d6354ba2d4f6d45665/firebase-core-17.4.4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.4.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5426419deaf391d6354ba2d4f6d45665/firebase-core-17.4.4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2544f82156912b4eab074112b8e02bc0/firebase-analytics-17.5.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2544f82156912b4eab074112b8e02bc0/firebase-analytics-17.5.0/AndroidManifest.xml:7:5-20
+MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:11:5-20
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:48:5-120:19
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:48:5-120:19
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/038f038599d98c2ffed60f4c0f9d8a37/soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/038f038599d98c2ffed60f4c0f9d8a37/soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6af0048dd5d581d19450d87e1134248c/play-services-measurement-sdk-17.5.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6af0048dd5d581d19450d87e1134248c/play-services-measurement-sdk-17.5.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:22:5-43:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cf58a84e095dd169904469f8a02fea73/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cf58a84e095dd169904469f8a02fea73/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2846cc18407a222e0e1ac2038eff4554/play-services-measurement-base-17.5.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2846cc18407a222e0e1ac2038eff4554/play-services-measurement-base-17.5.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f1103622f61bc0d569140046f16294b1/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f1103622f61bc0d569140046f16294b1/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bba2b9d8a2510bd898831989366219a/jetified-play-services-location-15.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bba2b9d8a2510bd898831989366219a/jetified-play-services-location-15.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c808ff012612bc845f1076244bc09f9a/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c808ff012612bc845f1076244bc09f9a/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/073b328cf8456d1230f4083c517c7195/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/073b328cf8456d1230f4083c517c7195/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01b7de67393feec2c368611bad1bb91a/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01b7de67393feec2c368611bad1bb91a/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/26a9ff7613e7ed81956097ca37119707/play-services-places-placereport-15.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/26a9ff7613e7ed81956097ca37119707/play-services-places-placereport-15.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0b9c3d4161ee580be8a282ec5c15c6a/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0b9c3d4161ee580be8a282ec5c15c6a/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d5e0f2a63316408633c4d8155ad81c75/annotation-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d5e0f2a63316408633c4d8155ad81c75/annotation-0.8.2/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:8:7-39
 		ADDED from /Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:8:7-39
@@ -166,14 +275,22 @@ MERGED from [:react-native-video] /Users/ducena/Desktop/DemoRN/node_modules/reac
 MERGED from [:react-native-video] /Users/ducena/Desktop/DemoRN/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/ducena/Desktop/DemoRN/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/ducena/Desktop/DemoRN/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4c1b6740f2699ae829ed5245bc5d0c29/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4c1b6740f2699ae829ed5245bc5d0c29/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75140fc5841194e40951e87db9b557fe/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75140fc5841194e40951e87db9b557fe/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1e58665674e9abcc885a67c08c7040fe/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1e58665674e9abcc885a67c08c7040fe/flipper-network-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5f3966b71a35c1421efc270bf449fc40/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5f3966b71a35c1421efc270bf449fc40/flipper-fresco-plugin-0.33.1/AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-firebase_app] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/033202e5710b066ff2735ece02396b17/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/033202e5710b066ff2735ece02396b17/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:17.4.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5426419deaf391d6354ba2d4f6d45665/firebase-core-17.4.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.4.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5426419deaf391d6354ba2d4f6d45665/firebase-core-17.4.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2544f82156912b4eab074112b8e02bc0/firebase-analytics-17.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2544f82156912b4eab074112b8e02bc0/firebase-analytics-17.5.0/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-art] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-art] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_art] /Users/ducena/Desktop/DemoRN/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -184,98 +301,176 @@ MERGED from [:react-native-gesture-handler] /Users/ducena/Desktop/DemoRN/node_mo
 MERGED from [:react-native-gesture-handler] /Users/ducena/Desktop/DemoRN/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-localize] /Users/ducena/Desktop/DemoRN/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-localize] /Users/ducena/Desktop/DemoRN/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-onesignal] /Users/ducena/Desktop/DemoRN/node_modules/react-native-onesignal/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-onesignal] /Users/ducena/Desktop/DemoRN/node_modules/react-native-onesignal/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-reanimated] /Users/ducena/Desktop/DemoRN/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /Users/ducena/Desktop/DemoRN/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-safe-area-context] /Users/ducena/Desktop/DemoRN/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] /Users/ducena/Desktop/DemoRN/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/ducena/Desktop/DemoRN/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /Users/ducena/Desktop/DemoRN/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4d7be7d64c6c19c2d88ccdef13e5fa77/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4d7be7d64c6c19c2d88ccdef13e5fa77/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6bb482d4edfb8945df7454050b78aa75/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6bb482d4edfb8945df7454050b78aa75/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b8286ed28b50483d1bfadc3ffa43e8ca/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b8286ed28b50483d1bfadc3ffa43e8ca/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7641105dea446ae5537c60dc45dc7187/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7641105dea446ae5537c60dc45dc7187/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e533381761856b8520e1b828230a7177/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
-MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e533381761856b8520e1b828230a7177/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
-MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f09c903ffb3bba4651d8eb0d589b8c28/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f09c903ffb3bba4651d8eb0d589b8c28/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/140b6e767445ecbd595a93bf2be69720/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/140b6e767445ecbd595a93bf2be69720/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/ce4f9537e8cc7fb08472508f2b5b43b0/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/ce4f9537e8cc7fb08472508f2b5b43b0/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f2bf713e218183c457b42a259f41558c/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f2bf713e218183c457b42a259f41558c/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/640602193e9b13554b35979b0839c23d/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/640602193e9b13554b35979b0839c23d/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1bd0c5f7c73feca3508db3a96423e9fd/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1bd0c5f7c73feca3508db3a96423e9fd/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/34b9f944e68c8c013aadc0afa91cfdb0/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/34b9f944e68c8c013aadc0afa91cfdb0/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5745c68994c278f4f440fe04eb2c6a77/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5745c68994c278f4f440fe04eb2c6a77/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d23f5a8c0bfad9f19edcd7b40c306b7d/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d23f5a8c0bfad9f19edcd7b40c306b7d/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2ef1c0916f1ce32aa1abddcdea1fbe34/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2ef1c0916f1ce32aa1abddcdea1fbe34/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bfb36a8a02a6b71b49ca7ec649145b26/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bfb36a8a02a6b71b49ca7ec649145b26/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/699bc310780b1730bce8fe271ffeca8b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/699bc310780b1730bce8fe271ffeca8b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/af19d2bf9efbba5c87d98162386fe6bd/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/af19d2bf9efbba5c87d98162386fe6bd/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/817fc0f1c5e4ae5271bca4e2db3eccfc/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/817fc0f1c5e4ae5271bca4e2db3eccfc/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/df075d1e0ebaa8f20062e116464b1eeb/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/df075d1e0ebaa8f20062e116464b1eeb/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2dd52bdeda96a748df5d7e83cece6c38/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2dd52bdeda96a748df5d7e83cece6c38/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/863b030a4ef24c5e89f12cd832de155e/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/863b030a4ef24c5e89f12cd832de155e/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7e3b4c2f83e256517b094f844ce7d668/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7e3b4c2f83e256517b094f844ce7d668/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/63dca38f6832352d0414ad7faf5de168/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/63dca38f6832352d0414ad7faf5de168/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4677d8a5382c107f6965fb7455600737/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4677d8a5382c107f6965fb7455600737/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2fe66d8bec3c90b690bace4d7b7b6157/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2fe66d8bec3c90b690bace4d7b7b6157/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bbb72600245c24a4fed81f14e5302b4/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bbb72600245c24a4fed81f14e5302b4/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/ed5a9132108c5b2ae9625fd37b95cb34/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/ed5a9132108c5b2ae9625fd37b95cb34/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01d333055a983e736e0a5fac950ffa8f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01d333055a983e736e0a5fac950ffa8f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f3128affa7000c088d176285d7f5681f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f3128affa7000c088d176285d7f5681f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ef4cf53c2e69d9a48297aca6f06a492/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ef4cf53c2e69d9a48297aca6f06a492/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cb34feab5db2b919c5bcf32eec0920cb/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cb34feab5db2b919c5bcf32eec0920cb/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f64c8351ef0c9a7a800019d28185706c/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f64c8351ef0c9a7a800019d28185706c/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1162dfc4708142e2976ba251e87dc077/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1162dfc4708142e2976ba251e87dc077/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/69ba81d17fd1c26c75281615add0554c/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/69ba81d17fd1c26c75281615add0554c/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/df65787e67fe4b4bc0635deed9695797/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/df65787e67fe4b4bc0635deed9695797/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bc452342bfee356d6b01786353f9367d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bc452342bfee356d6b01786353f9367d/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/61b36bcd44c689e23dd0e5a9c933fba0/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/61b36bcd44c689e23dd0e5a9c933fba0/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/02df220f8c1d7cb41dd5202c1567d99c/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/02df220f8c1d7cb41dd5202c1567d99c/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e47e313b0cf7341a24dbef499a8f00e4/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e47e313b0cf7341a24dbef499a8f00e4/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:4:5-44
+MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:4:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75ffac8a8d3ada200c9b1a3ede22ea0c/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75ffac8a8d3ada200c9b1a3ede22ea0c/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/97a11c9da00543b346f331330f30e773/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/97a11c9da00543b346f331330f30e773/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c101a907d8af4b3a60bc3b9ca0f7c0ce/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c101a907d8af4b3a60bc3b9ca0f7c0ce/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c6bbccf3146e48895185241b0485752/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c6bbccf3146e48895185241b0485752/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d04b9cc5a5b39c9c65f368055b649c24/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d04b9cc5a5b39c9c65f368055b649c24/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/226a635a9979a2b1c5b35817da50680d/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/226a635a9979a2b1c5b35817da50680d/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/503d25c366d5055f4e521092de2ada01/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/503d25c366d5055f4e521092de2ada01/stetho-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/aa323670f327a87f7a71c8199649a283/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/aa323670f327a87f7a71c8199649a283/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4a33c5790b4f7209e2f20f8588d3f146/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4a33c5790b4f7209e2f20f8588d3f146/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c2bd63ffd5e16cb5003bae09a78fc07/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c2bd63ffd5e16cb5003bae09a78fc07/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/17b92ee5052fc3147ffb3e0956ee6cbf/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/17b92ee5052fc3147ffb3e0956ee6cbf/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9d1c56d5ea7c25c26c02a6b19b4d3219/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9d1c56d5ea7c25c26c02a6b19b4d3219/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6d25c7b202aa49fd1987b70fc603c85/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6d25c7b202aa49fd1987b70fc603c85/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7acdf2d52656438d7cc8267efeea922b/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7acdf2d52656438d7cc8267efeea922b/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/038f038599d98c2ffed60f4c0f9d8a37/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/038f038599d98c2ffed60f4c0f9d8a37/soloader-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6af0048dd5d581d19450d87e1134248c/play-services-measurement-sdk-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6af0048dd5d581d19450d87e1134248c/play-services-measurement-sdk-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5a3d594331faf4e61cc3778e4a0e5a71/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5a3d594331faf4e61cc3778e4a0e5a71/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/85d95aced43f581f8fb73d10aca4956c/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/85d95aced43f581f8fb73d10aca4956c/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5cab2b55ac3ec613df7b5e95620f039d/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5cab2b55ac3ec613df7b5e95620f039d/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cf58a84e095dd169904469f8a02fea73/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cf58a84e095dd169904469f8a02fea73/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2846cc18407a222e0e1ac2038eff4554/play-services-measurement-base-17.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2846cc18407a222e0e1ac2038eff4554/play-services-measurement-base-17.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f1103622f61bc0d569140046f16294b1/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f1103622f61bc0d569140046f16294b1/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8fe566e382bc8b7398776b20904f0511/firebase-installations-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8fe566e382bc8b7398776b20904f0511/firebase-installations-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/eb169740c3f0387f0c069f7a8bde663e/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/eb169740c3f0387f0c069f7a8bde663e/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a431e874fba4e0b66ee4dc381c2039a0/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a431e874fba4e0b66ee4dc381c2039a0/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bba2b9d8a2510bd898831989366219a/jetified-play-services-location-15.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5bba2b9d8a2510bd898831989366219a/jetified-play-services-location-15.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c808ff012612bc845f1076244bc09f9a/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c808ff012612bc845f1076244bc09f9a/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/073b328cf8456d1230f4083c517c7195/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/073b328cf8456d1230f4083c517c7195/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01b7de67393feec2c368611bad1bb91a/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/01b7de67393feec2c368611bad1bb91a/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/26a9ff7613e7ed81956097ca37119707/play-services-places-placereport-15.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/26a9ff7613e7ed81956097ca37119707/play-services-places-placereport-15.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9d254e2367a6f79fa6dbe560a87bed0f/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9d254e2367a6f79fa6dbe560a87bed0f/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/def07a52a797a4d9c2659101768981b1/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/def07a52a797a4d9c2659101768981b1/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cb20f7f187a12169dd614af398a54d53/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/cb20f7f187a12169dd614af398a54d53/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2f08ea65390a6e1465f52edc16eedd96/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2f08ea65390a6e1465f52edc16eedd96/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4b19a2b9239b860ded34a2368cf2a171/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4b19a2b9239b860ded34a2368cf2a171/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9b949ce9ff4bf2a4b47f1577973c101b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/9b949ce9ff4bf2a4b47f1577973c101b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8ec73185ba434e51448ee82aa7d51ec4/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8ec73185ba434e51448ee82aa7d51ec4/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0d9dd610c88cd4f4b4b47031e4cdbad/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0d9dd610c88cd4f4b4b47031e4cdbad/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e1569ea0b3654818698447f147144b3f/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e1569ea0b3654818698447f147144b3f/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/da4bdc7ce97f484d7182399445a0600b/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/da4bdc7ce97f484d7182399445a0600b/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/369b2e8c1987b0bf69b60cb70c90148d/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/369b2e8c1987b0bf69b60cb70c90148d/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1001885feaefb70409c8035550a275c1/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1001885feaefb70409c8035550a275c1/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e629c9478969f43d94c5bd1dc44c9738/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e629c9478969f43d94c5bd1dc44c9738/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/902a10383468f6e94bbc36a7cbea474c/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/902a10383468f6e94bbc36a7cbea474c/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/466e9cae0523684ce889a49ace55301a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/466e9cae0523684ce889a49ace55301a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c12f27c608cd021896300af2b398757e/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c12f27c608cd021896300af2b398757e/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6b3cb5aa6b55642b65db95eb88750fe0/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6b3cb5aa6b55642b65db95eb88750fe0/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0b9c3d4161ee580be8a282ec5c15c6a/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c0b9c3d4161ee580be8a282ec5c15c6a/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/95f4f85e44e4d76a2b3ec6ccfa73dd2f/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/95f4f85e44e4d76a2b3ec6ccfa73dd2f/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0a16f2e030b724888a0a34a5a95fb42d/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0a16f2e030b724888a0a34a5a95fb42d/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c43b9d8bf5f9feaf71b3467ec7dddf11/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c43b9d8bf5f9feaf71b3467ec7dddf11/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/29086189513dad1f91eb3f0f3cd85cbc/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/29086189513dad1f91eb3f0f3cd85cbc/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e4cef62ed9567c79b4047c524beca1f1/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e4cef62ed9567c79b4047c524beca1f1/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/962cad80c3a162969cef666ce8f37320/firebase-encoders-json-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/962cad80c3a162969cef666ce8f37320/firebase-encoders-json-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2e66d8a9551feaf2dbbdbb83076e93fb/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/2e66d8a9551feaf2dbbdbb83076e93fb/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/45daeba57ceeae00f5847ad66de28793/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/45daeba57ceeae00f5847ad66de28793/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c6cfcbd44ef74cfd70d394f69ebc3c4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c6cfcbd44ef74cfd70d394f69ebc3c4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/dcfa8b1e6819b87f149d4a7fe837081f/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/dcfa8b1e6819b87f149d4a7fe837081f/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ea70d7ded15c9325096438b11e69709/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1ea70d7ded15c9325096438b11e69709/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d5e0f2a63316408633c4d8155ad81c75/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d5e0f2a63316408633c4d8155ad81c75/annotation-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a468a034795489f3138ce28a12ea4e0e/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/a468a034795489f3138ce28a12ea4e0e/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/41cafb0dc2ef2d2a469c2e7a2c7bc339/transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/41cafb0dc2ef2d2a469c2e7a2c7bc339/transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -289,9 +484,9 @@ ADDED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xm
 	android:name
 		ADDED from /Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+		ADDED from [com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
 ADDED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
@@ -308,3 +503,447 @@ ADDED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/rea
 		ADDED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
 	android:name
 		ADDED from [:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:7:5-9:47
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:9:9-44
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:8:9-63
+permission#com.demorn.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:7:5-9:47
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:9:9-44
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:8:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:11:22-76
+uses-permission#com.demorn.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:11:22-76
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:17:5-82
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:17:22-79
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:18:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:18:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:23:5-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:23:22-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e6f6914a1e2a23b17d881a1f78c1dfae/play-services-measurement-sdk-api-17.5.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:24:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:29:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:29:22-78
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:31:5-86
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:31:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:32:5-87
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:32:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:33:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:34:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:35:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:35:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:36:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:36:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:37:5-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:37:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:38:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:38:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:39:5-91
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:39:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:40:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:40:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:41:5-93
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:41:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:43:5-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:43:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:44:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:44:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:45:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:45:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:46:5-89
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:46:22-86
+meta-data#onesignal_app_id
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:49:9-51:51
+	android:value
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:51:13-48
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:50:13-44
+meta-data#onesignal_google_project_number
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:53:9-55:70
+	android:value
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:55:13-67
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:54:13-59
+receiver#com.onesignal.GcmBroadcastReceiver
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:57:9-67:20
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:59:13-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:58:13-62
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:62:13-66:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:62:28-50
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.demorn
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:62:13-66:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:62:28-50
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:63:17-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:63:25-78
+category#${applicationId}
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:65:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:65:27-58
+category#com.demorn
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:65:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:65:27-58
+receiver#com.onesignal.NotificationOpenedReceiver
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:68:9-77
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:68:19-74
+service#com.onesignal.HmsMessageServiceOneSignal
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:70:9-76:19
+	android:exported
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:72:13-37
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:71:13-68
+intent-filter#action:name:com.huawei.push.action.MESSAGING_EVENT
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:73:13-75:29
+action#com.huawei.push.action.MESSAGING_EVENT
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:74:17-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:74:25-78
+activity#com.onesignal.NotificationOpenedActivityHMS
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:78:9-84:20
+	android:theme
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:80:13-72
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:79:13-71
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:81:13-83:29
+action#android.intent.action.VIEW
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:82:17-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:82:25-66
+service#com.onesignal.GcmIntentService
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:86:9-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:86:18-63
+service#com.onesignal.GcmIntentJobService
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:87:9-89:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:89:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:88:13-61
+service#com.onesignal.RestoreJobService
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:90:9-92:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:92:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:91:13-59
+service#com.onesignal.RestoreKickoffJobService
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:93:9-95:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:95:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:94:13-66
+service#com.onesignal.SyncService
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:96:9-98:43
+	android:stopWithTask
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:98:13-40
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:97:13-53
+service#com.onesignal.SyncJobService
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:99:9-101:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:101:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:100:13-56
+activity#com.onesignal.PermissionsActivity
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:103:9-105:75
+	android:theme
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:105:13-72
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:104:13-61
+service#com.onesignal.NotificationRestoreService
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:107:9-76
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:107:18-73
+receiver#com.onesignal.BootUpReceiver
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:109:9-114:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:109:19-62
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:110:13-113:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:111:17-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:111:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:112:17-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:112:25-79
+receiver#com.onesignal.UpgradeReceiver
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:115:9-119:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:115:19-63
+intent-filter#action:name:android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:116:13-118:29
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:117:17-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:117:25-81
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a297fbf69a0180bcb476f0b3c0abcd/play-services-measurement-impl-17.5.0/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:40:13-87
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:36:9-42:19
+MERGED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:36:9-42:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:29:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:28:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:31:17-139
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:28:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:31:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:30:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:29:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:32:13-34:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:32:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:33:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:33:25-75
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:39:13-41:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:41:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:40:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:41:13-43:29
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58

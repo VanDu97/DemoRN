@@ -14,73 +14,474 @@
 12    <uses-permission android:name="android.permission.INTERNET" />
 12-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:4:5-67
 12-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:4:22-64
-13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd07a4b9da9c1a0f973c6a8b3062d4cf/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
-14
-15    <application
-15-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:6:5-25:19
-16        android:name="com.demorn.MainApplication"
-16-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:7:7-38
-17        android:allowBackup="false"
-17-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:11:7-34
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
-20-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:9:7-41
-21        android:label="@string/app_name"
-21-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:8:7-39
-22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:10:7-52
-23        android:theme="@style/AppTheme"
-23-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:12:7-38
-24        android:usesCleartextTraffic="true" >
-24-->/Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml:7:18-53
-25        <activity
-25-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:13:7-23:18
-26            android:name="com.demorn.MainActivity"
-26-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:14:9-37
-27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-27-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:16:9-86
-28            android:label="@string/app_name"
-28-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:15:9-41
-29            android:launchMode="singleTask"
-29-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:17:9-40
-30            android:windowSoftInputMode="adjustResize" >
-30-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:18:9-51
-31            <intent-filter>
-31-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:19:9-22:25
-32                <action android:name="android.intent.action.MAIN" />
-32-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:20:13-65
-32-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:20:21-62
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:21:13-73
-34-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:21:23-70
-35            </intent-filter>
-36        </activity>
-37        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-37-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:24:7-84
-37-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:24:17-81
-38
-39        <provider
-39-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
-40            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-40-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
-41            android:authorities="com.demorn.fileprovider"
-41-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
-42            android:exported="false"
-42-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
-43            android:grantUriPermissions="true" >
-43-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
-44            <meta-data
-44-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
-45                android:name="android.support.FILE_PROVIDER_PATHS"
-45-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
-46                android:resource="@xml/file_provider_paths" />
-46-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
-47        </provider>
-48    </application>
-49
-50</manifest>
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7c1675cd57af9d65990f2ed8601fdbf0/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+14    <permission
+14-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:7:5-9:47
+15        android:name="com.demorn.permission.C2D_MESSAGE"
+15-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:8:9-63
+16        android:protectionLevel="signature" />
+16-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:9:9-44
+17
+18    <uses-permission android:name="com.demorn.permission.C2D_MESSAGE" />
+18-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:11:5-79
+18-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+19-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:17:5-82
+19-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:17:22-79
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:18:5-68
+20-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:18:22-65
+21    <!--
+22 Required so the device vibrates on receiving a push notification.
+23         Vibration settings of the device still apply.
+24    -->
+25    <uses-permission android:name="android.permission.VIBRATE" />
+25-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:23:5-66
+25-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:23:22-63
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:24:5-79
+26-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:24:22-76
+27    <!--
+28 Use to restore notifications the user hasn't interacted with.
+29         They could be missed notifications if the user reboots their device if this isn't in place.
+30    -->
+31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+31-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:29:5-81
+31-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:29:22-78
+32    <!-- Samsung -->
+33    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+33-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:31:5-86
+33-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:31:22-83
+34    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+34-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:32:5-87
+34-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:32:22-84
+35    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+35-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:33:5-81
+35-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:33:22-78
+36    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+36-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:34:5-83
+36-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:34:22-80
+37    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+37-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:35:5-88
+37-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:35:22-85
+38    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+38-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:36:5-92
+38-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:36:22-89
+39    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+39-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:37:5-84
+39-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:37:22-81
+40    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+40-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:38:5-83
+40-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:38:22-80
+41    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+41-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:39:5-91
+41-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:39:22-88
+42    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+42-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:40:5-92
+42-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:40:22-89
+43    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+43-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:41:5-93
+43-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:41:22-90
+44    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+44-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:42:5-73
+44-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:42:22-70
+45    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+45-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:43:5-82
+45-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:43:22-79
+46    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+46-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:44:5-83
+46-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:44:22-80
+47    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+47-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:45:5-88
+47-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:45:22-85
+48    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+48-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:46:5-89
+48-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:46:22-86
+49    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+49-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:26:5-110
+49-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:26:22-107
+50
+51    <application
+51-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:6:5-25:19
+52        android:name="com.demorn.MainApplication"
+52-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:7:7-38
+53        android:allowBackup="false"
+53-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:11:7-34
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:24:18-86
+55        android:debuggable="true"
+56        android:icon="@mipmap/ic_launcher"
+56-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:9:7-41
+57        android:label="@string/app_name"
+57-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:8:7-39
+58        android:roundIcon="@mipmap/ic_launcher_round"
+58-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:10:7-52
+59        android:theme="@style/AppTheme"
+59-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:12:7-38
+60        android:usesCleartextTraffic="true" >
+60-->/Users/ducena/Desktop/DemoRN/android/app/src/debug/AndroidManifest.xml:7:18-53
+61        <activity
+61-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:13:7-23:18
+62            android:name="com.demorn.MainActivity"
+62-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:14:9-37
+63            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+63-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:16:9-86
+64            android:label="@string/app_name"
+64-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:15:9-41
+65            android:launchMode="singleTask"
+65-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:17:9-40
+66            android:windowSoftInputMode="adjustResize" >
+66-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:18:9-51
+67            <intent-filter>
+67-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:19:9-22:25
+68                <action android:name="android.intent.action.MAIN" />
+68-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:20:13-65
+68-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:20:21-62
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:21:13-73
+70-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:21:23-70
+71            </intent-filter>
+72        </activity>
+73        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+73-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:24:7-84
+73-->/Users/ducena/Desktop/DemoRN/android/app/src/main/AndroidManifest.xml:24:17-81
+74
+75        <provider
+75-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+76            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+76-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+77            android:authorities="com.demorn.fileprovider"
+77-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+78            android:exported="false"
+78-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+79            android:grantUriPermissions="true" >
+79-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+80            <meta-data
+80-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+82                android:resource="@xml/file_provider_paths" />
+82-->[:react-native-webview] /Users/ducena/Desktop/DemoRN/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+83        </provider>
+84
+85        <meta-data
+85-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:49:9-51:51
+86            android:name="onesignal_app_id"
+86-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:50:13-44
+87            android:value="" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+87-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:51:13-48
+88        <meta-data
+88-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:53:9-55:70
+89            android:name="onesignal_google_project_number"
+89-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:54:13-59
+90            android:value="str:REMOTE" />
+90-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:55:13-67
+91
+92        <receiver
+92-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:57:9-67:20
+93            android:name="com.onesignal.GcmBroadcastReceiver"
+93-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:58:13-62
+94            android:permission="com.google.android.c2dm.permission.SEND" >
+94-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:59:13-73
+95
+96            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+97            <intent-filter android:priority="999" >
+97-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:62:13-66:29
+97-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:62:28-50
+98                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+98-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:63:17-81
+98-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:63:25-78
+99
+100                <category android:name="com.demorn" />
+100-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:65:17-61
+100-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:65:27-58
+101            </intent-filter>
+102        </receiver>
+103        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+103-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:68:9-77
+103-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:68:19-74
+104
+105        <service
+105-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:70:9-76:19
+106            android:name="com.onesignal.HmsMessageServiceOneSignal"
+106-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:71:13-68
+107            android:exported="false" >
+107-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:72:13-37
+108            <intent-filter>
+108-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:73:13-75:29
+109                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+109-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:74:17-81
+109-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:74:25-78
+110            </intent-filter>
+111        </service>
+112
+113        <activity
+113-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:78:9-84:20
+114            android:name="com.onesignal.NotificationOpenedActivityHMS"
+114-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:79:13-71
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+115-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:80:13-72
+116            <intent-filter>
+116-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:81:13-83:29
+117                <action android:name="android.intent.action.VIEW" />
+117-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:82:17-69
+117-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:82:25-66
+118            </intent-filter>
+119        </activity>
+120
+121        <service android:name="com.onesignal.GcmIntentService" />
+121-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:86:9-66
+121-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:86:18-63
+122        <service
+122-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:87:9-89:72
+123            android:name="com.onesignal.GcmIntentJobService"
+123-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:88:13-61
+124            android:permission="android.permission.BIND_JOB_SERVICE" />
+124-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:89:13-69
+125        <service
+125-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:90:9-92:72
+126            android:name="com.onesignal.RestoreJobService"
+126-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:91:13-59
+127            android:permission="android.permission.BIND_JOB_SERVICE" />
+127-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:92:13-69
+128        <service
+128-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:93:9-95:72
+129            android:name="com.onesignal.RestoreKickoffJobService"
+129-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:94:13-66
+130            android:permission="android.permission.BIND_JOB_SERVICE" />
+130-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:95:13-69
+131        <service
+131-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:96:9-98:43
+132            android:name="com.onesignal.SyncService"
+132-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:97:13-53
+133            android:stopWithTask="true" />
+133-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:98:13-40
+134        <service
+134-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:99:9-101:72
+135            android:name="com.onesignal.SyncJobService"
+135-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:100:13-56
+136            android:permission="android.permission.BIND_JOB_SERVICE" />
+136-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:101:13-69
+137
+138        <activity
+138-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:103:9-105:75
+139            android:name="com.onesignal.PermissionsActivity"
+139-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:104:13-61
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+140-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:105:13-72
+141
+142        <service android:name="com.onesignal.NotificationRestoreService" />
+142-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:107:9-76
+142-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:107:18-73
+143
+144        <receiver android:name="com.onesignal.BootUpReceiver" >
+144-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:109:9-114:20
+144-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:109:19-62
+145            <intent-filter>
+145-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:110:13-113:29
+146                <action android:name="android.intent.action.BOOT_COMPLETED" />
+146-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:111:17-79
+146-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:111:25-76
+147                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+147-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:112:17-82
+147-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:112:25-79
+148            </intent-filter>
+149        </receiver>
+150        <receiver android:name="com.onesignal.UpgradeReceiver" >
+150-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:115:9-119:20
+150-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:115:19-63
+151            <intent-filter>
+151-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:116:13-118:29
+152                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+152-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:117:17-84
+152-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:117:25-81
+153            </intent-filter>
+154        </receiver>
+155        <receiver
+155-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:29:9-33:20
+156            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+156-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:30:13-85
+157            android:enabled="true"
+157-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:31:13-35
+158            android:exported="false" >
+158-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:32:13-37
+159        </receiver>
+160
+161        <service
+161-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:35:9-38:40
+162            android:name="com.google.android.gms.measurement.AppMeasurementService"
+162-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:36:13-84
+163            android:enabled="true"
+163-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:37:13-35
+164            android:exported="false" />
+164-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:38:13-37
+165        <service
+165-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:39:9-43:72
+166            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+166-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:40:13-87
+167            android:enabled="true"
+167-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:41:13-35
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:42:13-37
+169            android:permission="android.permission.BIND_JOB_SERVICE" />
+169-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/06182c368a1aa5f6486c310cf2125ac9/play-services-measurement-17.5.0/AndroidManifest.xml:43:13-69
+170        <service
+170-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:27:9-33:19
+171            android:name="com.google.firebase.components.ComponentDiscoveryService"
+171-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:28:13-84
+172            android:directBootAware="true"
+172-->[com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+173            android:exported="false" >
+173-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:29:13-37
+174            <meta-data
+174-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:30:13-32:85
+175                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+175-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:31:17-139
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/fd38f589b0141c1f8ece651ddc0ae452/play-services-measurement-api-17.5.0/AndroidManifest.xml:32:17-82
+177            <meta-data
+177-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:39:13-41:85
+178                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+178-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:40:17-119
+179                android:value="com.google.firebase.components.ComponentRegistrar" />
+179-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:41:17-82
+180            <meta-data
+180-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+181                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+181-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+182                android:value="com.google.firebase.components.ComponentRegistrar" />
+182-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/35e5282f3a648f103a0948a77769d4c1/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+183            <meta-data
+183-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:32:13-34:85
+184                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+184-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:33:17-96
+185                android:value="com.google.firebase.components.ComponentRegistrar" />
+185-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:34:17-82
+186            <meta-data
+186-->[com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
+187                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+187-->[com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+188                android:value="com.google.firebase.components.ComponentRegistrar" />
+188-->[com.google.firebase:firebase-installations:16.3.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/275c448edeb93f8013e5819294b42ff4/firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
+189        </service>
+190        <!--
+191             FirebaseMessagingService performs security checks at runtime,
+192             but set to not exported to explicitly avoid allowing another app to call it.
+193        -->
+194        <service
+194-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:28:9-35:19
+195            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+195-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:29:13-82
+196            android:directBootAware="true"
+196-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:30:13-43
+197            android:exported="false" >
+197-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:31:13-37
+198            <intent-filter android:priority="-500" >
+198-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:32:13-34:29
+198-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:32:28-51
+199                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+199-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:33:17-78
+199-->[com.google.firebase:firebase-messaging:20.2.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/8e2d6dc48b3f34ae14c36c8be50bb803/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:33:25-75
+200            </intent-filter>
+201        </service>
+202        <service
+202-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+203            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+203-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+204            android:exported="false" >
+204-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+205            <meta-data
+205-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+206                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+206-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+207                android:value="cct" />
+207-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/92a35d553af6ab22420e54ef2d40a07a/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+208        </service>
+209        <service
+209-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+210            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+210-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+211            android:exported="false"
+211-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+212            android:permission="android.permission.BIND_JOB_SERVICE" >
+212-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+213        </service>
+214
+215        <receiver
+215-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+216            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+216-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+217            android:exported="false" />
+217-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d3960742fa34de64eb8c1e229de69f4b/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+218
+219        <activity
+219-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+220            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+220-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+221            android:excludeFromRecents="true"
+221-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+222            android:exported="false"
+222-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+223            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+223-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+224        <!--
+225            Service handling Google Sign-In user revocation. For apps that do not integrate with
+226            Google Sign-In, this service will never be started.
+227        -->
+228        <service
+228-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+229            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+229-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+230            android:exported="true"
+230-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+231            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+231-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ducena/.gradle/caches/transforms-2/files-2.1/6f9a7e3776ccf4a657e78df6de45aa1f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+232
+233        <receiver
+233-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:37:9-44:20
+234            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+234-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:38:13-78
+235            android:exported="true"
+235-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:39:13-36
+236            android:permission="com.google.android.c2dm.permission.SEND" >
+236-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:40:13-73
+237            <intent-filter>
+237-->[com.google.firebase:firebase-iid:20.2.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/571a0fdfc186d4aef16101a02c8ad12f/firebase-iid-20.2.3/AndroidManifest.xml:41:13-43:29
+238                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+238-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:63:17-81
+238-->[com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:63:25-78
+239            </intent-filter>
+240        </receiver>
+241
+242        <provider
+242-->[com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+243            android:name="com.google.firebase.provider.FirebaseInitProvider"
+243-->[com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+244            android:authorities="com.demorn.firebaseinitprovider"
+244-->[com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+245            android:exported="false"
+245-->[com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+246            android:initOrder="100" />
+246-->[com.google.firebase:firebase-common:19.3.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3cfdcc1aa73f6b5b14217484b17efbf/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+247
+248        <activity
+248-->[com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+249            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+249-->[com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+250            android:exported="false"
+250-->[com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+251            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+251-->[com.google.android.gms:play-services-base:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/b3054f42559985a7fdb6e5f5ff7e6abb/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+252
+253        <meta-data
+253-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+254            android:name="com.google.android.gms.version"
+254-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+255            android:value="@integer/google_play_services_version" />
+255-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/7da4843c66e933e06e21a1e98b13197e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+256    </application>
+257
+258</manifest>

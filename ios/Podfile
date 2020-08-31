@@ -85,6 +85,7 @@ target 'DemoRN' do
 
   pod 'react-native-video', :path => '../node_modules/react-native-video/react-native-video.podspec'
 
+
   target 'DemoRNTests' do
     inherit! :complete
     # Pods for testing

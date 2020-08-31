@@ -15,10 +15,14 @@ import java.util.ArrayList;
 import com.reactnativecommunity.art.ARTPackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-firebase/app
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-localize
 import com.reactcommunity.rnlocalize.RNLocalizePackage;
+// react-native-onesignal
+import com.geektime.rnonesignalandroid.ReactNativeOneSignalPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -78,8 +82,10 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new ARTPackage(),
       new RNCMaskedViewPackage(),
+      new ReactNativeFirebaseAppPackage(),
       new RNGestureHandlerPackage(),
       new RNLocalizePackage(),
+      new ReactNativeOneSignalPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
