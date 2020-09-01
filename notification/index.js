@@ -10,7 +10,7 @@ export default class App extends Component {
     OneSignal.setLogLevel(6, 0);
 
     // Replace 'YOUR_ONESIGNAL_APP_ID' with your OneSignal App ID.
-    OneSignal.init("34537544-440d-4543-82f5-301d007bc5e5", {
+    OneSignal.init("77000e3e-fc40-4363-a8d6-d11979ed48f7", {
       kOSSettingsKeyAutoPrompt: false,
       kOSSettingsKeyInAppLaunchURL: false,
       kOSSettingsKeyInFocusDisplayOption: 2,

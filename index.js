@@ -40,5 +40,6 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./animation/animationcodedaily/Easings";
 //import App from "./animation/animationcodedaily/KittenCard";
 // import App from "./animation/DiffClamps";
-import App from "./notification/index";
+// import App from "./notification/index";
+import App from "./Performance/index";
 AppRegistry.registerComponent(appName, () => App);
