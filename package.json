@@ -20,6 +20,7 @@
     "@react-navigation/native": "^5.5.0",
     "@react-navigation/stack": "^5.4.1",
     "i18n-js": "^3.7.0",
+    "lodash": "^4.17.20",
     "lodash.memoize": "^4.1.2",
     "moment": "^2.26.0",
     "moments": "0.0.2",
