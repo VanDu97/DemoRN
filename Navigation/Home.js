@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text, Dimensions } from "react-native";
-
+import { Icon } from "react-native-elements";
 export default class Home extends Component {
   render() {
     return (
@@ -29,6 +29,13 @@ export default class Home extends Component {
             Touch Next Screen
           </Text>
         </TouchableOpacity>
+        <Icon
+          raised
+          name="heartbeat"
+          type="font-awesome"
+          color="#f50"
+          onPress={() => console.log("hello")}
+        />
       </View>
     );
   }
