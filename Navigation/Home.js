@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity, Text, Dimensions } from "react-native";
 import { Icon } from "react-native-elements";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+
 export default class Home extends Component {
   render() {
     return (
@@ -13,7 +15,7 @@ export default class Home extends Component {
       >
         <TouchableOpacity
           onPress={() => {
-            this.props.navigation.navigate("ScreenOne");
+            this.props.navigation.navigate("Settings");
           }}
           style={{
             backgroundColor: "green",

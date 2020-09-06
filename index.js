@@ -43,4 +43,5 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./notification/index";
 //import App from "./Performance/index";
 import App from "./Navigation/BottomTabs";
+//import App from "./Navigation/Home";
 AppRegistry.registerComponent(appName, () => App);

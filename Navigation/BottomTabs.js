@@ -6,10 +6,10 @@ import Home from "./Home";
 import ScreenOne from "./ScreenOne";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { Icon } from "react-native-elements";
-
-const Tab = createMaterialTopTabNavigator();
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createStackNavigator } from "@react-navigation/stack";
+//const Tab = createMaterialTopTabNavigator();
 //const Tab = createMaterialBottomTabNavigator();
-
 // function MyTabs() {
 //   return (
 //     <Tab.Navigator>
@@ -19,53 +19,65 @@ const Tab = createMaterialTopTabNavigator();
 //   );
 // }
 // const Tab = createMaterialBottomTabNavigator();
+const Stack = createStackNavigator();
 
-function MyBottomTabs() {
+function MyStack() {
   return (
     <NavigationContainer>
-      <Tab.Navigator
-        tabBarPosition="bottom"
-        tabBarOptions={{
-          showIcon: true,
-          iconStyle: {
-            alignItems: "center",
-            justifyContent: "center",
-          },
-          labelStyle: { textTransform: "none" },
-        }}
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color }) => {
-            console.log(route, focused, "1001010");
-            let iconName;
-            if (route.name === "Home") {
-              return (
-                <Icon
-                  raised
-                  name="heartbeat"
-                  type="font-awesome"
-                  color="#f50"
-                  onPress={() => console.log("hello")}
-                />
-              );
-            } else if (route.name == "Settings") {
-              return (
-                <Icon
-                  raised
-                  name="heartbeat"
-                  type="font-awesome"
-                  color="green"
-                  onPress={() => console.log("hello")}
-                />
-              );
-            }
-          },
-        })}
-      >
+      <Stack.Navigator>
         <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Settings" component={ScreenOne} />
-      </Tab.Navigator>
+        <Tab.Screen name="Settings" component={MyBottomTabs} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-export default MyBottomTabs;
+const Tab = createDrawerNavigator();
+
+function MyBottomTabs() {
+  return (
+    <Tab.Navigator
+      tabBarPosition="bottom"
+      tabBarOptions={{
+        showIcon: true,
+        iconStyle: {
+          alignItems: "center",
+          justifyContent: "center",
+        },
+        labelStyle: { textTransform: "none" },
+      }}
+      // screenOptions={({ route }) => ({
+      //   tabBarIcon: ({ focused, color }) => {
+      //     console.log(route, focused, "1001010");
+      //     let iconName;
+      //     if (route.name === "Home") {
+      //       return (
+      //         <Icon
+      //           raised
+      //           name="heartbeat"
+      //           type="font-awesome"
+      //           color="#f50"
+      //           onPress={() => console.log("hello")}
+      //         />
+      //       );
+      //     } else if (route.name == "Settings") {
+      //       return (
+      //         <Icon
+      //           raised
+      //           name="heartbeat"
+      //           type="font-awesome"
+      //           color="green"
+      //           onPress={() => console.log("hello")}
+      //         />
+      //       );
+      //     }
+      //   },
+      // })}
+    >
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Settings" component={ScreenOne} />
+    </Tab.Navigator>
+  );
+}
+
+export default MyStack;
