@@ -86,6 +86,8 @@ target 'DemoRN' do
   pod 'react-native-video', :path => '../node_modules/react-native-video/react-native-video.podspec'
 
 
+  pod 'RNSketchCanvas', :path => '../node_modules/@terrylinla/react-native-sketch-canvas'
+
   target 'DemoRNTests' do
     inherit! :complete
     # Pods for testing

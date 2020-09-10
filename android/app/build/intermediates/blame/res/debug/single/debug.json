@@ -268,6 +268,10 @@
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/res/color/mtrl_calendar_selected_range.xml"
     },
     {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_template_big_media.xml"
+    },
+    {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/color_design_box_stroke_color.xml.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/res/color/design_box_stroke_color.xml"
     },
@@ -286,6 +290,10 @@
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -508,12 +516,12 @@
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/def07a52a797a4d9c2659101768981b1/fragment-1.2.1/res/anim/fragment_open_enter.xml"
     },
     {
-        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/res/drawable-hdpi-v4/design_ic_visibility.png"
-    },
-    {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_design_ic_visibility.png.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/res/drawable-hdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/anim_fragment_fade_enter.xml.flat",
@@ -646,6 +654,10 @@
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable_btn_checkbox_unchecked_to_checked_mtrl_animation.xml.flat",
@@ -1024,6 +1036,10 @@
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_browser_actions_context_menu_row.xml.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/75ffac8a8d3ada200c9b1a3ede22ea0c/browser-1.0.0/res/layout/browser_actions_context_menu_row.xml"
     },
@@ -1098,6 +1114,10 @@
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
@@ -1404,6 +1424,10 @@
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_template_media.xml"
+    },
+    {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -1702,6 +1726,10 @@
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -2488,6 +2516,10 @@
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_template_media_custom.xml"
+    },
+    {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/xml_standalone_badge_gravity_top_start.xml.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/res/xml/standalone_badge_gravity_top_start.xml"
     },
@@ -2674,6 +2706,10 @@
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/animator_mtrl_card_state_list_anim.xml.flat",
         "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/res/animator/mtrl_card_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/res/layout/notification_template_big_media_custom.xml"
     },
     {
         "merged": "/Users/ducena/Desktop/DemoRN/android/app/build/intermediates/res/merged/debug/interpolator_mtrl_linear.xml.flat",

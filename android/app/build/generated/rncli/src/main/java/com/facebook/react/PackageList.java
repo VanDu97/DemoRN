@@ -17,6 +17,8 @@ import com.reactnativecommunity.art.ARTPackage;
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // @react-native-firebase/app
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+// @terrylinla/react-native-sketch-canvas
+import com.terrylinla.rnsketchcanvas.SketchCanvasPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-localize
@@ -33,6 +35,8 @@ import com.swmansion.rnscreens.RNScreensPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 // react-native-video
 import com.brentvatne.react.ReactVideoPackage;
+// react-native-view-shot
+import fr.greweb.reactnativeviewshot.RNViewShotPackage;
 // react-native-webview
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 
@@ -83,6 +87,7 @@ public class PackageList {
       new ARTPackage(),
       new RNCMaskedViewPackage(),
       new ReactNativeFirebaseAppPackage(),
+      new SketchCanvasPackage(),
       new RNGestureHandlerPackage(),
       new RNLocalizePackage(),
       new ReactNativeOneSignalPackage(),
@@ -91,6 +96,7 @@ public class PackageList {
       new RNScreensPackage(),
       new VectorIconsPackage(),
       new ReactVideoPackage(),
+      new RNViewShotPackage(),
       new RNCWebViewPackage()
     ));
   }

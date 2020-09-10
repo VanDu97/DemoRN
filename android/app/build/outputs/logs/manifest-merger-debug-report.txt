@@ -24,7 +24,9 @@ MERGED from [:react-native-onesignal] /Users/ducena/Desktop/DemoRN/node_modules/
 MERGED from [:react-native-reanimated] /Users/ducena/Desktop/DemoRN/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/ducena/Desktop/DemoRN/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/ducena/Desktop/DemoRN/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-view-shot] /Users/ducena/Desktop/DemoRN/node_modules/react-native-view-shot/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c634f084fec93d35d604743bc4559dd4/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:2:1-122:12
 MERGED from [androidx.browser:browser:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75ffac8a8d3ada200c9b1a3ede22ea0c/browser-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/97a11c9da00543b346f331330f30e773/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -32,6 +34,7 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ducena
 MERGED from [com.google.android.material:material:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/0e72b5add547d79a9443f1d05ad07a23/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c6bbccf3146e48895185241b0485752/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [:terrylinla_react-native-sketch-canvas] /Users/ducena/Desktop/DemoRN/node_modules/@terrylinla/react-native-sketch-canvas/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d04b9cc5a5b39c9c65f368055b649c24/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:2:1-12:12
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/226a635a9979a2b1c5b35817da50680d/flipper-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/503d25c366d5055f4e521092de2ada01/stetho-2.0.0/AndroidManifest.xml:2:1-9:12
@@ -85,6 +88,7 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ducena/.
 MERGED from [androidx.customview:customview:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/369b2e8c1987b0bf69b60cb70c90148d/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1001885feaefb70409c8035550a275c1/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e629c9478969f43d94c5bd1dc44c9738/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/902a10383468f6e94bbc36a7cbea474c/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/466e9cae0523684ce889a49ace55301a/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -309,8 +313,12 @@ MERGED from [:react-native-safe-area-context] /Users/ducena/Desktop/DemoRN/node_
 MERGED from [:react-native-safe-area-context] /Users/ducena/Desktop/DemoRN/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/ducena/Desktop/DemoRN/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /Users/ducena/Desktop/DemoRN/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-view-shot] /Users/ducena/Desktop/DemoRN/node_modules/react-native-view-shot/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-view-shot] /Users/ducena/Desktop/DemoRN/node_modules/react-native-view-shot/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.2] /Users/ducena/.gradle/caches/transforms-2/files-2.1/db42f67f61bbc54ad87bb6c4a46e381e/jetified-react-native-0.62.2/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c634f084fec93d35d604743bc4559dd4/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c634f084fec93d35d604743bc4559dd4/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:4:5-44
 MERGED from [com.onesignal:OneSignal:3.15.3] /Users/ducena/.gradle/caches/transforms-2/files-2.1/c6930870089bffc5133ce5524fe71d97/jetified-OneSignal-3.15.3/AndroidManifest.xml:4:5-44
 MERGED from [androidx.browser:browser:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/75ffac8a8d3ada200c9b1a3ede22ea0c/browser-1.0.0/AndroidManifest.xml:20:5-44
@@ -325,6 +333,8 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/tr
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/4f727c78f6bdc38d29e8eb8a32b0973a/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c6bbccf3146e48895185241b0485752/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/ducena/.gradle/caches/transforms-2/files-2.1/5c6bbccf3146e48895185241b0485752/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [:terrylinla_react-native-sketch-canvas] /Users/ducena/Desktop/DemoRN/node_modules/@terrylinla/react-native-sketch-canvas/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:terrylinla_react-native-sketch-canvas] /Users/ducena/Desktop/DemoRN/node_modules/@terrylinla/react-native-sketch-canvas/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d04b9cc5a5b39c9c65f368055b649c24/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
 MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /Users/ducena/.gradle/caches/transforms-2/files-2.1/d04b9cc5a5b39c9c65f368055b649c24/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
 MERGED from [com.facebook.fresco:flipper:2.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/226a635a9979a2b1c5b35817da50680d/flipper-2.0.0/AndroidManifest.xml:5:5-7:41
@@ -431,6 +441,8 @@ MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/
 MERGED from [androidx.transition:transition:1.2.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/1001885feaefb70409c8035550a275c1/transition-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e629c9478969f43d94c5bd1dc44c9738/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/e629c9478969f43d94c5bd1dc44c9738/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/74dc4f9080571ea15829b45fbd4a9811/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/902a10383468f6e94bbc36a7cbea474c/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/902a10383468f6e94bbc36a7cbea474c/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] /Users/ducena/.gradle/caches/transforms-2/files-2.1/bcf016f5494b216286f6ea03347ce42d/core-1.1.0/AndroidManifest.xml:20:5-22:41
