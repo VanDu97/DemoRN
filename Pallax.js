@@ -13,61 +13,17 @@ import {
   Platform,
   AppState,
   Image,
+  Animated,
 } from "react-native";
-import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
+
 import { isIphoneX, ifIphoneX } from "react-native-iphone-x-helper";
-import VectorIcon from "../../utils/vectors";
-import AwesomeAlert from "react-native-awesome-alerts";
-import Headers from "./header";
-//import OurPackages from './ourPackage';
-//import TopDestination from './topDestination/TopDestination';
-import JWidget from "../../components/jwidget";
-import { sizeHeight, sizeWidth, sizeFont } from "../../helpers/size.helper";
-import Loader from "react-native-easy-content-loader";
-import { textSize } from "../../utils/constant/font";
-import Icon from "react-native-vector-icons/FontAwesome5Pro";
-import { connect } from "react-redux";
-import Modal from "react-native-modal";
-import AlertDesignNotification from "../../components/alert/AlertDesignNotification";
-import {
-  Provider,
-  Button,
-  Paragraph,
-  Dialog,
-  Portal,
-} from "react-native-paper";
-import NetWorkOffline from "../../components/network";
-import { loginWithToken, getCountryFromIp } from "../../actions/authAction";
-import { changeCodeNumber } from "../../actions/loginAction";
-import { netwrokConnected } from "../../actions/networkAction";
+
 //import FontAwesome5Pro from 'react-native-vector-icons/FontAwesome5Pro';
-import {
-  BallIndicator,
-  BarIndicator,
-  DotIndicator,
-  MaterialIndicator,
-  PacmanIndicator,
-  PulseIndicator,
-  SkypeIndicator,
-  UIActivityIndicator,
-  WaveIndicator,
-} from "react-native-indicators";
-import { COLOR, COLOR_LAZY_LOADING } from "../../utils/constant/color";
-import ContentLoader from "react-native-easy-content-loader";
-import { _retrieveData } from "../../utils/asynStorage";
-import { TOKEN } from "../../utils/asynStorage/store";
-import dataCodeNumberPhone from "../../utils/codeNumberPhone/dataCodeNumberPhone";
-import Loading from "../../components/loading";
-import WS from "../../components/ws";
-import { changeStatusMess, unreadMess } from "../../actions/messageAction";
-//import { Button, Paragraph, Dialog, Portal } from 'react-native-paper';
-import { listConversations } from "../../service/messages";
-import stylesHome from "../../styles/home";
+
 import ParallaxScrollView from "react-native-parallax-scroll-view";
-import { lang } from "../../language";
-import moment from "moment";
-const PARALLAX_HEADER_HEIGHT = sizeHeight(40);
-class Home extends PureComponent {
+
+const PARALLAX_HEADER_HEIGHT = 300;
+export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -83,108 +39,164 @@ class Home extends PureComponent {
     const { onScroll = () => {} } = this.props;
 
     return (
-      <View>
+      <View style={{ flex: 1 }}>
+        <StatusBar barStyle="light-content" />
         <ParallaxScrollView
           backgroundColor="#fff"
-          onScroll={onScroll}
-          stickyHeaderHeight={90}
-          parallaxHeaderHeight={PARALLAX_HEADER_HEIGHT}
+          onScroll={Animated.event(
+            [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
+            { useNativeDriver: false }
+          )}
+          //headerBackgroundColor="#000"
+          backgroundColor="#fff"
+          stickyHeaderHeight={
+            Platform.OS == "android" ? 70 : isIphoneX() ? 75 : 62
+          }
+          parallaxHeaderHeight={300}
           backgroundSpeed={10}
           renderForeground={() => (
-            <View>
-              <Text>Hello</Text>
+            <View style={{ position: "absolute", top: 45, left: 0 }}>
+              <Text style={{ color: "red" }}>Custom Buttom</Text>
             </View>
           )}
+          renderFixedHeader={() => {
+            return (
+              <View>
+                <Text style={{ color: "#000" }}>Back</Text>
+              </View>
+            );
+          }}
           renderStickyHeader={() => (
-            <View>
-              <Text>Hello</Text>
+            <View
+              style={{
+                height: Platform.OS == "android" ? 70 : isIphoneX() ? 75 : 62,
+                flexDirection: "row",
+                borderBottomWidth: 0.5,
+                borderBottomColor: "#eee",
+                width: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "center",
+              }}
+            >
+              <Text
+                style={{
+                  textAlign: "center",
+                  position: "absolute",
+                  top: isIphoneX() ? 45 : Platform.OS == "android" ? 40 : 32,
+                  fontSize: 16,
+                  fontWeight: "bold",
+                }}
+              >
+                Hello Minh
+              </Text>
             </View>
           )}
           renderBackground={() => (
-            <View>
-              <Text>Hello</Text>
+            <View style={{ width: Dimensions.get("window").width }}>
+              <Image
+                source={{ uri: "https://source.unsplash.com/random" }}
+                style={{ width: Dimensions.get("window").width, height: 300 }}
+              />
             </View>
           )}
-        />
+        >
+          <ScrollView style={{ flex: 1 }}>
+            <View>
+              <Text>
+                Voice 1 In some parts of the world, rates of HIV/AIDS have
+                decreased a lot. For example, Sub-Saharan Africa has the highest
+                rates of HIV/AIDS in the world. But in East and South African
+                countries, the number of people with HIV/AIDS has gone down by
+                nearly 30 percent since 2010. Botswana’s Health Minister Dorcas
+                Makgato tells Al Jazeera how her country made this happen: Voice
+                3 “Right from the beginning we decided to come to the issue
+                boldly. We were very open about the size of the problem and did
+                not try to hide from it. We were bold in the sense that we
+                admitted that there was a problem. We were bold in bringing
+                everyone involved together. We had a common purpose in fighting
+                HIV and AIDS.” Voice 2 Botswana still has a high rate of HIV at
+                21 percent. But this has dropped from 36 percent in the year
+                2000. Botswana has a government program that treats EVERY person
+                no matter their age, sex or economic status. And they have seen
+                particular improvement in one area: passing of HIV from mothers
+                to their babies. The rate in Botswana has dropped from 40 to
+                less than two percent! Many other countries have a similar drop
+                in mother to child transmission. This is one of the major
+                successes against the global HIV/AIDS epidemic. Voice 1 Many
+                people with HIV/AIDS are also living longer. People with
+                HIV/AIDS can take drugs to control the virus. These drugs are
+                called Antiretrovirals or ARVs. By using ARVs correctly, people
+                with HIV/AIDS can live long, productive lives. UNAIDS is the
+                United Nations’ global effort to end AIDS. In a report, they
+                said that for the first time, 53 percent of the people who need
+                ARVs are able to get them. This is more than twice the number of
+                people who were able to get them in 2012.
+              </Text>
+              <Text>
+                Voice 1 In some parts of the world, rates of HIV/AIDS have
+                decreased a lot. For example, Sub-Saharan Africa has the highest
+                rates of HIV/AIDS in the world. But in East and South African
+                countries, the number of people with HIV/AIDS has gone down by
+                nearly 30 percent since 2010. Botswana’s Health Minister Dorcas
+                Makgato tells Al Jazeera how her country made this happen: Voice
+                3 “Right from the beginning we decided to come to the issue
+                boldly. We were very open about the size of the problem and did
+                not try to hide from it. We were bold in the sense that we
+                admitted that there was a problem. We were bold in bringing
+                everyone involved together. We had a common purpose in fighting
+                HIV and AIDS.” Voice 2 Botswana still has a high rate of HIV at
+                21 percent. But this has dropped from 36 percent in the year
+                2000. Botswana has a government program that treats EVERY person
+                no matter their age, sex or economic status. And they have seen
+                particular improvement in one area: passing of HIV from mothers
+                to their babies. The rate in Botswana has dropped from 40 to
+                less than two percent! Many other countries have a similar drop
+                in mother to child transmission. This is one of the major
+                successes against the global HIV/AIDS epidemic. Voice 1 Many
+                people with HIV/AIDS are also living longer. People with
+                HIV/AIDS can take drugs to control the virus. These drugs are
+                called Antiretrovirals or ARVs. By using ARVs correctly, people
+                with HIV/AIDS can live long, productive lives. UNAIDS is the
+                United Nations’ global effort to end AIDS. In a report, they
+                said that for the first time, 53 percent of the people who need
+                ARVs are able to get them. This is more than twice the number of
+                people who were able to get them in 2012.
+              </Text>
+              <Text>
+                Voice 1 In some parts of the world, rates of HIV/AIDS have
+                decreased a lot. For example, Sub-Saharan Africa has the highest
+                rates of HIV/AIDS in the world. But in East and South African
+                countries, the number of people with HIV/AIDS has gone down by
+                nearly 30 percent since 2010. Botswana’s Health Minister Dorcas
+                Makgato tells Al Jazeera how her country made this happen: Voice
+                3 “Right from the beginning we decided to come to the issue
+                boldly. We were very open about the size of the problem and did
+                not try to hide from it. We were bold in the sense that we
+                admitted that there was a problem. We were bold in bringing
+                everyone involved together. We had a common purpose in fighting
+                HIV and AIDS.” Voice 2 Botswana still has a high rate of HIV at
+                21 percent. But this has dropped from 36 percent in the year
+                2000. Botswana has a government program that treats EVERY person
+                no matter their age, sex or economic status. And they have seen
+                particular improvement in one area: passing of HIV from mothers
+                to their babies. The rate in Botswana has dropped from 40 to
+                less than two percent! Many other countries have a similar drop
+                in mother to child transmission. This is one of the major
+                successes against the global HIV/AIDS epidemic. Voice 1 Many
+                people with HIV/AIDS are also living longer. People with
+                HIV/AIDS can take drugs to control the virus. These drugs are
+                called Antiretrovirals or ARVs. By using ARVs correctly, people
+                with HIV/AIDS can live long, productive lives. UNAIDS is the
+                United Nations’ global effort to end AIDS. In a report, they
+                said that for the first time, 53 percent of the people who need
+                ARVs are able to get them. This is more than twice the number of
+                people who were able to get them in 2012.
+              </Text>
+            </View>
+          </ScrollView>
+        </ParallaxScrollView>
       </View>
     );
   }
 }
-
-const window = Dimensions.get("window");
-
-const AVATAR_SIZE = 120;
-const ROW_HEIGHT = 60;
-const PARALLAX_HEADER_HEIGHT = sizeHeight(40);
-const STICKY_HEADER_HEIGHT = 70;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  background: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: window.width,
-    height: PARALLAX_HEADER_HEIGHT,
-  },
-  stickySection: {
-    height: STICKY_HEADER_HEIGHT,
-    width: Dimensions.get("window").width,
-    borderWidth: 1,
-    borderColor: "#eee",
-  },
-  stickySectionText: {
-    color: "#000",
-    fontSize: 20,
-    margin: 10,
-  },
-  fixedSection: {
-    position: "absolute",
-    bottom: 10,
-    right: 10,
-  },
-  fixedSectionText: {
-    color: "#999",
-    fontSize: 20,
-  },
-  parallaxHeader: {
-    alignItems: "center",
-    flex: 1,
-    flexDirection: "column",
-    paddingTop: 100,
-  },
-  avatar: {
-    marginBottom: 10,
-    borderRadius: AVATAR_SIZE / 2,
-  },
-  sectionSpeakerText: {
-    color: "white",
-    fontSize: 24,
-    paddingVertical: 5,
-  },
-  sectionTitleText: {
-    color: "white",
-    fontSize: 18,
-    paddingVertical: 5,
-  },
-  row: {
-    overflow: "hidden",
-    paddingHorizontal: 10,
-    height: ROW_HEIGHT,
-    backgroundColor: "white",
-    borderColor: "#ccc",
-    borderBottomWidth: 1,
-    justifyContent: "center",
-  },
-  rowText: {
-    fontSize: 20,
-  },
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home);
