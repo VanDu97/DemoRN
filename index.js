@@ -47,5 +47,6 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./pan/index";
 //import App from "./shot/index";
 // import App from "./Pallax";
-import App from "./Performance/Debounces";
+// import App from "./Performance/Debounces";
+import App from "./Performance/PallaxSection";
 AppRegistry.registerComponent(appName, () => App);
