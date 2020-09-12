@@ -23,10 +23,6 @@ import {
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { Icon } from "react-native-elements";
-// import Animated, {
-//   Easing,
-//   useAnimatedScrollHandler,
-// } from "react-native-reanimated";
 
 const HEADER_MAX_HEIGHT = 90;
 const HEADER_MIN_HEIGHT = 90;
