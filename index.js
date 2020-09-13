@@ -23,7 +23,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./ProgressExample";
 //import App from "./images/SizeImage";
 //import App from './UberEats.ts'
-//import App from "./Navigation/DemoStackNavigation";
+import App from "./Navigation/DemoStackNavigation";
 //import App from "./animation/HelloAppAnimation";
 // import App from "./animation/AnimationDemo";
 //import App from "./Video/index";
@@ -48,5 +48,6 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./shot/index";
 // import App from "./Pallax";
 // import App from "./Performance/Debounces";
-import App from "./Performance/PallaxSection";
+// import App from "./Performance/PallaxSection";
+//import App from "./Performance/BotttomHide";
 AppRegistry.registerComponent(appName, () => App);

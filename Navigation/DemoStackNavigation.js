@@ -9,7 +9,8 @@ import {
 import Home from "./Home";
 import ScreenOne from "./ScreenOne";
 import Icon from "react-native-vector-icons/AntDesign";
-import {SliderBox} from 'react-native-image-slider-box';
+import { SliderBox } from "react-native-image-slider-box";
+import BotttomHide from "../Performance/BotttomHide";
 const Stack = createStackNavigator();
 class HeaderCustom extends Component {
   render() {
@@ -54,7 +55,7 @@ export default class DemoStackNavigation extends Component {
             headerBackTitleVisible: false,
           }}
         >
-          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Home" component={BotttomHide} />
           <Stack.Screen
             name="ScreenOne"
             component={ScreenOne}
