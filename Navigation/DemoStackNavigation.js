@@ -11,6 +11,7 @@ import ScreenOne from "./ScreenOne";
 import Icon from "react-native-vector-icons/AntDesign";
 import { SliderBox } from "react-native-image-slider-box";
 import BotttomHide from "../Performance/BotttomHide";
+import TopAnimationHorizatol from "../Performance/TopAnimationHorizatol";
 const Stack = createStackNavigator();
 class HeaderCustom extends Component {
   render() {
@@ -51,11 +52,21 @@ export default class DemoStackNavigation extends Component {
           headerMode="screen"
           screenOptions={{
             headerTitleAlign: "center",
-            headerBackTitle: "",
-            headerBackTitleVisible: false,
+            // headerBackTitle: "",
+            // headerBackTitleVisible: false,
           }}
         >
-          <Stack.Screen name="Home" component={BotttomHide} />
+          <Stack.Screen
+            name="Home"
+            // component={BotttomHide}
+            component={TopAnimationHorizatol}
+            options={({ navigation, route }) => ({
+              // headerLeft: (props) => <HeaderCustom navigation={navigation} />,
+              headerTransparent: true,
+              headerTitle: null,
+              headerTintColor: "#fff",
+            })}
+          />
           <Stack.Screen
             name="ScreenOne"
             component={ScreenOne}

@@ -302,6 +302,12 @@ export default class ScreenOne extends Component {
                 even a bit Turkish. Jay responded to the results:
               </Text>
             </View>
+            <TouchableOpacity
+              style={styles.touch}
+              onPress={() => this.props.navigation.navigate("Home")}
+            >
+              <Text style={styles.textSafe}>Done</Text>
+            </TouchableOpacity>
           </Animated.ScrollView>
         </ParallaxScrollView>
 
