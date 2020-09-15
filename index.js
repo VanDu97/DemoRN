@@ -11,7 +11,7 @@ import { name as appName } from "./app.json";
 
 //import App from "./UberEats";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-
+//import App from "./App";
 //import App from "./Demo";
 //import App from "./Custom";
 //import App from "./DemoPallax";
@@ -23,7 +23,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./ProgressExample";
 //import App from "./images/SizeImage";
 //import App from './UberEats.ts'
-import App from "./Navigation/DemoStackNavigation";
+//import App from "./Navigation/DemoStackNavigation";
 //import App from "./animation/HelloAppAnimation";
 // import App from "./animation/AnimationDemo";
 //import App from "./Video/index";
@@ -40,7 +40,7 @@ import App from "./Navigation/DemoStackNavigation";
 //import App from "./animation/animationcodedaily/Easings";
 //import App from "./animation/animationcodedaily/KittenCard";
 // import App from "./animation/DiffClamps";
-// import App from "./notification/index";
+ import App from "./notification/index";
 //import App from "./Performance/index";
 // import App from "./Navigation/BottomTabs";
 //import App from "./Navigation/Home";

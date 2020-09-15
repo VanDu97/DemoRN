@@ -33,6 +33,8 @@ UIManager.setLayoutAnimationEnabledExperimental &&
  * Tại sao làm như vậy?
  * Nếu dùng interporate() thì nó sẽ chạy một khoảng chứ nó không cố định
  */
+const HEADER_MAX_HEIGHT = 250;
+const HEADER_MIN_HEIGHT = 70;
 
 const data = [
   {
@@ -111,9 +113,9 @@ export default class TopAnimationHorizatol extends Component {
   };
   render() {
     const HEIGHT = this.state.scrollY.interpolate({
-      inputRange: [-250, 300],
-      outputRange: [600, 300],
-      extrapolate: "clamp",
+      inputRange: [0, 200],
+      outputRange: [HEADER_MAX_HEIGHT, 0],
+      extrapolate: "extend",
     });
     const backGround = this.state.scrollY.interpolate({
       inputRange: [0, 200],
@@ -130,7 +132,11 @@ export default class TopAnimationHorizatol extends Component {
       outputRange: ["#fff", "#FF0000", "#fff"],
       extrapolate: "clamp",
     });
-
+    const TOP = this.state.scrollY.interpolate({
+      inputRange: [0, 200],
+      outputRange: [HEADER_MAX_HEIGHT, 0],
+      extrapolate: "clamp",
+    });
     return (
       <View style={{ flex: 1 }}>
         <StatusBar
@@ -139,6 +145,21 @@ export default class TopAnimationHorizatol extends Component {
           }
           backgroundColor="transparent"
           translucent
+        />
+        <Animated.Image
+          resizeMode="cover"
+          style={{
+            flex: 1,
+            width: "100%",
+            height: HEIGHT,
+            position: "absolute",
+
+            //justifyContent: "center",
+          }}
+          source={{
+            uri:
+              "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
+          }}
         />
         <Animated.View
           style={{
@@ -292,7 +313,7 @@ export default class TopAnimationHorizatol extends Component {
                     </Text>
                     <Animated.View
                       style={{
-                        borderWidth: 2,
+                        borderWidth: index === this.state.borders ? 2 : 0,
                         borderColor:
                           index === this.state.borders ? "red" : "#fff",
                         position: "absolute",
@@ -310,22 +331,25 @@ export default class TopAnimationHorizatol extends Component {
           </Animated.View>
         </Animated.View>
         <Animated.ScrollView
+          style={{
+            marginTop: TOP,
+          }}
           ref={(ref) => (this._scrollView = ref)}
           onScrollBeginDrag={(event) => {
             LayoutAnimation.linear();
             this.setState({ offset: event.nativeEvent.contentOffset.y });
             //this.offset = event.nativeEvent.contentOffset.y;
           }}
-          decelerationRate={0.7}
-          scrollEventThrottle={1}
+          //decelerationRate={0.7}
+          scrollEventThrottle={16}
           //   onScroll={Animated.event(
           //     [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
           //     {
           //       useNativeDriver: false,
-          //       listener: (text) => {
-          //        // console.log(text.nativeEvent);
-          //         LayoutAnimation.linear();
-          //       },
+          //       //   listener: (text) => {
+          //       //     // console.log(text.nativeEvent);
+          //       //     LayoutAnimation.linear();
+          //       //   },
           //     }
           //   )}
           onScroll={(event) => {
@@ -425,24 +449,7 @@ export default class TopAnimationHorizatol extends Component {
         >
           {console.log("2222", this._scrollHorizontal)}
           <View>
-            <View style={{}}>
-              <Animated.Image
-                resizeMode="cover"
-                style={{
-                  width: Dimensions.get("window").width,
-                  height: 300,
-                  //   position: "absolute",
-                  //   top: 0,
-                  //   left: 0,
-                  //   right: 0,
-                  //justifyContent: "center",
-                }}
-                source={{
-                  uri:
-                    "https://unku.store/wp-content/uploads/2019/01/basket-beautiful-beauty-opti.jpg",
-                }}
-              />
-            </View>
+            <View style={{}} />
 
             <View
               style={{

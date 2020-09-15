@@ -41,7 +41,7 @@ export default class AnimationDemo extends Component {
           }}
         />
         <Animated.ScrollView
-          contentContainerStyle={{ flex: 1, marginTop: 10 }}
+          contentContainerStyle={{ marginTop: 10 }}
           scrollEventThrottle={16}
           onScroll={Animated.event(
             [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
