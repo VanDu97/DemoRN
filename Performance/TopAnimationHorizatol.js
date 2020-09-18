@@ -16,6 +16,7 @@ import {
   FlatList,
   Image,
   PixelRatio,
+  InteractionManager,
 } from "react-native";
 import { isIphoneX } from "react-native-iphone-x-helper";
 import { ImageBackground } from "react-native";
@@ -114,7 +115,7 @@ export default class TopAnimationHorizatol extends Component {
   render() {
     const HEIGHT = this.state.scrollY.interpolate({
       inputRange: [0, 200],
-      outputRange: [HEADER_MAX_HEIGHT, 0],
+      outputRange: [HEADER_MAX_HEIGHT, 40],
       extrapolate: "extend",
     });
     const backGround = this.state.scrollY.interpolate({
@@ -137,6 +138,7 @@ export default class TopAnimationHorizatol extends Component {
       outputRange: [HEADER_MAX_HEIGHT, 0],
       extrapolate: "clamp",
     });
+
     return (
       <View style={{ flex: 1 }}>
         <StatusBar
@@ -355,15 +357,22 @@ export default class TopAnimationHorizatol extends Component {
           onScroll={(event) => {
             if (event.nativeEvent.contentOffset.y > 200) {
               LayoutAnimation.linear();
-              this.setState({
-                color: "#000",
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+                this.setState({
+                  color: "#000",
+                });
               });
+
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
             if (event.nativeEvent.contentOffset.y < 200) {
               LayoutAnimation.linear();
-              this.setState({
-                color: "#fff",
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+                this.setState({
+                  color: "#000",
+                });
               });
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
@@ -377,73 +386,100 @@ export default class TopAnimationHorizatol extends Component {
                 index: 0,
                 viewPosition: 0.5,
               });
-              this.setState({ borders: 0 });
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+                this.setState({ borders: 0 });
+              });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_two &&
               event.nativeEvent.contentOffset.y <= this.option_three
             ) {
               LayoutAnimation.linear();
-              this._scrollHorizontal.scrollToIndex({
-                animated: true,
-                index: 1,
-                viewPosition: 0.5,
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+
+                this._scrollHorizontal.scrollToIndex({
+                  animated: true,
+                  index: 1,
+                  viewPosition: 0.5,
+                });
+                this.setState({ borders: 1 });
               });
-              this.setState({ borders: 1 });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_three &&
               event.nativeEvent.contentOffset.y <= this.option_four
             ) {
               LayoutAnimation.linear();
-              this._scrollHorizontal.scrollToIndex({
-                animated: true,
-                index: 2,
-                viewPosition: 0.5,
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+
+                this._scrollHorizontal.scrollToIndex({
+                  animated: true,
+                  index: 2,
+                  viewPosition: 0.5,
+                });
+                this.setState({ borders: 2 });
               });
-              this.setState({ borders: 2 });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_four &&
               event.nativeEvent.contentOffset.y <= this.option_five
             ) {
               LayoutAnimation.linear();
-              this._scrollHorizontal.scrollToIndex({
-                animated: true,
-                index: 3,
-                viewPosition: 0.5,
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+
+                this._scrollHorizontal.scrollToIndex({
+                  animated: true,
+                  index: 3,
+                  viewPosition: 0.5,
+                });
+                this.setState({ borders: 3 });
               });
-              this.setState({ borders: 3 });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_five &&
               event.nativeEvent.contentOffset.y <= this.option_six
             ) {
               LayoutAnimation.linear();
-              this._scrollHorizontal.scrollToIndex({
-                animated: true,
-                index: 4,
-                viewPosition: 0.5,
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+
+                this._scrollHorizontal.scrollToIndex({
+                  animated: true,
+                  index: 4,
+                  viewPosition: 0.5,
+                });
+                this.setState({ borders: 4 });
               });
-              this.setState({ borders: 4 });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_six &&
               event.nativeEvent.contentOffset.y <= this.option_seven
             ) {
               LayoutAnimation.linear();
-              this._scrollHorizontal.scrollToIndex({
-                animated: true,
-                index: 5,
-                viewPosition: 0.5,
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+
+                this._scrollHorizontal.scrollToIndex({
+                  animated: true,
+                  index: 5,
+                  viewPosition: 0.5,
+                });
+                this.setState({ borders: 5 });
               });
-              this.setState({ borders: 5 });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_seven &&
               event.nativeEvent.contentOffset.y <= this.option_seven + 400
             ) {
               LayoutAnimation.linear();
-              this._scrollHorizontal.scrollToIndex({
-                animated: true,
-                index: 6,
-                viewPosition: 0.5,
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+
+                this._scrollHorizontal.scrollToIndex({
+                  animated: true,
+                  index: 6,
+                  viewPosition: 0.5,
+                });
+                this.setState({ borders: 6 });
               });
-              this.setState({ borders: 6 });
             }
           }}
         >

@@ -23,7 +23,8 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./ProgressExample";
 //import App from "./images/SizeImage";
 //import App from './UberEats.ts'
-//import App from "./Navigation/DemoStackNavigation";
+// import App from "./Navigation/DemoStackNavigation";
+import App from "./Performance/TouchAnimation";
 //import App from "./animation/HelloAppAnimation";
 // import App from "./animation/AnimationDemo";
 //import App from "./Video/index";
@@ -40,7 +41,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./animation/animationcodedaily/Easings";
 //import App from "./animation/animationcodedaily/KittenCard";
 // import App from "./animation/DiffClamps";
- import App from "./notification/index";
+//import App from "./notification/index";
 //import App from "./Performance/index";
 // import App from "./Navigation/BottomTabs";
 //import App from "./Navigation/Home";
@@ -50,4 +51,8 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./Performance/Debounces";
 // import App from "./Performance/PallaxSection";
 //import App from "./Performance/BotttomHide";
+import { YellowBox } from "react-native";
+
+YellowBox.ignoreWarnings(["Warning: ReactNative.createElement"]);
+console.disableYellowBox = true;
 AppRegistry.registerComponent(appName, () => App);
