@@ -22,6 +22,8 @@ export default class TouchAnimation extends Component {
     this.state = {
       scrollY: new Animated.ValueXY({ x: 0, y: 0 }),
       next: new Animated.Value(0.9),
+      opcity: new Animated.Value(1),
+      data: data,
     };
     this.panResponder = PanResponder.create({
       onStartShouldSetPanResponder: (evt, gestureState) => true,
@@ -42,8 +44,14 @@ export default class TouchAnimation extends Component {
       ),
       onPanResponderTerminationRequest: (evt, gestureState) => true,
       onPanResponderRelease: (evt, gestureState) => {
-        // The user has released all touches while this view is the
-        // responder. This typically means a gesture has succeeded
+        console.log("ge", gestureState);
+        if (Math.abs(gestureState.dx) > 150) {
+          Animated.decay(this.state.scrollY, {
+            velocity: { x: gestureState.vx, y: gestureState.vy },
+            deceleration: 0.98,
+            useNativeDriver: false,
+          }).start(this.handleAnimationCard);
+        }
       },
       onPanResponderTerminate: (evt, gestureState) => {
         // Another component has become the responder, so this gesture
@@ -56,15 +64,104 @@ export default class TouchAnimation extends Component {
       },
     });
   }
-  handleView = () => {};
+  handleAnimationCard = () => {
+    Animated.parallel([
+      Animated.timing(this.state.opcity, {
+        toValue: 0,
+        duration: 500,
+        useNativeDriver: false,
+      }).start(),
+      Animated.spring(this.state.next, {
+        toValue: 1,
+        friction: 4,
+        useNativeDriver: false,
+      }).start(),
+    ]).start(() => {
+      this.setState({ data: this.state.data.slice(1) }, () => {
+        this.state.scrollY.setValue({
+          x: 0,
+          y: 0,
+        });
+        this.state.next.setValue(0.9);
+        this.state.next.setValue(0.9);
+      });
+    });
+  };
   render() {
-    const panResponders = this.panResponder.panHandlers;
-    const RotateView = this.state.scrollY.y.interpolate({
-      inputRange: [0, 200],
-      outputRange: ["0deg", "45deg"],
+    const { scrollY, data } = this.state;
+
+    const RotateView = scrollY.x.interpolate({
+      inputRange: [-200, 0, 200],
+      outputRange: ["-45deg", "0deg", "45deg"],
       extrapolate: "clamp",
     });
-
+    const opacity = scrollY.x.interpolate({
+      inputRange: [-200, 0, 200],
+      outputRange: [0.5, 1, 0.5],
+      extrapolate: "clamp",
+    });
+    const animationView = {
+      transform: [
+        {
+          rotate: RotateView,
+        },
+        // {
+        //   translateX: this.state.scrollY.x,
+        // },
+        // {
+        //   translateY: this.state.scrollY.y,
+        // },
+        ...this.state.scrollY.getTranslateTransform(),
+      ],
+      opacity,
+    };
+    const opacityYes = scrollY.x.interpolate({
+      inputRange: [0, 150],
+      outputRange: [0, 1],
+      extrapolate: "clamp",
+    });
+    const rotateYes = scrollY.x.interpolate({
+      inputRange: [0, 150],
+      outputRange: [0.5, 1],
+      extrapolate: "clamp",
+    });
+    const yesCard = {
+      transform: [
+        {
+          rotate: "-30deg",
+        },
+        {
+          scale: rotateYes,
+        },
+      ],
+      opacity: opacityYes,
+    };
+    const imageStyle = scrollY.x.interpolate({
+      inputRange: [-200, 0, 200],
+      outputRange: [0, 1, 0],
+      extrapolate: "clamp",
+    });
+    const opacityNo = scrollY.x.interpolate({
+      inputRange: [-130, 0],
+      outputRange: [1, 0],
+      extrapolate: "clamp",
+    });
+    const rotateNo = scrollY.x.interpolate({
+      inputRange: [-130, 0],
+      outputRange: [1, 0.5],
+      extrapolate: "clamp",
+    });
+    const noCard = {
+      transform: [
+        {
+          rotate: "30deg",
+        },
+        {
+          scale: rotateNo,
+        },
+      ],
+      opacity: opacityNo,
+    };
     //{...panResponders}
     return (
       <View style={styles.container}>
@@ -72,42 +169,49 @@ export default class TouchAnimation extends Component {
           {data
             .slice(0, 2)
             .reverse()
-            .map((item, index) => {
-              const firstItem = 1;
-              const lastItem = 1;
+            .map(({ booked, src, comment, title, star }, index, data) => {
+              const firstItem = index === data.length - 2;
+              const lastItem = index === data.length - 1;
+              const animationCard = lastItem ? animationView : undefined;
+              const imgaeCard = lastItem
+                ? {
+                    opacity: imageStyle,
+                  }
+                : undefined;
+              const nextCard = firstItem
+                ? {
+                    transform: [
+                      {
+                        scale: this.state.next,
+                      },
+                    ],
+                  }
+                : undefined;
+
+              const pans = lastItem ? this.panResponder.panHandlers : {};
               return (
                 <Animated.View
-                  style={[
-                    styles.view_touch,
-                    {
-                      transform: [
-                        {
-                          rotate: RotateView,
-                        },
-                      ],
-                    },
-                  ]}
+                  style={[styles.view_touch, animationCard, nextCard]}
                   key={index}
-                  {...panResponders}
+                  {...pans}
                 >
-                  <View style={styles.view_choose}>
-                    <Text style={styles.textCommon}>Chọn</Text>
-                  </View>
-                  <View style={styles.view_reject}>
-                    <Text style={styles.textCommon}>Bỏ qua</Text>
-                  </View>
+                  {lastItem && (
+                    <Animated.View style={[styles.view_choose, yesCard]}>
+                      <Text style={styles.textCommon}>Chọn</Text>
+                    </Animated.View>
+                  )}
+                  {lastItem && (
+                    <Animated.View style={[styles.view_reject, noCard]}>
+                      <Text style={styles.textCommon}>Bỏ qua</Text>
+                    </Animated.View>
+                  )}
                   <Animated.Image
-                    source={{ uri: item.src }}
+                    source={{ uri: src }}
                     resizeMode="cover"
-                    style={{
-                      width: "100%",
-                      height: 400,
-                      borderTopLeftRadius: 6,
-                      borderTopRightRadius: 6,
-                    }}
+                    style={[styles.image, imgaeCard]}
                   />
                   <View style={{ paddingVertical: 15, paddingHorizontal: 20 }}>
-                    <Text style={styles.text_one}>{item.title}</Text>
+                    <Text style={styles.text_one}>{title}</Text>
                     <View
                       style={{
                         flexDirection: "row",
@@ -115,7 +219,7 @@ export default class TouchAnimation extends Component {
                         marginTop: 10,
                       }}
                     >
-                      <Text style={styles.rating}>{item.star} </Text>
+                      <Text style={styles.rating}>{star} </Text>
                       <Icon
                         name="star"
                         type="font-awesome"
@@ -124,11 +228,9 @@ export default class TouchAnimation extends Component {
                       />
                     </View>
                     <View style={styles.view_footer}>
-                      <Text style={styles.textCount}>
-                        {item.booked} lần gọi
-                      </Text>
+                      <Text style={styles.textCount}>{booked} lần gọi</Text>
                       <Text style={styles.text_review}>
-                        {item.comment.length} đánh giá
+                        {comment.length} đánh giá
                       </Text>
                     </View>
                   </View>
@@ -218,5 +320,12 @@ const styles = StyleSheet.create({
     color: "#FFA628",
     fontWeight: "bold",
     fontSize: 20,
+  },
+  image: {
+    width: null,
+    height: null,
+    borderTopLeftRadius: 6,
+    borderTopRightRadius: 6,
+    flex: 3,
   },
 });
