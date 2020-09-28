@@ -23,8 +23,11 @@ import { isIphoneX } from "react-native-iphone-x-helper";
 import { ImageBackground } from "react-native";
 import { duration } from "moment";
 import Icons from "react-native-vector-icons/AntDesign";
+import { Icon } from "react-native-elements";
+import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
 
 import { t } from "i18n-js";
+import styles from "./style";
 var pixelWidth = require("string-pixel-width");
 const HEIGHT_HEADER = Dimensions.get("window").height;
 const WITH_HEADER = Dimensions.get("window").width;
@@ -35,8 +38,8 @@ UIManager.setLayoutAnimationEnabledExperimental &&
  * Tại sao làm như vậy?
  * Nếu dùng interporate() thì nó sẽ chạy một khoảng chứ nó không cố định
  */
-const HEADER_MAX_HEIGHT = 250;
-const HEADER_MIN_HEIGHT = 70;
+const HEADER_MAX_HEIGHT = 300;
+const HEADER_MIN_HEIGHT = 0;
 
 const data = [
   {
@@ -118,35 +121,37 @@ export default class TopAnimationHorizatol extends Component {
   };
   render() {
     const HEIGHT = this.state.scrollY.interpolate({
-      inputRange: [0, HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT],
-      outputRange: [HEADER_MAX_HEIGHT, HEADER_MIN_HEIGHT],
+      inputRange: [0, 250],
+      outputRange: [HEADER_MAX_HEIGHT, 0],
       extrapolate: "extend",
     });
     const backGround = this.state.scrollY.interpolate({
-      inputRange: [0, 200],
+      inputRange: [0, 150],
       outputRange: ["rgba(0, 0, 0,0)", "#fff"],
       extrapolate: "clamp",
     });
     const opacityHeader = this.state.scrollY.interpolate({
-      inputRange: [0, 200],
+      inputRange: [0, 200, 300],
+      outputRange: [0, 0, 1],
+      extrapolate: "clamp",
+    });
+
+    const opcityOne = this.state.scrollY.interpolate({
+      inputRange: [0, 250],
+      outputRange: [1, 0],
+      extrapolate: "clamp",
+    });
+    const opcityTwo = this.state.scrollY.interpolate({
+      inputRange: [0, 250],
       outputRange: [0, 1],
       extrapolate: "clamp",
     });
-    const colorBorder = this.state.scrollY.interpolate({
-      inputRange: [0, Math.ceil(this.option_one), Math.ceil(this.option_two)],
-      outputRange: ["#fff", "#FF0000", "#fff"],
+    const opcityThree = this.state.scrollY.interpolate({
+      inputRange: [0, 250],
+      outputRange: [1, 0],
       extrapolate: "clamp",
     });
-    const TOP = this.state.scrollY.interpolate({
-      inputRange: [0, 200],
-      outputRange: [HEADER_MAX_HEIGHT, 0],
-      extrapolate: "clamp",
-    });
-    const colorIcon = this.state.scrollY.interpolate({
-      inputRange: [0, 150, 300],
-      outputRange: ["#fff", "#000", "#000"],
-      extrapolate: "clamp",
-    });
+
     return (
       <View style={{ flex: 1 }}>
         <StatusBar
@@ -161,7 +166,7 @@ export default class TopAnimationHorizatol extends Component {
             width: "100%",
             height: HEIGHT,
             position: "absolute",
-
+            opacity: opcityThree,
             //justifyContent: "center",
           }}
           source={{
@@ -181,39 +186,60 @@ export default class TopAnimationHorizatol extends Component {
             //backgroundColor: "#fff",
             // borderBottomWidth: 1,
             // borderBottomColor: "#ddd",
-            height: isIphoneX()
-              ? HEIGHT_HEADER * 0.14
-              : Platform.OS === "android"
-              ? HEIGHT_HEADER * 0.14
-              : HEIGHT_HEADER * 0.14,
+            height: HEIGHT_HEADER * 0.14,
             backgroundColor: backGround,
           }}
         >
-          <TouchableOpacity
+          <Animated.View
             style={{
-              paddingHorizontal: 15,
+              opacity: opcityOne,
               top: isIphoneX()
-                ? HEIGHT_HEADER * 0.055
+                ? HEIGHT_HEADER * 0.04
                 : Platform.OS === "android"
-                ? HEIGHT_HEADER * 0.047
-                : HEIGHT_HEADER * 0.04,
+                ? HEIGHT_HEADER * 0.03
+                : HEIGHT_HEADER * 0.024,
               left: -10,
               zIndex: 11,
-            }}
-            onPress={() => {
-              alert("Back New");
+              position: "absolute",
             }}
           >
             <Icons
               name="left"
               size={30}
               //color="#000"
-              color={this.color}
-              style={{ marginLeft: 5 }}
+              onPress={() => {
+                alert("Back New");
+              }}
+              color="#fff"
+              style={{ paddingHorizontal: 20, paddingVertical: 15 }}
             />
-          </TouchableOpacity>
+          </Animated.View>
 
-          <View
+          <Animated.View
+            style={{
+              opacity: opcityTwo,
+              top: isIphoneX()
+                ? HEIGHT_HEADER * 0.04
+                : Platform.OS === "android"
+                ? HEIGHT_HEADER * 0.03
+                : HEIGHT_HEADER * 0.024,
+              left: -10,
+              zIndex: 11,
+              position: "absolute",
+            }}
+          >
+            <Icons
+              name="left"
+              size={30}
+              //color="#000"
+              color="#000"
+              onPress={() => {
+                alert("Back New");
+              }}
+              style={{ paddingHorizontal: 20, paddingVertical: 15 }}
+            />
+          </Animated.View>
+          <Animated.View
             style={{
               position: "absolute",
               top: isIphoneX()
@@ -236,7 +262,7 @@ export default class TopAnimationHorizatol extends Component {
                 name="hearto"
                 size={30}
                 // color="#000"
-                color={this.color}
+                color="#fff"
                 style={{ marginLeft: 5 }}
               />
             </TouchableOpacity>
@@ -250,7 +276,7 @@ export default class TopAnimationHorizatol extends Component {
                 name="sharealt"
                 size={30}
                 // color="#000"
-                color={this.color}
+                color="#fff"
                 style={{ marginLeft: 5 }}
               />
             </TouchableOpacity>
@@ -262,16 +288,73 @@ export default class TopAnimationHorizatol extends Component {
               <Icons
                 name="shoppingcart"
                 size={30}
-                // color="#000"
-                color={this.color}
+                color="#fff"
+                //color={this.color}
                 style={{ marginLeft: 5 }}
               />
             </TouchableOpacity>
-          </View>
+          </Animated.View>
+
+          <Animated.View
+            style={{
+              position: "absolute",
+              top: isIphoneX()
+                ? HEIGHT_HEADER * 0.055
+                : Platform.OS === "android"
+                ? HEIGHT_HEADER * 0.047
+                : HEIGHT_HEADER * 0.04,
+              right: 15,
+              flexDirection: "row",
+              zIndex: 11,
+              opacity: opcityTwo,
+            }}
+          >
+            <TouchableOpacity
+              style={{ marginRight: 15 }}
+              onPress={() => {
+                alert("Back");
+              }}
+            >
+              <Icons
+                name="hearto"
+                size={30}
+                color="#000"
+                //  color={this.color}
+                style={{ marginLeft: 5 }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{ marginRight: 15 }}
+              onPress={() => {
+                alert("Back");
+              }}
+            >
+              <Icons
+                name="sharealt"
+                size={30}
+                color="#000"
+                style={{ marginLeft: 5 }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                alert("Back");
+              }}
+            >
+              <Icons
+                name="shoppingcart"
+                size={30}
+                color="#000"
+                //color={this.color}
+                style={{ marginLeft: 5 }}
+              />
+            </TouchableOpacity>
+          </Animated.View>
+
           <Animated.View
             style={{
               opacity: opacityHeader,
-              marginLeft: -60,
+              marginLeft: 0,
             }}
           >
             <FlatList
@@ -305,12 +388,13 @@ export default class TopAnimationHorizatol extends Component {
                       alignItems: "center",
                       justifyContent: "center",
                       alignContent: "center",
+                      zIndex: 4,
                     }}
                   >
                     <Text
                       style={{
                         fontSize: 16,
-                        color: "#000",
+                        color: index === this.borders ? "red" : "#000",
                         position: "absolute",
                         bottom: 10,
                         textAlign: "center",
@@ -339,15 +423,15 @@ export default class TopAnimationHorizatol extends Component {
           </Animated.View>
         </Animated.View>
         <Animated.ScrollView
-          style={{
-            marginTop: TOP,
-          }}
+          // style={{
+          //   marginTop: TOP,
+          // }}
           ref={(ref) => (this._scrollView = ref)}
-          onScrollBeginDrag={(event) => {
-            LayoutAnimation.linear();
-            this.setState({ offset: event.nativeEvent.contentOffset.y });
-            //this.offset = event.nativeEvent.contentOffset.y;
-          }}
+          // onScrollBeginDrag={(event) => {
+          //   LayoutAnimation.linear();
+          //   this.setState({ offset: event.nativeEvent.contentOffset.y });
+          //   //this.offset = event.nativeEvent.contentOffset.y;
+          // }}
           //decelerationRate={0.7}
           scrollEventThrottle={16}
           //   onScroll={Animated.event(
@@ -361,21 +445,14 @@ export default class TopAnimationHorizatol extends Component {
           //     }
           //   )}
           onScroll={(event) => {
-            if (event.nativeEvent.contentOffset.y > 200) {
-              LayoutAnimation.linear();
-              InteractionManager.runAfterInteractions(() => {
-                // ...long-running synchronous task...
-                this.color = "#000";
-              });
+            if (event.nativeEvent.contentOffset.y > 300) {
+             // LayoutAnimation.linear();
 
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
             if (event.nativeEvent.contentOffset.y < 150) {
-              LayoutAnimation.linear();
-              InteractionManager.runAfterInteractions(() => {
-                // ...long-running synchronous task...
-                this.color = "#FFF";
-              });
+             // LayoutAnimation.linear();
+
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
             if (
@@ -492,8 +569,92 @@ export default class TopAnimationHorizatol extends Component {
           }}
         >
           {console.log("2222", this._scrollHorizontal)}
-          <View>
-            <View style={{}} />
+          <View style={{ marginTop: HEADER_MAX_HEIGHT, overflow: "hidden" }}>
+            <View style={{ marginHorizontal: 15 }}>
+              <Text
+                style={{ fontSize: 20, fontWeight: "bold", marginVertical: 15 }}
+              >
+                Saigon Skydeck in Bitexco Financial Tower Admission Ticket
+              </Text>
+              <Text style={{ fontSize: 16 }}>
+                City views so beautifull girl and building high
+              </Text>
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  marginVertical: 15,
+                }}
+              >
+                <Icon
+                  name="star"
+                  type="font-awesome"
+                  color="#FFA628"
+                  size={24}
+                />
+                <Text
+                  style={{
+                    color: "#000",
+                  }}
+                >
+                  5{" "}
+                </Text>
+                <Text> (760 Reviews) </Text>
+                <Text>||</Text>
+                <Icon name="user" type="font-awesome" color="#999" size={24} />
+                <Text>10+k Booked</Text>
+              </View>
+
+              <View
+                style={{
+                  borderTopWidth: 1,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 1,
+                  paddingBottom: 15,
+                }}
+              >
+                <View style={styles.viewContent}>
+                  <FontAwesome5Pro name="clock" color="#424242" size={24} />
+                  <Text style={styles.textContent}>Available Today</Text>
+                </View>
+                <View style={styles.viewContent}>
+                  <FontAwesome5Pro name="lightbulb" color="red" size={24} />
+                  <Text style={styles.textContent}>Instant Confirmation</Text>
+                </View>
+                <View style={styles.viewContent}>
+                  <FontAwesome5Pro
+                    name="usd-circle"
+                    color="#424242"
+                    size={24}
+                  />
+                  <Text style={styles.textContent}>No Cancellation</Text>
+                </View>
+                <View style={styles.viewContent}>
+                  <FontAwesome5Pro name="print" color="#424242" size={24} />
+                  <Text style={styles.textContent}>
+                    Show mobile or printed voucher
+                  </Text>
+                </View>
+                <View style={styles.viewContent}>
+                  <FontAwesome5Pro
+                    name="calendar-week"
+                    color="#424242"
+                    size={24}
+                  />
+                  <Text style={styles.textContent}>Open Date Ticket</Text>
+                </View>
+                <View style={styles.viewContent}>
+                  <FontAwesome5Pro
+                    name="clipboard-list"
+                    color="#424242"
+                    size={24}
+                  />
+                  <Text style={styles.textContent}>
+                    Collect Physical Ticket
+                  </Text>
+                </View>
+              </View>
+            </View>
 
             <View
               style={{

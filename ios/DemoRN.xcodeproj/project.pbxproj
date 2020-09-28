@@ -20,6 +20,10 @@
 		4A2A1FC0A44E12BDC13C719B /* libPods-DemoRN-DemoRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE8CBD4DD8C7EDEA787246C /* libPods-DemoRN-DemoRNTests.a */; };
 		5B44593924FD0A12002BB2CD /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44593824FD0A12002BB2CD /* NotificationService.swift */; };
 		5B44593D24FD0A12002BB2CD /* OneSignal.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B44593624FD0A12002BB2CD /* OneSignal.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B855AFA2522018C0002BFDB /* FontAwesome5_Pro_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B855AF32522018C0002BFDB /* FontAwesome5_Pro_Brands.ttf */; };
+		5B855AFB2522018C0002BFDB /* FontAwesome5_Pro_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B855AF42522018C0002BFDB /* FontAwesome5_Pro_Light.ttf */; };
+		5B855AFC2522018C0002BFDB /* FontAwesome5_Pro_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B855AF52522018C0002BFDB /* FontAwesome5_Pro_Solid.ttf */; };
+		5B855AFF2522018C0002BFDB /* FontAwesome5_Pro_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B855AF82522018C0002BFDB /* FontAwesome5_Pro_Regular.ttf */; };
 		D8DE7A5534ADC0F7D24B4C26 /* libPods-DemoRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD19C74038E7090F0FA2A7F4 /* libPods-DemoRN.a */; };
 		EF4832DE4450755ABA4B93D5 /* libPods-DemoRN-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE56CCE67936C0103C8F7373 /* libPods-DemoRN-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -86,6 +90,13 @@
 		5B44593624FD0A12002BB2CD /* OneSignal.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignal.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B44593824FD0A12002BB2CD /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		5B44593A24FD0A12002BB2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B855AF22522018C0002BFDB /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		5B855AF32522018C0002BFDB /* FontAwesome5_Pro_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Pro_Brands.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Pro_Brands.ttf; sourceTree = "<group>"; };
+		5B855AF42522018C0002BFDB /* FontAwesome5_Pro_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Pro_Light.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Pro_Light.ttf; sourceTree = "<group>"; };
+		5B855AF52522018C0002BFDB /* FontAwesome5_Pro_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Pro_Solid.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Pro_Solid.ttf; sourceTree = "<group>"; };
+		5B855AF62522018C0002BFDB /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		5B855AF72522018C0002BFDB /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		5B855AF82522018C0002BFDB /* FontAwesome5_Pro_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Pro_Regular.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Pro_Regular.ttf; sourceTree = "<group>"; };
 		6CE8CBD4DD8C7EDEA787246C /* libPods-DemoRN-DemoRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoRN-DemoRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		980214054148277B59E7406D /* libPods-DemoRN-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoRN-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD19C74038E7090F0FA2A7F4 /* libPods-DemoRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +214,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				5B855AF22522018C0002BFDB /* FontAwesome5_Brands.ttf */,
+				5B855AF32522018C0002BFDB /* FontAwesome5_Pro_Brands.ttf */,
+				5B855AF42522018C0002BFDB /* FontAwesome5_Pro_Light.ttf */,
+				5B855AF82522018C0002BFDB /* FontAwesome5_Pro_Regular.ttf */,
+				5B855AF52522018C0002BFDB /* FontAwesome5_Pro_Solid.ttf */,
+				5B855AF62522018C0002BFDB /* FontAwesome5_Regular.ttf */,
+				5B855AF72522018C0002BFDB /* FontAwesome5_Solid.ttf */,
 				13B07FAE1A68108700A75B9A /* DemoRN */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DemoRNTests */,
@@ -413,6 +431,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B855AFA2522018C0002BFDB /* FontAwesome5_Pro_Brands.ttf in Resources */,
+				5B855AFB2522018C0002BFDB /* FontAwesome5_Pro_Light.ttf in Resources */,
+				5B855AFC2522018C0002BFDB /* FontAwesome5_Pro_Solid.ttf in Resources */,
+				5B855AFF2522018C0002BFDB /* FontAwesome5_Pro_Regular.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
