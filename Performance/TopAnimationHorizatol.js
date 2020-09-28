@@ -17,6 +17,7 @@ import {
   Image,
   PixelRatio,
   InteractionManager,
+  TouchableHighlightBase,
 } from "react-native";
 import { isIphoneX } from "react-native-iphone-x-helper";
 import { ImageBackground } from "react-native";
@@ -88,6 +89,9 @@ export default class TopAnimationHorizatol extends Component {
     this.option_seven = 0;
     this.refs._scrollHorizontal;
     this.refs._scrollView;
+    this.color = "#fff";
+    this.borders = -1;
+    this.colorAnimation = new Animated.Value(0);
   }
   handleScroll = (index) => {
     if (index === 0) {
@@ -114,8 +118,8 @@ export default class TopAnimationHorizatol extends Component {
   };
   render() {
     const HEIGHT = this.state.scrollY.interpolate({
-      inputRange: [0, 200],
-      outputRange: [HEADER_MAX_HEIGHT, 40],
+      inputRange: [0, HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT],
+      outputRange: [HEADER_MAX_HEIGHT, HEADER_MIN_HEIGHT],
       extrapolate: "extend",
     });
     const backGround = this.state.scrollY.interpolate({
@@ -138,13 +142,15 @@ export default class TopAnimationHorizatol extends Component {
       outputRange: [HEADER_MAX_HEIGHT, 0],
       extrapolate: "clamp",
     });
-
+    const colorIcon = this.state.scrollY.interpolate({
+      inputRange: [0, 150, 300],
+      outputRange: ["#fff", "#000", "#000"],
+      extrapolate: "clamp",
+    });
     return (
       <View style={{ flex: 1 }}>
         <StatusBar
-          barStyle={
-            this.state.color === "#fff" ? "light-content" : "dark-content"
-          }
+          barStyle={this.color === "#fff" ? "light-content" : "dark-content"}
           backgroundColor="transparent"
           translucent
         />
@@ -201,8 +207,8 @@ export default class TopAnimationHorizatol extends Component {
             <Icons
               name="left"
               size={30}
-              // color="#000"
-              color={this.state.color}
+              //color="#000"
+              color={this.color}
               style={{ marginLeft: 5 }}
             />
           </TouchableOpacity>
@@ -230,7 +236,7 @@ export default class TopAnimationHorizatol extends Component {
                 name="hearto"
                 size={30}
                 // color="#000"
-                color={this.state.color}
+                color={this.color}
                 style={{ marginLeft: 5 }}
               />
             </TouchableOpacity>
@@ -244,7 +250,7 @@ export default class TopAnimationHorizatol extends Component {
                 name="sharealt"
                 size={30}
                 // color="#000"
-                color={this.state.color}
+                color={this.color}
                 style={{ marginLeft: 5 }}
               />
             </TouchableOpacity>
@@ -257,7 +263,7 @@ export default class TopAnimationHorizatol extends Component {
                 name="shoppingcart"
                 size={30}
                 // color="#000"
-                color={this.state.color}
+                color={this.color}
                 style={{ marginLeft: 5 }}
               />
             </TouchableOpacity>
@@ -315,15 +321,15 @@ export default class TopAnimationHorizatol extends Component {
                     </Text>
                     <Animated.View
                       style={{
-                        borderWidth: index === this.state.borders ? 2 : 0,
-                        borderColor:
-                          index === this.state.borders ? "red" : "#fff",
+                        borderWidth: index === this.borders ? 2 : 0,
+                        borderColor: index === this.borders ? "red" : "#fff",
                         position: "absolute",
                         bottom: 0,
                         width:
                           Math.ceil(pixelWidth(item.name, { size: 16 })) + 5,
                         borderRadius: 6,
                         left: -1.5,
+                        opacity: 1,
                       }}
                     />
                   </TouchableOpacity>
@@ -359,20 +365,16 @@ export default class TopAnimationHorizatol extends Component {
               LayoutAnimation.linear();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
-                this.setState({
-                  color: "#000",
-                });
+                this.color = "#000";
               });
 
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
-            if (event.nativeEvent.contentOffset.y < 200) {
+            if (event.nativeEvent.contentOffset.y < 150) {
               LayoutAnimation.linear();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
-                this.setState({
-                  color: "#000",
-                });
+                this.color = "#FFF";
               });
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
@@ -387,8 +389,9 @@ export default class TopAnimationHorizatol extends Component {
                 viewPosition: 0.5,
               });
               InteractionManager.runAfterInteractions(() => {
+                this.borders = 0;
                 // ...long-running synchronous task...
-                this.setState({ borders: 0 });
+                //this.setState({ borders: 0 });
               });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_two &&
@@ -403,7 +406,7 @@ export default class TopAnimationHorizatol extends Component {
                   index: 1,
                   viewPosition: 0.5,
                 });
-                this.setState({ borders: 1 });
+                this.borders = 1;
               });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_three &&
@@ -418,7 +421,8 @@ export default class TopAnimationHorizatol extends Component {
                   index: 2,
                   viewPosition: 0.5,
                 });
-                this.setState({ borders: 2 });
+                this.borders = 2;
+                //this.setState({ borders: 2 });
               });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_four &&
@@ -433,7 +437,8 @@ export default class TopAnimationHorizatol extends Component {
                   index: 3,
                   viewPosition: 0.5,
                 });
-                this.setState({ borders: 3 });
+                this.borders = 3;
+                //this.setState({ borders: 3 });
               });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_five &&
@@ -448,7 +453,8 @@ export default class TopAnimationHorizatol extends Component {
                   index: 4,
                   viewPosition: 0.5,
                 });
-                this.setState({ borders: 4 });
+                this.borders = 4;
+                //this.setState({ borders: 4 });
               });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_six &&
@@ -463,7 +469,8 @@ export default class TopAnimationHorizatol extends Component {
                   index: 5,
                   viewPosition: 0.5,
                 });
-                this.setState({ borders: 5 });
+                this.borders = 5;
+                //this.setState({ borders: 5 });
               });
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_seven &&
@@ -478,7 +485,8 @@ export default class TopAnimationHorizatol extends Component {
                   index: 6,
                   viewPosition: 0.5,
                 });
-                this.setState({ borders: 6 });
+                this.borders = 6;
+                //this.setState({ borders: 6 });
               });
             }
           }}

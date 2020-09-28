@@ -23,10 +23,10 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 // import App from "./ProgressExample";
 //import App from "./images/SizeImage";
 //import App from './UberEats.ts'
-// import App from "./Navigation/DemoStackNavigation";
-import App from "./Performance/TouchAnimation";
+ import App from "./Navigation/DemoStackNavigation";
+//import App from "./Performance/TouchAnimation";
 //import App from "./animation/HelloAppAnimation";
-// import App from "./animation/AnimationDemo";
+ //import App from "./animation/AnimationDemo";
 //import App from "./Video/index";
 // export const fonts = {
 //   UberMoveRegular: require("./assets/UberMoveRegular.ttf"),
