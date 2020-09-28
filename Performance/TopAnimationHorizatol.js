@@ -121,18 +121,18 @@ export default class TopAnimationHorizatol extends Component {
   };
   render() {
     const HEIGHT = this.state.scrollY.interpolate({
-      inputRange: [0, 250],
-      outputRange: [HEADER_MAX_HEIGHT, 0],
+      inputRange: [0, 300],
+      outputRange: [HEADER_MAX_HEIGHT, 10],
       extrapolate: "extend",
     });
     const backGround = this.state.scrollY.interpolate({
-      inputRange: [0, 150],
+      inputRange: [0, 200],
       outputRange: ["rgba(0, 0, 0,0)", "#fff"],
       extrapolate: "clamp",
     });
     const opacityHeader = this.state.scrollY.interpolate({
-      inputRange: [0, 200, 300],
-      outputRange: [0, 0, 1],
+      inputRange: [0, 200, 300, 400],
+      outputRange: [0, 0, 0, 1],
       extrapolate: "clamp",
     });
 
@@ -151,7 +151,24 @@ export default class TopAnimationHorizatol extends Component {
       outputRange: [1, 0],
       extrapolate: "clamp",
     });
-
+    const heightAnimation = this.state.scrollY.interpolate({
+      inputRange: [0, 150, 300],
+      outputRange: [
+        HEIGHT_HEADER * 0.1,
+        HEIGHT_HEADER * 0.1,
+        HEIGHT_HEADER * 0.14,
+      ],
+      extrapolate: "clamp",
+    });
+    console.log(
+      this.option_one,
+      this.option_two,
+      this.option_three,
+      this.option_four,
+      this.option_five,
+      this.option_six,
+      this.option_seven
+    );
     return (
       <View style={{ flex: 1 }}>
         <StatusBar
@@ -166,7 +183,7 @@ export default class TopAnimationHorizatol extends Component {
             width: "100%",
             height: HEIGHT,
             position: "absolute",
-            opacity: opcityThree,
+            // opacity: opcityThree,
             //justifyContent: "center",
           }}
           source={{
@@ -186,7 +203,7 @@ export default class TopAnimationHorizatol extends Component {
             //backgroundColor: "#fff",
             // borderBottomWidth: 1,
             // borderBottomColor: "#ddd",
-            height: HEIGHT_HEADER * 0.14,
+            height: heightAnimation,
             backgroundColor: backGround,
           }}
         >
@@ -423,15 +440,17 @@ export default class TopAnimationHorizatol extends Component {
           </Animated.View>
         </Animated.View>
         <Animated.ScrollView
-          // style={{
-          //   marginTop: TOP,
-          // }}
           ref={(ref) => (this._scrollView = ref)}
-          // onScrollBeginDrag={(event) => {
-          //   LayoutAnimation.linear();
-          //   this.setState({ offset: event.nativeEvent.contentOffset.y });
-          //   //this.offset = event.nativeEvent.contentOffset.y;
-          // }}
+          onScrollBeginDrag={(event) => {
+            //LayoutAnimation.linear();
+            this.setState({ offset: event.nativeEvent.contentOffset.y });
+            //this.offset = event.nativeEvent.contentOffset.y;
+          }}
+          onMomentumScrollEnd={(event) => {
+            //LayoutAnimation.linear();
+            this.setState({ offset: event.nativeEvent.contentOffset.y });
+            //this.offset = event.nativeEvent.contentOffset.y;
+          }}
           //decelerationRate={0.7}
           scrollEventThrottle={16}
           //   onScroll={Animated.event(
@@ -445,36 +464,46 @@ export default class TopAnimationHorizatol extends Component {
           //     }
           //   )}
           onScroll={(event) => {
+            console.log(event.nativeEvent.contentOffset.y);
             if (event.nativeEvent.contentOffset.y > 300) {
-             // LayoutAnimation.linear();
-
+              //LayoutAnimation.linear();
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+                this.color = "#000";
+              });
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
-            if (event.nativeEvent.contentOffset.y < 150) {
-             // LayoutAnimation.linear();
+
+            if (event.nativeEvent.contentOffset.y < 250) {
+              //LayoutAnimation.linear();
+              InteractionManager.runAfterInteractions(() => {
+                // ...long-running synchronous task...
+                this.color = "#FFF";
+              });
+              // LayoutAnimation.linear();
 
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
             if (
-              event.nativeEvent.contentOffset.y >= this.option_one &&
+              event.nativeEvent.contentOffset.y >= this.option_one + 100 &&
               event.nativeEvent.contentOffset.y <= this.option_two
             ) {
-              LayoutAnimation.linear();
+              // LayoutAnimation.linear();
               this._scrollHorizontal.scrollToIndex({
                 animated: true,
                 index: 0,
                 viewPosition: 0.5,
               });
               InteractionManager.runAfterInteractions(() => {
-                this.borders = 0;
                 // ...long-running synchronous task...
                 //this.setState({ borders: 0 });
               });
+              this.borders = 0;
             } else if (
               event.nativeEvent.contentOffset.y >= this.option_two &&
               event.nativeEvent.contentOffset.y <= this.option_three
             ) {
-              LayoutAnimation.linear();
+              // LayoutAnimation.linear();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -489,7 +518,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_three &&
               event.nativeEvent.contentOffset.y <= this.option_four
             ) {
-              LayoutAnimation.linear();
+              // LayoutAnimation.linear();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -505,7 +534,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_four &&
               event.nativeEvent.contentOffset.y <= this.option_five
             ) {
-              LayoutAnimation.linear();
+              // LayoutAnimation.linear();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -521,7 +550,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_five &&
               event.nativeEvent.contentOffset.y <= this.option_six
             ) {
-              LayoutAnimation.linear();
+              // LayoutAnimation.linear();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -537,7 +566,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_six &&
               event.nativeEvent.contentOffset.y <= this.option_seven
             ) {
-              LayoutAnimation.linear();
+              // LayoutAnimation.linear();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -568,94 +597,7 @@ export default class TopAnimationHorizatol extends Component {
             }
           }}
         >
-          {console.log("2222", this._scrollHorizontal)}
-          <View style={{ marginTop: HEADER_MAX_HEIGHT, overflow: "hidden" }}>
-            <View style={{ marginHorizontal: 15 }}>
-              <Text
-                style={{ fontSize: 20, fontWeight: "bold", marginVertical: 15 }}
-              >
-                Saigon Skydeck in Bitexco Financial Tower Admission Ticket
-              </Text>
-              <Text style={{ fontSize: 16 }}>
-                City views so beautifull girl and building high
-              </Text>
-              <View
-                style={{
-                  flexDirection: "row",
-                  alignItems: "center",
-                  marginVertical: 15,
-                }}
-              >
-                <Icon
-                  name="star"
-                  type="font-awesome"
-                  color="#FFA628"
-                  size={24}
-                />
-                <Text
-                  style={{
-                    color: "#000",
-                  }}
-                >
-                  5{" "}
-                </Text>
-                <Text> (760 Reviews) </Text>
-                <Text>||</Text>
-                <Icon name="user" type="font-awesome" color="#999" size={24} />
-                <Text>10+k Booked</Text>
-              </View>
-
-              <View
-                style={{
-                  borderTopWidth: 1,
-                  borderColor: "#ddd",
-                  borderBottomWidth: 1,
-                  paddingBottom: 15,
-                }}
-              >
-                <View style={styles.viewContent}>
-                  <FontAwesome5Pro name="clock" color="#424242" size={24} />
-                  <Text style={styles.textContent}>Available Today</Text>
-                </View>
-                <View style={styles.viewContent}>
-                  <FontAwesome5Pro name="lightbulb" color="red" size={24} />
-                  <Text style={styles.textContent}>Instant Confirmation</Text>
-                </View>
-                <View style={styles.viewContent}>
-                  <FontAwesome5Pro
-                    name="usd-circle"
-                    color="#424242"
-                    size={24}
-                  />
-                  <Text style={styles.textContent}>No Cancellation</Text>
-                </View>
-                <View style={styles.viewContent}>
-                  <FontAwesome5Pro name="print" color="#424242" size={24} />
-                  <Text style={styles.textContent}>
-                    Show mobile or printed voucher
-                  </Text>
-                </View>
-                <View style={styles.viewContent}>
-                  <FontAwesome5Pro
-                    name="calendar-week"
-                    color="#424242"
-                    size={24}
-                  />
-                  <Text style={styles.textContent}>Open Date Ticket</Text>
-                </View>
-                <View style={styles.viewContent}>
-                  <FontAwesome5Pro
-                    name="clipboard-list"
-                    color="#424242"
-                    size={24}
-                  />
-                  <Text style={styles.textContent}>
-                    Collect Physical Ticket
-                  </Text>
-                </View>
-              </View>
-            </View>
-
+          <View style={{ marginTop: HEADER_MAX_HEIGHT, overflow: "visible" }}>
             <View
               style={{
                 marginTop: 10,
@@ -664,9 +606,109 @@ export default class TopAnimationHorizatol extends Component {
               }}
             >
               <View
+                style={{ marginHorizontal: 15 }}
+                onLayout={(event) => {
+                  console.log("Du1000", event.nativeEvent);
+                }}
+              >
+                <Text
+                  style={{
+                    fontSize: 20,
+                    fontWeight: "bold",
+                    marginVertical: 15,
+                  }}
+                >
+                  Saigon Skydeck in Bitexco Financial Tower Admission Ticket
+                </Text>
+                <Text style={{ fontSize: 16 }}>
+                  City views so beautifull girl and building high
+                </Text>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    marginVertical: 15,
+                    alignItems: "center",
+                  }}
+                >
+                  <Icon
+                    name="star"
+                    type="font-awesome"
+                    color="#FFA628"
+                    size={24}
+                  />
+                  <Text
+                    style={{
+                      color: "#000",
+                    }}
+                  >
+                    5{" "}
+                  </Text>
+                  <Text> (760 Reviews) </Text>
+                  <Text> || </Text>
+                  <Icon
+                    name="user"
+                    type="font-awesome"
+                    color="#999"
+                    size={24}
+                  />
+                  <Text>10+k Booked</Text>
+                </View>
+
+                <View
+                  style={{
+                    borderTopWidth: 1,
+                    borderColor: "#ddd",
+                    borderBottomWidth: 1,
+                    paddingBottom: 15,
+                  }}
+                >
+                  <View style={styles.viewContent}>
+                    <FontAwesome5Pro name="clock" color="#424242" size={24} />
+                    <Text style={styles.textContent}>Available Today</Text>
+                  </View>
+                  <View style={styles.viewContent}>
+                    <FontAwesome5Pro name="lightbulb" color="red" size={24} />
+                    <Text style={styles.textContent}>Instant Confirmation</Text>
+                  </View>
+                  <View style={styles.viewContent}>
+                    <FontAwesome5Pro
+                      name="usd-circle"
+                      color="#424242"
+                      size={24}
+                    />
+                    <Text style={styles.textContent}>No Cancellation</Text>
+                  </View>
+                  <View style={styles.viewContent}>
+                    <FontAwesome5Pro name="print" color="#424242" size={24} />
+                    <Text style={styles.textContent}>
+                      Show mobile or printed voucher
+                    </Text>
+                  </View>
+                  <View style={styles.viewContent}>
+                    <FontAwesome5Pro
+                      name="calendar-week"
+                      color="#424242"
+                      size={24}
+                    />
+                    <Text style={styles.textContent}>Open Date Ticket</Text>
+                  </View>
+                  <View style={styles.viewContent}>
+                    <FontAwesome5Pro
+                      name="clipboard-list"
+                      color="#424242"
+                      size={24}
+                    />
+                    <Text style={styles.textContent}>
+                      Collect Physical Ticket
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
                 onLayout={(event) => {
                   this.option_one = event.nativeEvent.layout.y;
-                  console.log("Du", event.nativeEvent);
+                  console.log("Du 1", event.nativeEvent);
                 }}
               >
                 <Text
@@ -762,62 +804,13 @@ export default class TopAnimationHorizatol extends Component {
                   decreased a lot. For example, Sub-Saharan Africa has the
                   highest rates of HIV/AIDS in the world. But in East and South
                   African countries, the number of people with HIV/AIDS has gone
-                  down by nearly 30 percent since 2010. Botswana’s Health
-                  Minister Dorcas Makgato tells Al Jazeera how her country made
-                  this happen: Voice 3 “Right from the beginning we decided to
-                  come to the issue boldly. We were very open about the size of
-                  the problem and did not try to hide from it. We were bold in
-                  the sense that we admitted that there was a problem. We were
-                  bold in bringing everyone involved together. We had a common
-                  purpose in fighting HIV and AIDS.” Voice 2 Botswana still has
-                  a high rate of HIV at 21 percent. But this has dropped from 36
-                  percent in the year 2000. Botswana has a government program
-                  that treats EVERY person no matter their age, sex or economic
-                  status. And they have seen particular improvement in one area:
-                  passing of HIV from mothers to their babies. The rate in
-                  Botswana has dropped from 40 to less than two percent! Many
-                  other countries have a similar drop in mother to child
-                  transmission. This is one of the major successes against the
-                  global HIV/AIDS epidemic. Voice 1 Many people with HIV/AIDS
-                  are also living longer. People with HIV/AIDS can take drugs to
-                  control the virus. These drugs are called Antiretrovirals or
-                  ARVs. By using ARVs correctly, people with HIV/AIDS can live
-                  long, productive lives. UNAIDS is the United Nations’ global
-                  effort to end AIDS. In a report, they said that for the first
-                  time, 53 percent of the people who need ARVs are able to get
-                  them. This is more than twice the number of people who were
-                  able to get them in 2012.
+                  down by nearly 30 percent since 2010. Botswana’s
                 </Text>
                 <Text>
                   Voice 1 In some parts of the world, rates of HIV/AIDS have
                   decreased a lot. For example, Sub-Saharan Africa has the
                   highest rates of HIV/AIDS in the world. But in East and South
-                  African countries, the number of people with HIV/AIDS has gone
-                  down by nearly 30 percent since 2010. Botswana’s Health
-                  Minister Dorcas Makgato tells Al Jazeera how her country made
-                  this happen: Voice 3 “Right from the beginning we decided to
-                  come to the issue boldly. We were very open about the size of
-                  the problem and did not try to hide from it. We were bold in
-                  the sense that we admitted that there was a problem. We were
-                  bold in bringing everyone involved together. We had a common
-                  purpose in fighting HIV and AIDS.” Voice 2 Botswana still has
-                  a high rate of HIV at 21 percent. But this has dropped from 36
-                  percent in the year 2000. Botswana has a government program
-                  that treats EVERY person no matter their age, sex or economic
-                  status. And they have seen particular improvement in one area:
-                  passing of HIV from mothers to their babies. The rate in
-                  Botswana has dropped from 40 to less than two percent! Many
-                  other countries have a similar drop in mother to child
-                  transmission. This is one of the major successes against the
-                  global HIV/AIDS epidemic. Voice 1 Many people with HIV/AIDS
-                  are also living longer. People with HIV/AIDS can take drugs to
-                  control the virus. These drugs are called Antiretrovirals or
-                  ARVs. By using ARVs correctly, people with HIV/AIDS can live
-                  long, productive lives. UNAIDS is the United Nations’ global
-                  effort to end AIDS. In a report, they said that for the first
-                  time, 53 percent of the people who need ARVs are able to get
-                  them. This is more than twice the number of people who were
-                  able to get them in 2012.
+                  African countries, the number of people with HIV/AIDS
                 </Text>
               </View>
               <View
@@ -992,63 +985,12 @@ export default class TopAnimationHorizatol extends Component {
                   Voice 1 In some parts of the world, rates of HIV/AIDS have
                   decreased a lot. For example, Sub-Saharan Africa has the
                   highest rates of HIV/AIDS in the world. But in East and South
-                  African countries, the number of people with HIV/AIDS has gone
-                  down by nearly 30 percent since 2010. Botswana’s Health
-                  Minister Dorcas Makgato tells Al Jazeera how her country made
-                  this happen: Voice 3 “Right from the beginning we decided to
-                  come to the issue boldly. We were very open about the size of
-                  the problem and did not try to hide from it. We were bold in
-                  the sense that we admitted that there was a problem. We were
-                  bold in bringing everyone involved together. We had a common
-                  purpose in fighting HIV and AIDS.” Voice 2 Botswana still has
-                  a high rate of HIV at 21 percent. But this has dropped from 36
-                  percent in the year 2000. Botswana has a government program
-                  that treats EVERY person no matter their age, sex or economic
-                  status. And they have seen particular improvement in one area:
-                  passing of HIV from mothers to their babies. The rate in
-                  Botswana has dropped from 40 to less than two percent! Many
-                  other countries have a similar drop in mother to child
-                  transmission. This is one of the major successes against the
-                  global HIV/AIDS epidemic. Voice 1 Many people with HIV/AIDS
-                  are also living longer. People with HIV/AIDS can take drugs to
-                  control the virus. These drugs are called Antiretrovirals or
-                  ARVs. By using ARVs correctly, people with HIV/AIDS can live
-                  long, productive lives. UNAIDS is the United Nations’ global
-                  effort to end AIDS. In a report, they said that for the first
-                  time, 53 percent of the people who need ARVs are able to get
-                  them. This is more than twice the number of people who were
-                  able to get them in 2012.
+                  African countries, the number of people with HIV/AIDS
                 </Text>
                 <Text>
                   Voice 1 In some parts of the world, rates of HIV/AIDS have
-                  decreased a lot. For example, Sub-Saharan Africa has the
-                  highest rates of HIV/AIDS in the world. But in East and South
-                  African countries, the number of people with HIV/AIDS has gone
-                  down by nearly 30 percent since 2010. Botswana’s Health
-                  Minister Dorcas Makgato tells Al Jazeera how her country made
-                  this happen: Voice 3 “Right from the beginning we decided to
-                  come to the issue boldly. We were very open about the size of
-                  the problem and did not try to hide from it. We were bold in
-                  the sense that we admitted that there was a problem. We were
-                  bold in bringing everyone involved together. We had a common
-                  purpose in fighting HIV and AIDS.” Voice 2 Botswana still has
-                  a high rate of HIV at 21 percent. But this has dropped from 36
-                  percent in the year 2000. Botswana has a government program
-                  that treats EVERY person no matter their age, sex or economic
-                  status. And they have seen particular improvement in one area:
-                  passing of HIV from mothers to their babies. The rate in
-                  Botswana has dropped from 40 to less than two percent! Many
-                  other countries have a similar drop in mother to child
-                  transmission. This is one of the major successes against the
-                  global HIV/AIDS epidemic. Voice 1 Many people with HIV/AIDS
-                  are also living longer. People with HIV/AIDS can take drugs to
-                  control the virus. These drugs are called Antiretrovirals or
-                  ARVs. By using ARVs correctly, people with HIV/AIDS can live
-                  long, productive lives. UNAIDS is the United Nations’ global
-                  effort to end AIDS. In a report, they said that for the first
-                  time, 53 percent of the people who need ARVs are able to get
-                  them. This is more than twice the number of people who were
-                  able to get them in 2012.
+                  decreased a lot. For example, Sub-Saharan Africa has the f
+                  people who were able to get them in 2012.
                 </Text>
               </View>
               <View
@@ -1073,28 +1015,7 @@ export default class TopAnimationHorizatol extends Component {
                   down by nearly 30 percent since 2010. Botswana’s Health
                   Minister Dorcas Makgato tells Al Jazeera how her country made
                   this happen: Voice 3 “Right from the beginning we decided to
-                  come to the issue boldly. We were very open about the size of
-                  the problem and did not try to hide from it. We were bold in
-                  the sense that we admitted that there was a problem. We were
-                  bold in bringing everyone involved together. We had a common
-                  purpose in fighting HIV and AIDS.” Voice 2 Botswana still has
-                  a high rate of HIV at 21 percent. But this has dropped from 36
-                  percent in the year 2000. Botswana has a government program
-                  that treats EVERY person no matter their age, sex or economic
-                  status. And they have seen particular improvement in one area:
-                  passing of HIV from mothers to their babies. The rate in
-                  Botswana has dropped from 40 to less than two percent! Many
-                  other countries have a similar drop in mother to child
-                  transmission. This is one of the major successes against the
-                  global HIV/AIDS epidemic. Voice 1 Many people with HIV/AIDS
-                  are also living longer. People with HIV/AIDS can take drugs to
-                  control the virus. These drugs are called Antiretrovirals or
-                  ARVs. By using ARVs correctly, people with HIV/AIDS can live
-                  long, productive lives. UNAIDS is the United Nations’ global
-                  effort to end AIDS. In a report, they said that for the first
-                  time, 53 percent of the people who need ARVs are able to get
-                  them. This is more than twice the number of people who were
-                  able to get them in 2012.
+                  come to the issue boldly. We were very open
                 </Text>
                 <Text>
                   Voice 1 In some parts of the world, rates of HIV/AIDS have
@@ -1103,29 +1024,7 @@ export default class TopAnimationHorizatol extends Component {
                   African countries, the number of people with HIV/AIDS has gone
                   down by nearly 30 percent since 2010. Botswana’s Health
                   Minister Dorcas Makgato tells Al Jazeera how her country made
-                  this happen: Voice 3 “Right from the beginning we decided to
-                  come to the issue boldly. We were very open about the size of
-                  the problem and did not try to hide from it. We were bold in
-                  the sense that we admitted that there was a problem. We were
-                  bold in bringing everyone involved together. We had a common
-                  purpose in fighting HIV and AIDS.” Voice 2 Botswana still has
-                  a high rate of HIV at 21 percent. But this has dropped from 36
-                  percent in the year 2000. Botswana has a government program
-                  that treats EVERY person no matter their age, sex or economic
-                  status. And they have seen particular improvement in one area:
-                  passing of HIV from mothers to their babies. The rate in
-                  Botswana has dropped from 40 to less than two percent! Many
-                  other countries have a similar drop in mother to child
-                  transmission. This is one of the major successes against the
-                  global HIV/AIDS epidemic. Voice 1 Many people with HIV/AIDS
-                  are also living longer. People with HIV/AIDS can take drugs to
-                  control the virus. These drugs are called Antiretrovirals or
-                  ARVs. By using ARVs correctly, people with HIV/AIDS can live
-                  long, productive lives. UNAIDS is the United Nations’ global
-                  effort to end AIDS. In a report, they said that for the first
-                  time, 53 percent of the people who need ARVs are able to get
-                  them. This is more than twice the number of people who were
-                  able to get them in 2012.
+                  this happen: Voice 3 “Right from the beginning
                 </Text>
               </View>
               <View
@@ -1141,37 +1040,6 @@ export default class TopAnimationHorizatol extends Component {
                   }}
                 >
                   Option seven
-                </Text>
-                <Text>
-                  Voice 1 In some parts of the world, rates of HIV/AIDS have
-                  decreased a lot. For example, Sub-Saharan Africa has the
-                  highest rates of HIV/AIDS in the world. But in East and South
-                  African countries, the number of people with HIV/AIDS has gone
-                  down by nearly 30 percent since 2010. Botswana’s Health
-                  Minister Dorcas Makgato tells Al Jazeera how her country made
-                  this happen: Voice 3 “Right from the beginning we decided to
-                  come to the issue boldly. We were very open about the size of
-                  the problem and did not try to hide from it. We were bold in
-                  the sense that we admitted that there was a problem. We were
-                  bold in bringing everyone involved together. We had a common
-                  purpose in fighting HIV and AIDS.” Voice 2 Botswana still has
-                  a high rate of HIV at 21 percent. But this has dropped from 36
-                  percent in the year 2000. Botswana has a government program
-                  that treats EVERY person no matter their age, sex or economic
-                  status. And they have seen particular improvement in one area:
-                  passing of HIV from mothers to their babies. The rate in
-                  Botswana has dropped from 40 to less than two percent! Many
-                  other countries have a similar drop in mother to child
-                  transmission. This is one of the major successes against the
-                  global HIV/AIDS epidemic. Voice 1 Many people with HIV/AIDS
-                  are also living longer. People with HIV/AIDS can take drugs to
-                  control the virus. These drugs are called Antiretrovirals or
-                  ARVs. By using ARVs correctly, people with HIV/AIDS can live
-                  long, productive lives. UNAIDS is the United Nations’ global
-                  effort to end AIDS. In a report, they said that for the first
-                  time, 53 percent of the people who need ARVs are able to get
-                  them. This is more than twice the number of people who were
-                  able to get them in 2012.
                 </Text>
                 <Text>
                   Voice 1 In some parts of the world, rates of HIV/AIDS have
