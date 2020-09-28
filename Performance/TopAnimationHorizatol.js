@@ -177,7 +177,7 @@ export default class TopAnimationHorizatol extends Component {
           backgroundColor="transparent"
           translucent
           animated
-          ref={(ref) => (this.statusBar = ref)}
+         
         />
 
         <Animated.Image
