@@ -95,6 +95,7 @@ export default class TopAnimationHorizatol extends Component {
     this.color = "#fff";
     this.borders = -1;
     this.colorAnimation = new Animated.Value(0);
+    this.refs.statusBar;
   }
   handleScroll = (index) => {
     if (index === 0) {
@@ -172,10 +173,13 @@ export default class TopAnimationHorizatol extends Component {
     return (
       <View style={{ flex: 1 }}>
         <StatusBar
-          barStyle={this.color === "#fff" ? "light-content" : "dark-content"}
+          barStyle={"light-content"}
           backgroundColor="transparent"
           translucent
+          animated
+          ref={(ref) => (this.statusBar = ref)}
         />
+
         <Animated.Image
           resizeMode="cover"
           style={{
@@ -451,7 +455,7 @@ export default class TopAnimationHorizatol extends Component {
             this.setState({ offset: event.nativeEvent.contentOffset.y });
             //this.offset = event.nativeEvent.contentOffset.y;
           }}
-          //decelerationRate={0.7}
+          //decelerationRate={0.95}
           scrollEventThrottle={16}
           //   onScroll={Animated.event(
           //     [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
@@ -465,21 +469,19 @@ export default class TopAnimationHorizatol extends Component {
           //   )}
           onScroll={(event) => {
             console.log(event.nativeEvent.contentOffset.y);
-            if (event.nativeEvent.contentOffset.y > 300) {
+            if (event.nativeEvent.contentOffset.y > 200) {
               //LayoutAnimation.linear();
-              InteractionManager.runAfterInteractions(() => {
-                // ...long-running synchronous task...
-                this.color = "#000";
-              });
+              StatusBar.setBarStyle("dark-content");
+              // this.statusBar.setNativeProps({
+              //   barStyle: "dark-content",
+              // });    console.log(this.statusBar.);
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
 
-            if (event.nativeEvent.contentOffset.y < 250) {
+            if (event.nativeEvent.contentOffset.y < 200) {
               //LayoutAnimation.linear();
-              InteractionManager.runAfterInteractions(() => {
-                // ...long-running synchronous task...
-                this.color = "#FFF";
-              });
+
+              StatusBar.setBarStyle("light-content");
               // LayoutAnimation.linear();
 
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
@@ -488,7 +490,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_one + 100 &&
               event.nativeEvent.contentOffset.y <= this.option_two
             ) {
-              // LayoutAnimation.linear();
+              LayoutAnimation.easeInEaseOut();
               this._scrollHorizontal.scrollToIndex({
                 animated: true,
                 index: 0,
@@ -503,7 +505,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_two &&
               event.nativeEvent.contentOffset.y <= this.option_three
             ) {
-              // LayoutAnimation.linear();
+              LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -518,7 +520,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_three &&
               event.nativeEvent.contentOffset.y <= this.option_four
             ) {
-              // LayoutAnimation.linear();
+              LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -534,7 +536,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_four &&
               event.nativeEvent.contentOffset.y <= this.option_five
             ) {
-              // LayoutAnimation.linear();
+              LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -550,7 +552,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_five &&
               event.nativeEvent.contentOffset.y <= this.option_six
             ) {
-              // LayoutAnimation.linear();
+              LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -566,7 +568,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_six &&
               event.nativeEvent.contentOffset.y <= this.option_seven
             ) {
-              // LayoutAnimation.linear();
+              LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -582,7 +584,7 @@ export default class TopAnimationHorizatol extends Component {
               event.nativeEvent.contentOffset.y >= this.option_seven &&
               event.nativeEvent.contentOffset.y <= this.option_seven + 400
             ) {
-              LayoutAnimation.linear();
+              LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
