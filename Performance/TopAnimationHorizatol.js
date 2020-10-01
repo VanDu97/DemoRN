@@ -96,28 +96,30 @@ export default class TopAnimationHorizatol extends Component {
     this.borders = -1;
     this.colorAnimation = new Animated.Value(0);
     this.refs.statusBar;
+    this.refs.mesure;
+    this.refs.mesureOne;
   }
   handleScroll = (index) => {
     if (index === 0) {
-      return Math.ceil(this.option_one);
+      return Math.ceil(this.option_one.y);
     }
     if (index === 1) {
-      return Math.ceil(this.option_two);
+      return Math.ceil(this.option_two.y);
     }
     if (index === 2) {
-      return Math.ceil(this.option_three);
+      return Math.ceil(this.option_three.y);
     }
     if (index === 3) {
-      return Math.ceil(this.option_four);
+      return Math.ceil(this.option_four.y);
     }
     if (index === 4) {
-      return Math.ceil(this.option_five);
+      return Math.ceil(this.option_five.y);
     }
     if (index === 5) {
-      return Math.ceil(this.option_six);
+      return Math.ceil(this.option_six.y);
     }
     if (index === 6) {
-      return Math.ceil(this.option_seven);
+      return Math.ceil(this.option_seven.y);
     }
   };
   render() {
@@ -171,13 +173,17 @@ export default class TopAnimationHorizatol extends Component {
       this.option_seven
     );
     return (
-      <View style={{ flex: 1 }}>
+      <View
+        style={{ flex: 1 }}
+        onLayout={(event) => {
+          console.log("total", event.nativeEvent.layout);
+        }}
+      >
         <StatusBar
           barStyle={"light-content"}
           backgroundColor="transparent"
           translucent
           animated
-         
         />
 
         <Animated.Image
@@ -196,6 +202,9 @@ export default class TopAnimationHorizatol extends Component {
           }}
         />
         <Animated.View
+          onLayout={(event) => {
+            console.log("Event", event.nativeEvent);
+          }}
           style={{
             position: "absolute",
             //top: isIphoneX() ? 50 : Platform.OS === "android" ? 13 : 24,
@@ -397,8 +406,9 @@ export default class TopAnimationHorizatol extends Component {
                         index: index,
                         viewPosition: 0.5,
                       });
+                      console.log("this", index);
                       this._scrollView.scrollTo({
-                        y: this.handleScroll(index) + 200,
+                        y: this.handleScroll(index),
                         animated: true,
                       });
                     }}
@@ -445,6 +455,16 @@ export default class TopAnimationHorizatol extends Component {
         </Animated.View>
         <Animated.ScrollView
           ref={(ref) => (this._scrollView = ref)}
+          onLayout={(event) => {
+            console.log("scroll", event.nativeEvent);
+          }}
+          onContentSizeChange={(contentWidth, contentHeight) => {
+            console.log(
+              "contentWidth, contentHeight",
+              contentWidth,
+              contentHeight
+            );
+          }}
           onScrollBeginDrag={(event) => {
             //LayoutAnimation.linear();
             this.setState({ offset: event.nativeEvent.contentOffset.y });
@@ -468,7 +488,7 @@ export default class TopAnimationHorizatol extends Component {
           //     }
           //   )}
           onScroll={(event) => {
-            console.log(event.nativeEvent.contentOffset.y);
+            console.log("1", event.nativeEvent.contentOffset);
             if (event.nativeEvent.contentOffset.y > 200) {
               //LayoutAnimation.linear();
               StatusBar.setBarStyle("dark-content");
@@ -487,10 +507,11 @@ export default class TopAnimationHorizatol extends Component {
               this.state.scrollY.setValue(event.nativeEvent.contentOffset.y);
             }
             if (
-              event.nativeEvent.contentOffset.y >= this.option_one + 100 &&
-              event.nativeEvent.contentOffset.y <= this.option_two
+              event.nativeEvent.contentOffset.y >= this.option_one.y + 100 &&
+              event.nativeEvent.contentOffset.y <= this.option_two.y
             ) {
-              LayoutAnimation.easeInEaseOut();
+              console.log("lol", event.nativeEvent.contentOffset.y);
+              //LayoutAnimation.easeInEaseOut();
               this._scrollHorizontal.scrollToIndex({
                 animated: true,
                 index: 0,
@@ -502,10 +523,10 @@ export default class TopAnimationHorizatol extends Component {
               });
               this.borders = 0;
             } else if (
-              event.nativeEvent.contentOffset.y >= this.option_two &&
-              event.nativeEvent.contentOffset.y <= this.option_three
+              event.nativeEvent.contentOffset.y >= this.option_two.y &&
+              event.nativeEvent.contentOffset.y <= this.option_three.y
             ) {
-              LayoutAnimation.easeInEaseOut();
+              // LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -517,10 +538,10 @@ export default class TopAnimationHorizatol extends Component {
                 this.borders = 1;
               });
             } else if (
-              event.nativeEvent.contentOffset.y >= this.option_three &&
-              event.nativeEvent.contentOffset.y <= this.option_four
+              event.nativeEvent.contentOffset.y >= this.option_three.y &&
+              event.nativeEvent.contentOffset.y <= this.option_four.y
             ) {
-              LayoutAnimation.easeInEaseOut();
+              // LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -533,10 +554,10 @@ export default class TopAnimationHorizatol extends Component {
                 //this.setState({ borders: 2 });
               });
             } else if (
-              event.nativeEvent.contentOffset.y >= this.option_four &&
-              event.nativeEvent.contentOffset.y <= this.option_five
+              event.nativeEvent.contentOffset.y >= this.option_four.y &&
+              event.nativeEvent.contentOffset.y <= this.option_five.y
             ) {
-              LayoutAnimation.easeInEaseOut();
+              //LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -549,10 +570,10 @@ export default class TopAnimationHorizatol extends Component {
                 //this.setState({ borders: 3 });
               });
             } else if (
-              event.nativeEvent.contentOffset.y >= this.option_five &&
-              event.nativeEvent.contentOffset.y <= this.option_six
+              event.nativeEvent.contentOffset.y >= this.option_five.y &&
+              event.nativeEvent.contentOffset.y <= this.option_six.y
             ) {
-              LayoutAnimation.easeInEaseOut();
+              //LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -565,10 +586,10 @@ export default class TopAnimationHorizatol extends Component {
                 //this.setState({ borders: 4 });
               });
             } else if (
-              event.nativeEvent.contentOffset.y >= this.option_six &&
-              event.nativeEvent.contentOffset.y <= this.option_seven
+              event.nativeEvent.contentOffset.y >= this.option_six.y &&
+              event.nativeEvent.contentOffset.y <= this.option_seven.y
             ) {
-              LayoutAnimation.easeInEaseOut();
+              //LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -581,10 +602,10 @@ export default class TopAnimationHorizatol extends Component {
                 //this.setState({ borders: 5 });
               });
             } else if (
-              event.nativeEvent.contentOffset.y >= this.option_seven &&
-              event.nativeEvent.contentOffset.y <= this.option_seven + 400
+              event.nativeEvent.contentOffset.y >= this.option_seven.y &&
+              event.nativeEvent.contentOffset.y <= this.option_seven.y + 400
             ) {
-              LayoutAnimation.easeInEaseOut();
+              //LayoutAnimation.easeInEaseOut();
               InteractionManager.runAfterInteractions(() => {
                 // ...long-running synchronous task...
 
@@ -609,8 +630,17 @@ export default class TopAnimationHorizatol extends Component {
             >
               <View
                 style={{ marginHorizontal: 15 }}
+                ref={(ref) => (this.mesure = ref)}
                 onLayout={(event) => {
                   console.log("Du1000", event.nativeEvent);
+                  this.mesure.measure((fx, fy, width, height, px, py) => {
+                    console.log("Component width is: " + width);
+                    console.log("Component height is: " + height);
+                    console.log("X offset to frame: " + fx);
+                    console.log("Y offset to frame: " + fy);
+                    console.log("X offset to page: " + px);
+                    console.log("Y offset to page: " + py);
+                  });
                 }}
               >
                 <Text
@@ -708,9 +738,19 @@ export default class TopAnimationHorizatol extends Component {
                 </View>
               </View>
               <View
+                ref={(ref) => (this.mesureOne = ref)}
                 onLayout={(event) => {
-                  this.option_one = event.nativeEvent.layout.y;
+                  this.option_one = event.nativeEvent.layout;
                   console.log("Du 1", event.nativeEvent);
+                  console.log("Du1000", event.nativeEvent);
+                  this.mesureOne.measure((fx, fy, width, height, px, py) => {
+                    console.log("Component width is: " + width);
+                    console.log("Component height is: " + height);
+                    console.log("X offset to frame: " + fx);
+                    console.log("Y offset to frame: " + fy);
+                    console.log("X offset to page: " + px);
+                    console.log("Y offset to page: " + py);
+                  });
                 }}
               >
                 <Text
@@ -788,7 +828,7 @@ export default class TopAnimationHorizatol extends Component {
               </View>
               <View
                 onLayout={(event) => {
-                  this.option_two = event.nativeEvent.layout.y;
+                  this.option_two = event.nativeEvent.layout;
                   console.log("Du 2", event.nativeEvent);
                 }}
               >
@@ -817,7 +857,7 @@ export default class TopAnimationHorizatol extends Component {
               </View>
               <View
                 onLayout={(event) => {
-                  this.option_three = event.nativeEvent.layout.y;
+                  this.option_three = event.nativeEvent.layout;
                 }}
               >
                 <Text
@@ -894,7 +934,7 @@ export default class TopAnimationHorizatol extends Component {
               </View>
               <View
                 onLayout={(event) => {
-                  this.option_four = event.nativeEvent.layout.y;
+                  this.option_four = event.nativeEvent.layout;
                 }}
               >
                 <Text
@@ -971,7 +1011,7 @@ export default class TopAnimationHorizatol extends Component {
               </View>
               <View
                 onLayout={(event) => {
-                  this.option_five = event.nativeEvent.layout.y;
+                  this.option_five = event.nativeEvent.layout;
                 }}
               >
                 <Text
@@ -997,7 +1037,7 @@ export default class TopAnimationHorizatol extends Component {
               </View>
               <View
                 onLayout={(event) => {
-                  this.option_six = event.nativeEvent.layout.y;
+                  this.option_six = event.nativeEvent.layout;
                 }}
               >
                 <Text
@@ -1031,7 +1071,7 @@ export default class TopAnimationHorizatol extends Component {
               </View>
               <View
                 onLayout={(event) => {
-                  this.option_seven = event.nativeEvent.layout.y;
+                  this.option_seven = event.nativeEvent.layout;
                 }}
               >
                 <Text
