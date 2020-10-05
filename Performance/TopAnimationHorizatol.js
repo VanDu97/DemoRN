@@ -25,7 +25,7 @@ import { duration } from "moment";
 import Icons from "react-native-vector-icons/AntDesign";
 import { Icon } from "react-native-elements";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
-
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { t } from "i18n-js";
 import styles from "./style";
 var pixelWidth = require("string-pixel-width");
