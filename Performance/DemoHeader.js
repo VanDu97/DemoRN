@@ -5,26 +5,192 @@ import {
   Text,
   FlatList,
   Animated,
-  Dimensions,
   Image,
   StyleSheet,
+  Dimensions,
 } from "react-native";
 import data from "./im";
-import { isIphoneX } from "react-native-iphone-x-helper";
-const WIDTH = Dimensions.get("window").width;
-const HEIGHT = Dimensions.get("window").height;
-
-const Paging = ({ scrollX }) => {
-  const translateX = scrollX.interpolate({
-    inputRange: [-WIDTH, 0, WIDTH],
-    outputRange: [-30, 0, 30],
-    extrapolate: "clamp",
+const { width, height } = Dimensions.get("window");
+const Items = ({
+  type,
+  imageUri,
+  heading,
+  description,
+  key,
+  color,
+  scrollX,
+  index,
+}) => {
+  const inputRange = [(index - 1) * width, index * width, (index + 1) * width];
+  const scale = scrollX.interpolate({
+    inputRange,
+    outputRange: [0, 1, 0],
+  });
+  const translateXHeader = scrollX.interpolate({
+    inputRange,
+    outputRange: [width * -0.1, 0, width * 0.2],
+  });
+  const opacity = scrollX.interpolate({
+    inputRange: [(index - 1.8) * width, index * width, (index + 0.2) * width],
+    outputRange: [0, 1, 0],
   });
   return (
-    <View style={styles.viewPaging}>
+    <View style={styles.viewItem}>
+      <Animated.Image
+        source={imageUri}
+        style={[
+          styles.image,
+          {
+            transform: [
+              {
+                scale,
+              },
+            ],
+          },
+        ]}
+        resizeMode="contain"
+      />
+      <View style={styles.viewContent}>
+        <Animated.Text
+          style={[
+            styles.textHeader,
+            {
+              transform: [
+                {
+                  translateX: translateXHeader,
+                },
+              ],
+              opacity,
+            },
+          ]}
+        >
+          {heading}{" "}
+        </Animated.Text>
+        <Animated.Text
+          style={[
+            styles.textDescription,
+            {
+              transform: [
+                {
+                  translateX: translateXHeader,
+                },
+              ],
+              opacity,
+            },
+          ]}
+        >
+          {description}{" "}
+        </Animated.Text>
+      </View>
+    </View>
+  );
+};
+
+const TickHeader = ({ scrollX }) => {
+  const translateY = scrollX.interpolate({
+    inputRange: [-width, 0, width],
+    outputRange: [40, 0, -40],
+  });
+  return (
+    <View style={[styles.tickHeader, {}]}>
       <Animated.View
         style={[
-          styles.viewParsetDot,
+          { height: 45, alignSelf: "center" },
+          {
+            transform: [
+              {
+                translateY,
+              },
+            ],
+          },
+        ]}
+      >
+        {data.map((item) => {
+          return <Text style={styles.textHeader}>{item.type} </Text>;
+        })}
+      </Animated.View>
+    </View>
+  );
+};
+
+const Circle = ({ scrollX }) => {
+  return (
+    <View style={{}}>
+      {data.map((item, index) => {
+        const opacity = scrollX.interpolate({
+          inputRange: [width * (index - 1), width * index, width * (index + 1)],
+          outputRange: [0, 1, 0],
+        });
+        const scale = scrollX.interpolate({
+          inputRange: [
+            width * (index - 0.2),
+            width * index,
+            width * (index + 1.2),
+          ],
+          //inputRange: [width * (index - 1), width * index, width * (index + 1)],
+          outputRange: [0, 1, 0],
+        });
+        const indexs = scrollX.interpolate({
+          inputRange: [-width * 0.2, 0, width * 0.2],
+          outputRange: [-1, 0, -1],
+        });
+        return (
+          <Animated.View
+            key={item.key}
+            style={[
+              {
+                width: width * 0.6,
+                height: width * 0.6,
+                borderRadius: width * 0.3,
+                backgroundColor: item.color,
+                position: "absolute",
+                top: height * 0.14,
+                flexDirection: "row",
+                left: width * 0.2,
+                opacity,
+                overflow: "hidden",
+              },
+              {
+                transform: [
+                  {
+                    scale,
+                  },
+                ],
+              },
+            ]}
+          />
+        );
+      })}
+    </View>
+  );
+};
+const Paging = ({ scrollX }) => {
+  const translateX = scrollX.interpolate({
+    inputRange: [-width, 0, width],
+    outputRange: [-30, 0, 30],
+  });
+  return (
+    <View
+      style={{
+        flexDirection: "row",
+        position: "absolute",
+        right: 10,
+        bottom: 40,
+      }}
+    >
+      <Animated.View
+        style={[
+          {
+            height: 30,
+            width: 30,
+            borderRadius: 15,
+            borderWidth: 1,
+            borderColor: "#ddd",
+            position: "absolute",
+            right: 90,
+            bottom: -10,
+            alignItems: "center",
+          },
           {
             transform: [
               {
@@ -34,55 +200,13 @@ const Paging = ({ scrollX }) => {
           },
         ]}
       />
-      {data.map((element, index) => {
+      {data.map((item) => {
         return (
-          <View
-            style={{
-              width: 30,
-              height: 30,
-            }}
-          >
-            <View style={[styles.dot, { backgroundColor: element.color }]} />
+          <View style={styles.viewDot}>
+            <View style={[styles.dot, { backgroundColor: item.color }]} />
           </View>
         );
       })}
-    </View>
-  );
-};
-
-const Ticker = ({ scrollX }) => {
-  const translateY = scrollX.interpolate({
-    inputRange: [-WIDTH, 0, WIDTH],
-    outputRange: [40, 0, -40],
-    // extrapolate: "clamp",
-  });
-  return (
-    <View
-      style={{
-        position: "absolute",
-        top: 10,
-        left: 20,
-        height: 40,
-        overflow: "hidden",
-      }}
-    >
-      <Animated.View
-        style={{
-          transform: [
-            {
-              translateY,
-            },
-          ],
-        }}
-      >
-        {data.map((item) => {
-          return (
-            <Animated.Text style={[styles.textType]} key={item.key}>
-              {item.type.toLocaleUpperCase()}{" "}
-            </Animated.Text>
-          );
-        })}
-      </Animated.View>
     </View>
   );
 };
@@ -95,140 +219,70 @@ export default class DemoHeader extends Component {
   }
   render() {
     const { scrollX } = this.state;
-
     return (
       <View style={{ flex: 1 }}>
+        <Circle scrollX={scrollX} />
         <Animated.FlatList
           data={data}
           pagingEnabled
           horizontal
+          showsHorizontalScrollIndicator={false}
           onScroll={Animated.event(
             [{ nativeEvent: { contentOffset: { x: scrollX } } }],
             { useNativeDriver: true }
           )}
-          scrollEventThrottle={16}
           keyExtractor={(item) => item.key}
-          showsHorizontalScrollIndicator={false}
           renderItem={({ item, index }) => {
-            const inputRange = [
-              WIDTH * (index - 1),
-              WIDTH * index,
-              WIDTH * (index + 1),
-            ];
-            const scale = scrollX.interpolate({
-              inputRange,
-              outputRange: [0, 1, 0],
-              extrapolate: "clamp",
-            });
-
-            const opacity = scrollX.interpolate({
-              inputRange: [
-                (index - 0.3) * WIDTH,
-                index * WIDTH,
-                (index + 0.3) * WIDTH,
-              ],
-              outputRange: [0, 1, 0],
-              extrapolate: "clamp",
-            });
-            const translateXHead = scrollX.interpolate({
-              inputRange,
-              outputRange: [WIDTH * 0.5, 0, -WIDTH * 0.5],
-              extrapolate: "clamp",
-            });
-            const translateXDescription = scrollX.interpolate({
-              inputRange,
-              outputRange: [WIDTH * 0.5, 0, -WIDTH * 0.5],
-            });
-
-            //width * 0.1, 0, -width * 0.1
-            return (
-              <View
-                style={{
-                  width: WIDTH,
-                  alignItems: "center",
-                  height: Dimensions.get("window").height,
-                }}
-              >
-                <Animated.Image
-                  source={item.imageUri}
-                  style={[
-                    {
-                      width: WIDTH * 0.75,
-                      height: HEIGHT * 0.75,
-                      flex: 1,
-                    },
-                    {
-                      transform: [
-                        {
-                          scale,
-                        },
-                      ],
-                    },
-                  ]}
-                  resizeMode="contain"
-                />
-
-                <Animated.View
-                  style={{
-                    flex: 0.5,
-                    marginLeft: 50,
-                  }}
-                >
-                  <Animated.Text
-                    style={[
-                      styles.textHeader,
-                      {
-                        transform: [
-                          {
-                            translateX: translateXHead,
-                          },
-                        ],
-                        opacity,
-                      },
-                    ]}
-                  >
-                    {item.heading.toLocaleUpperCase()}{" "}
-                  </Animated.Text>
-                  <Animated.Text
-                    style={[
-                      styles.textDiscription,
-                      {
-                        transform: [
-                          {
-                            translateX: translateXDescription,
-                          },
-                        ],
-                        opacity,
-                      },
-                    ]}
-                  >
-                    {item.description}{" "}
-                  </Animated.Text>
-                </Animated.View>
-              </View>
-            );
+            return <Items scrollX={scrollX} {...item} index={index} />;
           }}
         />
+        <Image
+          source={require("../assets/ue_black_logo.png")}
+          style={styles.imageIcon}
+          resizeMode="contain"
+        />
         <Paging scrollX={scrollX} />
-        <Ticker scrollX={scrollX} />
+        <TickHeader scrollX={scrollX} />
       </View>
     );
   }
 }
-
 const styles = StyleSheet.create({
-  textHeader: {
-    fontSize: 28,
-    fontWeight: "bold",
+  image: {
+    width: width * 0.75,
+    height: width * 0.75,
+    flex: 1,
   },
-  textDiscription: {
+  viewItem: {
+    width,
+    height,
+    alignItems: "center",
+  },
+  viewContent: {
+    flex: 0.6,
+    marginLeft: width * 0.3,
+  },
+  textHeader: {
+    fontSize: 30,
+    fontWeight: "bold",
+    textTransform: "uppercase",
+  },
+  textDescription: {
     fontSize: 16,
-    color: "#999",
     textAlign: "left",
   },
-  textType: {
-    fontSize: 38,
-    fontWeight: "bold",
+  imageIcon: {
+    width: 200,
+    height: 200,
+    position: "absolute",
+    left: 10,
+    bottom: 10,
+    transform: [
+      { translateX: -120 / 2 },
+      { translateY: -10 / 2 },
+      { rotateZ: "-90deg" },
+    ],
+    resizeMode: "contain",
   },
   dot: {
     width: 10,
@@ -236,33 +290,17 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   viewDot: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
-    borderWidth: 1,
     alignItems: "center",
-    justifyContent: "center",
-    borderColor: "#999",
-    marginRight: 10,
-    position: "absolute",
-    bottom: 40,
-    right: 10,
-    flexDirection: "row",
-  },
-  viewParsetDot: {
-    position: "absolute",
-    bottom: 10,
-    right: 100,
     width: 30,
-    height: 30,
-    borderRadius: 15,
-    borderWidth: 1,
-    borderColor: "#999",
   },
-  viewPaging: {
-    flexDirection: "row",
+  tickHeader: {
     position: "absolute",
-    right: 10,
-    bottom: 20,
+    top: 10,
+    left: 20,
+    overflow: "hidden",
+  },
+  textHeader: {
+    fontSize: 30,
+    fontWeight: "bold",
   },
 });
