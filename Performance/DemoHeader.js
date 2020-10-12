@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
   },
   tickHeader: {
     position: "absolute",
-    top: 10,
+    top: 50,
     left: 20,
     overflow: "hidden",
   },

@@ -25,7 +25,9 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from './UberEats.ts'
 // import App from "./Navigation/DemoStackNavigation";
 //import App from "./Performance/CusromAnimatable";
-import App from "./Performance/DemoHeader";
+//import App from "./Performance/DemoHeader";
+import App from "./Performance/DemoChart";
+
 //mport App from "./Performance/dm";
 //import App from "./Performance/TouchAnimation";
 //import App from "./animation/HelloAppAnimation";
