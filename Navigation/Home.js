@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity, Text, Dimensions } from "react-native";
+import {
+  View,
+  TouchableOpacity,
+  Text,
+  Dimensions,
+  StatusBar,
+} from "react-native";
 import { Icon } from "react-native-elements";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
@@ -13,9 +19,10 @@ export default class Home extends Component {
           alignItems: "center",
         }}
       >
+        <StatusBar barStyle="dark-content" />
         <TouchableOpacity
           onPress={() => {
-            this.props.navigation.navigate("Settings");
+            this.props.navigation.navigate("DemoTest");
           }}
           style={{
             backgroundColor: "green",

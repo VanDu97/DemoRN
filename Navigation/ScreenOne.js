@@ -141,6 +141,7 @@ export default class ScreenOne extends Component {
         // onResponderTerminationRequest={() => true}
         // onStartShouldSetResponder={() => true}
       >
+        <StatusBar barStyle="light-content" />
         <ParallaxScrollView
           backgroundColor="#fff"
           stickyHeaderHeight={90}

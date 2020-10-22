@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import { View, Text, TouchableOpacity, Animated } from "react-native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { View, Text, TouchableOpacity, Animated, Platform } from "react-native";
+import {
+  createStackNavigator,
+  CardStyleInterpolators,
+} from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import {
   createCollapsibleStack,
@@ -12,22 +15,18 @@ import Icon from "react-native-vector-icons/AntDesign";
 import { SliderBox } from "react-native-image-slider-box";
 import BotttomHide from "../Performance/BotttomHide";
 import TopAnimationHorizatol from "../Performance/TopAnimationHorizatol";
-const Stack = createStackNavigator();
-class HeaderCustom extends Component {
-  render() {
-    const { navigation } = this.props;
-    console.log(navigation);
-    return (
-      <TouchableOpacity
-        onPress={() => {
-          navigation.goBack();
-        }}
-      >
-        <Icon name="left" size={30} color="#fff" style={{ marginLeft: 5 }} />
-      </TouchableOpacity>
-    );
-  }
-}
+//const Stack = createStackNavigator();
+import { createNativeStackNavigator } from "react-native-screens/native-stack";
+import {
+  enableScreens,
+  ScreenContainer,
+  ScreenStackHeaderConfig,
+} from "react-native-screens";
+import DemoTest from "./DemoTest";
+
+enableScreens();
+const Stack = createNativeStackNavigator();
+
 export default class DemoStackNavigation extends Component {
   constructor(props) {
     super(props);
@@ -52,24 +51,23 @@ export default class DemoStackNavigation extends Component {
           headerMode="screen"
           screenOptions={{
             headerTitleAlign: "center",
-            // headerBackTitle: "",
-            // headerBackTitleVisible: false,
+            headerTranslucent: true,
           }}
         >
           <Stack.Screen
             name="Home"
-            // component={BotttomHide}
-            component={TopAnimationHorizatol}
+            // component={TopAnimationHorizatol}
+            component={Home}
             options={({ navigation, route }) => ({
-              // headerLeft: (props) => <HeaderCustom navigation={navigation} />,
               headerTransparent: true,
               headerTitle: null,
               headerTintColor: "#fff",
+              statusBarStyle: "light",
             })}
           />
           <Stack.Screen
-            name="ScreenOne"
-            component={ScreenOne}
+            name="DemoTest"
+            component={DemoTest}
             options={({ navigation, route }) => ({
               transitionSpec: {
                 open: config,
@@ -78,8 +76,8 @@ export default class DemoStackNavigation extends Component {
               headerTransparent: true,
               headerTitle: null,
               headerTintColor: "#fff",
-
-              //headerLeft: (props) => <HeaderCustom navigation={navigation} />,
+              stackPresentation:
+                Platform.OS === "ios" ? "modal" : "containedTransparentModal",
             })}
           />
         </Stack.Navigator>
