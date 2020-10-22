@@ -62,7 +62,7 @@ export default class DemoStackNavigation extends Component {
               headerTransparent: true,
               headerTitle: null,
               headerTintColor: "#fff",
-              statusBarStyle: "light",
+              headerShown: false,
             })}
           />
           <Stack.Screen
@@ -76,8 +76,8 @@ export default class DemoStackNavigation extends Component {
               headerTransparent: true,
               headerTitle: null,
               headerTintColor: "#fff",
-              stackPresentation:
-                Platform.OS === "ios" ? "modal" : "containedTransparentModal",
+              stackPresentation: Platform.OS === "ios" ? "modal" : "push",
+              headerShown: false,
             })}
           />
         </Stack.Navigator>
