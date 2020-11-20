@@ -558,10 +558,10 @@ SPEC CHECKSUMS:
   React-jsi: b6dc94a6a12ff98e8877287a0b7620d365201161
   React-jsiexecutor: 1540d1c01bb493ae3124ed83351b1b6a155db7da
   React-jsinspector: 512e560d0e985d0e8c479a54a4e5c147a9c83493
-  react-native-onesignal: 4d82a09492e4937c1b6eb22dcd602b0b26a9e4b0
+  react-native-onesignal: ad2eaab1517951e50d19fa3eccd16d3048167181
   react-native-safe-area-context: c23e140ee9a482e89991798aed110fbffefb2f51
   react-native-video: aa527b0acb37f94c4491e70df0274cb26979405d
-  react-native-view-shot: 08c46c9e8e92f6681e8f2ffa55ac3d06e7e99070
+  react-native-view-shot: 4475fde003fe8a210053d1f98fb9e06c1d834e1c
   react-native-webview: a5bae02fab4b01b856bc4d2bc5c8a4966d8a700b
   React-RCTActionSheet: f41ea8a811aac770e0cc6e0ad6b270c644ea8b7c
   React-RCTAnimation: 49ab98b1c1ff4445148b72a3d61554138565bad0
@@ -580,7 +580,7 @@ SPEC CHECKSUMS:
   RNLocalize: fc27ee5878ce5a3af73873fb2d8e866e0d1e6d84
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: 0e91da98ab26d5d04c7b59a9b6bd694124caf88c
-  RNSketchCanvas: 6939b18677cd1794151cc3d8eb5a0a2158a4a05b
+  RNSketchCanvas: 9c28adb5381543ed55cc98ce6de46479cb3cb12c
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
@@ -588,4 +588,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e5430658667315339940d716889765767dc67b08
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
