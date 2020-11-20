@@ -4,6 +4,8 @@ import { View, Text } from "react-native";
 import HOC from "./HocCus";
 import ViewComp from "./ViewComp";
 import { Icon } from "native-base";
+import MessageQueue from "react-native/Libraries/BatchedBridge/MessageQueue";
+MessageQueue.spy(true);
 const HOCCompoent = HOC(ViewComp);
 export default class LearnHOC extends Component {
   render() {
