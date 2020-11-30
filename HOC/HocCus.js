@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { TouchableOpacity, View } from "react-native";
 import { Text } from "react-native-animatable";
+import { Button } from 'react-native-elements';
 import Modal from "react-native-modal";
 const HOC = (MyComponent) => {
   return class ModalHOC extends Component {

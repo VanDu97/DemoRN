@@ -5,6 +5,7 @@ import HOC from "./HocCus";
 import ViewComp from "./ViewComp";
 import { Icon } from "native-base";
 import _ from "lodash";
+import { Button } from "react-native-elements";
 // import MessageQueue from "react-native/Libraries/BatchedBridge/MessageQueue";
 
 // MessageQueue.spy(true);
@@ -17,6 +18,26 @@ export default class LearnHOC extends Component {
     console.log("text", this.state.valueText);
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <Button title="Solid Button" />
+
+        <Button title="Outline button" type="outline" />
+
+        <Button title="Clear button" type="clear" />
+
+        <Button
+          icon={<Icon name="arrow-right" size={15} color="white" />}
+          title="Button with icon component"
+        />
+
+        <Button
+          icon={{
+            name: "arrow-right",
+            size: 15,
+            color: "white",
+          }}
+          title="Button with icon object"
+        />
+
         <HOCCompoent>
           <View
             style={{
