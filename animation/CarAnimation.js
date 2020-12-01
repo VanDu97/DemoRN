@@ -10,6 +10,7 @@ import {
   Animated,
   LayoutAnimation,
   Dimensions,
+  StyleSheet,
 } from "react-native";
 import { Icon, Button } from "react-native-elements";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
@@ -303,3 +304,16 @@ export default class CarAnimation extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  viewHeader: {
+    justifyContent: "space-between",
+    flexDirection: "row",
+    paddingHorizontal: 15,
+    paddingVertical: 15,
+    backgroundColor: "#ff9933",
+    paddingTop: isIphoneX() ? 50 : Platform.OS == "ios" ? 35 : 40,
+    borderBottomColor: "#ff9933",
+    borderBottomWidth: 1,
+  },
+});
