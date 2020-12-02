@@ -46,8 +46,7 @@ class Demo extends React.PureComponent {
         // }
         headerView={
           <View>
-            <Text>My App</Text>
-            <Text>Custom Header View</Text>
+            <Text> My App </Text> <Text> Custom Header View </Text>{" "}
           </View>
           // </ImageBackground>
         }
@@ -90,8 +89,8 @@ class Demo extends React.PureComponent {
               console.log("layout view1", layout);
             }}
           >
-            <Text style={{ fontSize: 32, color: "white" }}>Custom view</Text>
-          </View>
+            <Text style={{ fontSize: 32, color: "white" }}> Custom view </Text>{" "}
+          </View>{" "}
           <View
             style={{
               height: 300,
@@ -103,8 +102,8 @@ class Demo extends React.PureComponent {
               console.log("layout view2", layout);
             }}
           >
-            <Text style={{ fontSize: 32, color: "white" }}>keep going.</Text>
-          </View>
+            <Text style={{ fontSize: 32, color: "white" }}> keep going. </Text>{" "}
+          </View>{" "}
           <View
             style={{
               height: 300,
@@ -112,8 +111,8 @@ class Demo extends React.PureComponent {
               alignItems: "center",
             }}
           >
-            <Text style={{ fontSize: 32, color: "white" }}>keep going..</Text>
-          </View>
+            <Text style={{ fontSize: 32, color: "white" }}> keep going.. </Text>{" "}
+          </View>{" "}
           <View
             style={{
               height: 300,
@@ -121,8 +120,11 @@ class Demo extends React.PureComponent {
               alignItems: "center",
             }}
           >
-            <Text style={{ fontSize: 32, color: "white" }}>keep going...</Text>
-          </View>
+            <Text style={{ fontSize: 32, color: "white" }}>
+              {" "}
+              keep going...{" "}
+            </Text>{" "}
+          </View>{" "}
           <View
             style={{
               height: 300,
@@ -130,9 +132,9 @@ class Demo extends React.PureComponent {
               alignItems: "center",
             }}
           >
-            <Text style={{ fontSize: 32, color: "white" }}>the end! :)</Text>
-          </View>
-        </ScrollView>
+            <Text style={{ fontSize: 32, color: "white" }}> the end!: ) </Text>{" "}
+          </View>{" "}
+        </ScrollView>{" "}
       </ParallaxScrollView>
     );
   }
