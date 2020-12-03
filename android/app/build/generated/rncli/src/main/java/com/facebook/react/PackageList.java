@@ -33,6 +33,8 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-svg
 import com.horcrux.svg.SvgPackage;
+// react-native-touch-id
+import com.rnfingerprint.FingerprintAuthPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
 // react-native-video
@@ -97,6 +99,7 @@ public class PackageList {
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new SvgPackage(),
+      new FingerprintAuthPackage(),
       new VectorIconsPackage(),
       new ReactVideoPackage(),
       new RNViewShotPackage(),

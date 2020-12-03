@@ -88,6 +88,8 @@ target 'DemoRN' do
 
   pod 'RNSketchCanvas', :path => '../node_modules/@terrylinla/react-native-sketch-canvas'
 
+  pod 'TouchID', :path => '../node_modules/react-native-touch-id'
+
   target 'DemoRNTests' do
     inherit! :complete
     # Pods for testing
