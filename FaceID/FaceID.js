@@ -22,6 +22,8 @@ const optionalConfigObject = {
 //   passcodeFallback: true, // if true is passed, itwill allow isSupported to return an error if the device is not enrolled in touch id/face id etc. Otherwise, it will just tell you what method is supported, even if the user is not enrolled.  (default false)
 // };
 export default class FaceID extends Component {
+
+  
   _pressHandler() {
     TouchID.isSupported(optionalConfigObject)
       .then((biometryType) => {
