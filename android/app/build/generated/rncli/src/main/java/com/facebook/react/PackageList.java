@@ -19,6 +19,8 @@ import org.reactnative.maskedview.RNCMaskedViewPackage;
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 // @terrylinla/react-native-sketch-canvas
 import com.terrylinla.rnsketchcanvas.SketchCanvasPackage;
+// react-native-fingerprint-scanner
+import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-localize
@@ -92,6 +94,7 @@ public class PackageList {
       new RNCMaskedViewPackage(),
       new ReactNativeFirebaseAppPackage(),
       new SketchCanvasPackage(),
+      new ReactNativeFingerprintScannerPackage(),
       new RNGestureHandlerPackage(),
       new RNLocalizePackage(),
       new ReactNativeOneSignalPackage(),

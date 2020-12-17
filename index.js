@@ -10,7 +10,7 @@ import "react-native-gesture-handler";
 import { name as appName } from "./app.json";
 
 //import App from "./UberEats";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+//import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./App";
 //import App from "./Demo";
 //import App from "./Custom";
@@ -26,8 +26,10 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 //import App from "./Navigation/DemoStackNavigation";
 
 //import App from "./HOC/index";
-// import App from "./animation/CarAnimation";
-import App from "./FaceID/FaceID";
+//import App from "./animation/CarAnimation";
+import App from "./animation/ScrollTopMetiral";
+// import App from "./FaceID/FaceID";
+//import App from "./Scroll/ScrollTop";
 //import App from "./animation/StackAnimation";
 //import App from "./Performance/CusromAnimatable";
 //import App from "./Performance/DemoHeader";
