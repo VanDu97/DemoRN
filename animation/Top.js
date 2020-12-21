@@ -86,12 +86,24 @@ class HomeScreen extends Component {
   }
 }
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Settings!</Text>
-    </View>
-  );
+class SettingsScreen extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      ok: false,
+    };
+  }
+  componentDidMount() {
+    this.setState({ ok: true });
+    //this.props.scrollY.setOffset();
+  }
+  render() {
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <Text>Settings!</Text>
+      </View>
+    );
+  }
 }
 
 const Tab = createMaterialTopTabNavigator();
@@ -99,11 +111,25 @@ const Tab = createMaterialTopTabNavigator();
 export default function Top(props) {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        lazy
+        tabBarOptions={{
+          tabStyle: {
+            borderTopWidth: 0,
+          },
+          style: {
+            borderTopWidth: 1,
+            borderTopColor: "#fff",
+            backgroundColor: "#fff",
+          },
+        }}
+      >
         <Tab.Screen name="Tab1">
           {(navigation) => <HomeScreen {...props} {...navigation} />}
         </Tab.Screen>
-        <Tab.Screen name="Tab2" component={SettingsScreen} />
+        <Tab.Screen name="Tab2">
+          {(navigation) => <SettingsScreen {...props} {...navigation} />}
+        </Tab.Screen>
         <Tab.Screen name="Tab3" component={TabTop} />
       </Tab.Navigator>
     </NavigationContainer>

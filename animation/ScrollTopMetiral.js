@@ -43,7 +43,7 @@ export default class MyApp extends Component {
       60
     ).interpolate({
       inputRange: [0, 120],
-      outputRange: [0, -30],
+      outputRange: [0, -10],
       extrapolate: "clamp",
     });
     const opacity = Animated.diffClamp(this.state.scrollY, 0, 60).interpolate({
@@ -60,7 +60,7 @@ export default class MyApp extends Component {
       <SafeAreaView
         style={{ flex: 1, backgroundColor: "#fff", paddingBottom: 0 }}
       >
-        <StatusBar barStyle="dark-content" backgroundColor="white" />
+        <StatusBar barStyle="dark-content" backgroundColor="white"  />
         <Animated.View
           style={{
             flexDirection: "row",
